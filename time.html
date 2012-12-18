@@ -1,0 +1,342 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>The Time Issue</title>
+	      	
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<link href="http://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+
+
+
+<style type="text/css" media="screen">
+
+                /* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+
+.clearfix:after {clear: both;content: ' ';display: block;font-size: 0;line-height: 0;visibility: hidden;width: 0;height: 0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}.clearfix {display: block;}
+/* END RESET CSS */
+	
+html {
+background: rgb(255,255,255); 
+}
+
+:focus { 
+outline: none; 
+}
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+}
+		           		
+		
+#heading {
+width: 100%; 
+overflow: hidden; 
+}
+
+.Intro {
+margin-top: 200px; 
+margin-bottom: 400px; 
+width: 600px; 
+margin-left: auto; 
+margin-right: auto; 
+font-family: 'Bevan', serif; 
+font-size: 60px; 
+text-align: center;
+}
+                
+                	
+#navigation {
+position: fixed; 
+left: 50px; 
+top: 100px; 
+background: rgba(255,255,255,.8); 
+-webkit-border-radius: 10px; 
+-moz-border-radius: 10px; 
+border-radius: 10px; 
+padding: 20px; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out; 
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#navigation li {
+display: block; 
+padding: 5px; 
+font-family: 'Open Sans', 'Arial', sans-serif; 
+font-size: 14px; 
+}
+
+#navigation a {
+color: #333; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; 
+}
+
+#navigation a:hover {
+color: rgb(107,156,200); 
+}
+
+
+
+#SteveTime {
+background: #000; 
+width: 100%; 
+overflow: hidden;
+}
+
+
+#STBody {
+background: #000; 
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px;
+margin-top: 200px; 
+margin-bottom: 400px;
+color: #fff; 
+font-family: Josefin Slab, Garamond, Georgia, serif;
+font-size: 22px;
+line-height: 1.5;
+}
+
+
+#Timex {
+background: rgb(255,255,255); 
+width: 100%;}
+
+#TBody {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px; 
+color: #000; 
+font-family: Quattrocento, Garamond, serif; 
+font-weight: normal; 
+font-size: 24px;
+margin-top: 200px; 
+margin-bottom: 400px;
+line-height: 1.5;
+}
+
+#TBody figure {
+display: block; 
+position: relative; 
+margin-top: -75px; 
+}
+
+#TBody figcaption {
+position: absolute; 
+background: rgba(0,0,0,0.75); 
+color: rgb(255,255,255); 
+padding: 30px; 
+top: 100px; 
+left: -30%; 
+opacity: 0; 
+-webkit-transition: all 0.6s ease-in-out; 
+-moz-transition: all 0.6s ease-in-out; 
+-ms-transition: all 0.6s ease-in-out;
+font-family: Quattrocento, Garamond, serif; 
+font-weight: normal; 
+font-size: 16px; 
+text-shadow: 0px 1px 1px #161619; 
+-webkit-border-radius: 20px; 
+-moz-border-radius: 20px; 
+border-radius: 20px; 
+line-height: 1.5; 
+text-align: justify; 
+}
+
+
+
+#TBody figure:hover figcaption {
+opacity: 1; left: 0; 
+}
+
+#TBody a:link, a:visited {
+color: #777; 
+-webkit-transition: color 0.5s ease-in-out; 
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#TBody a:hover {
+color: rgb(39,137,148);
+}
+
+
+#KeepCalmHolder {
+background: rgb(204,51,0); 
+width: 100%;
+overflow: hidden;
+}
+
+#KeepCalmBody {
+width: 600px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px; 
+color: rgb(255,255,255); 
+font-family: 'Arial', serif; 
+font-weight: normal; 
+text-shadow: 0px 1px 2px #161619; 
+font-size: 18px; 
+margin-top: 200px; 
+margin-bottom: 200px;
+line-height: 1.5;
+}
+
+                                                                                 
+</style>
+</head>
+
+<body>
+
+<div id="heading">
+
+    <p class="Intro">The Time Issue</p>
+
+</div>
+
+<div id="navigation">
+    <ul id="nav">
+        <li><a href="#SteveTime" title="Steve Time">Steve Time</a></li>
+        <li><a href="#Timex" title="Timex">Timex</a></li>
+        <li><a href="#KeepCalmHolder" title="Keep Calm">Keep Calm</a></li>
+    </ul>       
+</div>
+
+
+
+<div id="SteveTime">
+
+<div id="STBody">
+
+    <p><img style="float: left; padding-right: 50px; padding-bottom: 200px; padding-top: 50px;" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Time%20Issue/1691281420_1.png"/></p>
+
+    <p>Time.  While it is a precious commodity to some, it is squandered by others.  It inevitably marches forward. Its passing heals wounds.  The older I get, the faster it seems to pass.  When I&#8217;m bored, I wish it would move faster, as it always seems to slow down.  When I am having a great moment, I wish it would slow down, as it is during these moments time always seems to speed up.</p>
+
+    <p style="padding-top: 25px;">My time is usually not my own.  People say I operate on &#8220;Steve Time&#8221;, which is to say that sometimes I do things when I think they should be done, not necessarily when other people expect them to be done.  Nonetheless, one of my goals is to ensure that I make the most of and be grateful for the time I am given, as I am realizing that time lost is time I will never get back.</p>
+
+</div>
+</div>
+
+
+
+<div id="Timex">
+
+<div id="TBody">
+
+    <figure><img style="float: left; padding-bottom: 75px;" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Time%20Issue/4368505528_1.png"/><figcaption>On the recommendation of a friend, I bought this watch a few years ago as a replacement for a much more expensive running watch. This particular running watch, while it was supposed to be a good watch and was highly recommended on the web, met its fate one summer afternoon in a pool.  It was supposed to be water resistant in 3 feet of water.  Needless to say, when I told my friend I was in the market for a digital watch that was sturdy and reliable, he told me that if I really wanted a watch that lasted, get a Timex Ironman. His recommendation was spot on.  This watch has been nothing but reliable, and I have put it through hell and back.  During the time that has passed since I purchased my Ironman, it has been banged up (as you can see in the photo), dropped numerous times and immersed in water on numerous occasions, but, like Timex&#8217;s old slogan says, it still &#8220;keeps on ticking&#8221;.  I highly recommend an Ironman to anyone who is in the market for a good digital watch.</figcaption></figure><p style="text-align: center; font-size: 62px; padding-top: 100px;">It takes a licking and keeps on ticking.</p>
+
+    <p style="text-align: center; padding-top: 25px;"><a href="http://www.timex.com">Timex.com</a></p>
+
+    <p style="margin-top: 75px; clear: both; text-align: center; font-size: 14px; font-style: italic; color: #999;">Huh? Hover over the watch for info.</p>
+
+</div>
+</div>
+
+
+<div id="KeepCalmHolder">
+
+<div id="KeepCalmBody">
+
+<p style="text-align: center; margin-bottom: 0px;"><img src="http://dl.dropbox.com/u/9043524/Experiments/The%20Time%20Issue/4716764678_1.png"/></p>
+
+<p style="text-align: center; font-size: 100px; text-align: center; text-transform: uppercase; margin-top: 0px; margin-bottom: 0px;">Keep</p>
+
+<p style="text-align: center; font-size: 100px; text-align: center; text-transform: uppercase; margin-top: 0px; margin-bottom: 0px;">Calm</p>
+
+<p style="text-transform: uppercase; font-size: 62px; text-align: center; margin-top: 0px; margin-bottom: 0px;">and</p>
+
+<p style="text-align: center; font-size: 100px; text-align: center; text-transform: uppercase; margin-top: 0px; margin-bottom: 0px;">Carry</p>
+
+<p style="text-align: center; font-size: 100px; text-align: center; text-transform: uppercase; margin-top: 0px;">On</p>
+
+<p style="font-family: 'Georgia', serif; line-height: 1.5; font-size: 20px; text-align: justify;">"Therefore I tell you, do not be anxious about your life, what you will eat or what you will drink, nor about your body, what you will put on. Is not life more than food, and the body more than clothing? Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they? And which of you by being anxious can add a single hour to his span of life? And why are you anxious about clothing? Consider the lilies of the field, how they grow: they neither toil nor spin, yet I tell you, even Solomon in all his glory was not arrayed like one of these. But if God so clothes the grass of the field, which today is alive and tomorrow is thrown into the oven, will he not much more clothe you, O you of little faith? Therefore do not be anxious, saying, 'What shall we eat?' or 'What shall we drink?' or 'What shall we wear?' For the Gentiles seek after all these things, and your heavenly Father knows that you need them all. But seek first the kingdom of God and his righteousness, and all these things will be added to you."</p>
+
+<p style="padding-top: 25px; font-family: Georgia, serif; line-height: 1.5; font-size: 20px; text-align: justify;">"Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble."</p>
+
+<p style="font-family: Georgia, serif; line-height: 1.5; font-size: 20px; text-align: right; padding-top: 25px; font-style: italic;">~ Matthew 6:25-34</p>
+
+</div>
+</div>
+        
+</body>
+</html> 
