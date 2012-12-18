@@ -31,62 +31,6 @@ $(function(){
 
 <style type="text/css" media="screen">
 
-                /* 
-  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
-  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
-  html5doctor.com/html-5-reset-stylesheet/
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
-}                  
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section { 
-    display:block;
-}
-
-nav ul { list-style:none; }
-blockquote, q { quotes:none; }
-blockquote:before, blockquote:after,
-q:before, q:after { content:''; content:none; }
-a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
-ins { background-color:#ff9; color:#000; text-decoration:none; }
-mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
-del { text-decoration: line-through; }
-abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
-/* tables still need cellspacing="0" in the markup */
-table { border-collapse:collapse; border-spacing:0; }
-hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
-input, select { vertical-align:middle; }
-.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
-
-.clearfix:after {clear: both;content: ' ';display: block;font-size: 0;line-height: 0;visibility: hidden;width: 0;height: 0;}
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}.clearfix {display: block;}
-/* END RESET CSS */
-
-html {
-background: purple; 
-}
-
 :focus { 
 outline: none; 
 }
@@ -95,20 +39,21 @@ text-decoration: none;
 border: none; 
 }
 
-.post {
-width: 800px;
-margin-left: auto;
-margin-right: auto;
-padding: 50px;
-}
 
 #main {
 background: purple url(http://dl.dropbox.com/u/9043524/Experiments/Christmas%202012/tumblr_mf552gKFNZ1ryty3y.png) top left repeat;
 width: 100%;
 }
 
-#main p {
-font-family: serif;
+#post {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
+}
+
+#post p {
+font-family: 'Georgia', serif;
 font-size: 18px;
 font-weight: normal;
 line-height: 1.5;
@@ -116,12 +61,12 @@ color: #fff;
 text-shadow: 0px 1px 2px #161619;
 }
 
-.LinusQuote {
-font-family: Walter Turncoat, serif;
+#post .LinusQuote {
+font-family: 'Walter Turncoat', 'Georgia', serif;
 font-size: 24px;
 }
 
-.LinusQuote2 {
+#post .LinusQuote2 {
 font-family: Walter Turncoat, serif;
 font-size: 28px;
 text-align: center;
@@ -137,12 +82,15 @@ margin-top: 50px;
 
 <div id="main">
 
+<div id="post">
+
 <p><img style="float: left; padding: 25px;" src="http://dl.dropbox.com/u/9043524/Experiments/Christmas%202012/Linus.png" /></p>
 
 <p class="LinusQuote">"And there were in the same country shepherds abiding in the field, keeping watch over their flock by night. And, lo, the angel of the Lord came upon them, and the glory of the Lord shone round about them: and they were sore afraid. And the angel said unto them, Fear not; for, behold, I bring you tidings of great joy, which shall be to all people. For unto you is born this day in the city of David a Savior, which is Christ the Lord. And this shall be a sign unto you: Ye shall find the babe wrapped in swaddling clothes, lying in a manger. And suddenly there was with the angel a multitude of the heavenly host praising God, and saying, Glory to God in the highest, and on earth peace and goodwill towards men."</p>
 
 <p class="LinusQuote2">"That's what Christmas is all about, Charlie Brown."</p>
 
+</div>
 </div>
 
 </body>
