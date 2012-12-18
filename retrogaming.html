@@ -1,0 +1,435 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>The Retro Gaming Issue</title>
+	      	
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Arapey' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Ewert' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Chicle' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+
+
+<style type="text/css" media="screen">
+
+                /* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+
+.clearfix:after {clear: both;content: ' ';display: block;font-size: 0;line-height: 0;visibility: hidden;width: 0;height: 0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}.clearfix {display: block;}
+/* END RESET CSS */
+
+
+	
+html {
+background: rgb(255,255,255); 
+}
+
+:focus { 
+outline: none; 
+}
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+}
+
+p {
+line-height: 1.5;
+}
+		           		
+                
+/*--[ HEADER ]--------------------*/
+#header { 
+background: rgba(18,18,18,.85); 
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2;
+}		
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}		
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Arial', sans-serif; 
+color: #fff; 
+font-weight: normal; 
+padding: 15px; 
+text-shadow: 0px 1px 1px rgb(22,22,25); 
+text-transform: uppercase; 
+}
+
+#header #nav a {
+color: #777; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: #fff; 
+}
+
+
+#article_intro {
+background: rgb(0,118,68) url(http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/NES_BkGRD.png) center center no-repeat; 
+background-attachment: fixed; 
+-moz-background-size: cover;  
+background-size: cover; 
+width: 100%;
+overflow: hidden;
+}
+
+.intro_text {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding-top: 300px;
+padding-bottom: 300px;
+color: rgb(255,255,255); 
+font-family: 'Press Start 2P', sans-serif; 
+font-weight: normal; 
+font-size: 80px; 
+line-height: 1.5;  
+text-shadow: 1px 1px 1px #161619; 
+text-align: center;
+}
+
+
+#retro {
+background: rgb(88,136,192) url(http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/retro_body.png) top left repeat; 
+width: 100%;
+overflow: hidden;
+}
+
+#retro_body {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px;
+}
+
+
+#retro_body p {
+color: #000; 
+font-family: Georgia, serif; 
+font-weight: normal; 
+font-size: 18px; 
+line-height: 1.5; 
+-webkit-font-smoothing: antialiased; 
+text-align: justify; 
+padding-bottom: 25px
+}
+
+#retro_body a:link, a:visited {
+color: #ccc; 
+-webkit-transition: all 0.2s ease-in-out; 
+-moz-transition: all 0.2s ease-in-out; 
+text-shadow: 0px 1px 1px #161619; 
+}
+
+#retro_body a:hover {
+color: #eee; 
+}
+
+
+
+#beano {
+background: rgb(0,0,0) url(http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/beans.png) top left no-repeat;
+background-attachment: fixed; 
+width: 100%;
+overflow: hidden;
+}
+
+#beano_body {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px;
+}
+
+#beano_body p {
+color: #999; 
+font-family: Hoefler Text, Baskerville, Garamond, Palatino Linotype, Georgia, Times New Roman, serif; font-weight: normal; 
+font-size: 18px; 
+line-height: 1.5; 
+text-shadow: 0px 1px 1px #161619;
+padding-bottom: 25px;
+}
+
+#beano_body a:link, a:visited {
+color: #ccc; 
+-webkit-transition: all 0.2s ease-in-out; 
+-moz-transition: all 0.2s ease-in-out; 
+text-shadow: 0px 1px 1px #161619; 
+}
+
+#beano_body a:hover {
+color: #eee; 
+}
+
+#beano_body img {
+-webkit-transition: all 1s ease-in-out;
+}
+
+#beano_body img:hover {
+-webkit-transform:rotate(90deg); 
+-moz-transform:rotate(90deg);
+}
+
+
+
+#top5 {
+background: #000; 
+width: 100%;
+overflow: hidden;
+}
+
+#top5content {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+color: #fff;
+padding: 50px;
+}
+
+#top5content p {
+font-family: Georgia, serif; 
+text-shadow: 0px 1px 1px #161619;
+padding-bottom: 25px;
+}
+
+#top5content a:link, a:visited {
+color: #ccc; 
+-webkit-transition: all 0.2s ease-in-out; 
+-moz-transition: all 0.2s ease-in-out; 
+text-shadow: 0px 1px 1px #161619; 
+}
+
+#top5content a:hover {
+color: #eee; 
+}
+
+#top5content .retrotext {
+font-size: 32px; 
+color: #fff; 
+margin-bottom: 5px; 
+text-align: center;
+font-family: 'Press Start 2P', sans-serif;
+margin-top: 50px;
+}
+                                                                                
+</style>
+</head>
+
+<body>
+
+<section id="header">
+		
+    <ul id="nav">
+        <li>Contents:</li>
+        <li><a title="Retro Gaming" href=#retro>Retro Gaming</a></li>
+        <li><a title="Beano"href=#beano>Beano</a></li>
+        <li><a title="Top 5 NES Games"href=#top5>Top 5 NES Games</a></li>
+    </ul>
+               
+</section> <!-- end #header -->
+
+
+<section id="article_intro">
+
+    <p class="intro_text">The Retro Gaming Issue</p>
+
+</section> <!-- end #article_intro -->
+
+
+<section id="retro">
+
+<section id="retro_body">
+
+<p><img style="float: right; margin-top: 25px; margin-bottom: 30px; margin-left: 40px; border: 15px solid #fff; border-bottom: 65px solid #fff; box-shadow: 0px 0px 10px #161619; -moz-box-shadow: 0px 0px 10px #161619; -webkit-box-shadow: 0px 0px 10px #161619;" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/1601271654_1.png"/></p>
+
+<p style="padding-top: 75px; font-family: Lobster, arial, serif; font-size: 82px; text-shadow: 0px 3px 2px #161619; color: rgb(255,255,255);">Retro Gaming</p>
+
+<p style="font-size: 20px; line-height: 1.75; color: #000;"><span style="line-height: 1; font-size: 62px; text-shadow: 0px 3px 2px #161619; color: rgb(255,255,255); font-family: Lobster, arial, serif;">S</span>uper Mario Bros. 3 was quite possibly the best game made for the original Nintendo Entertainment System (NES).  It most certainly makes my top five list.  In fact,  it is my opinion that Super Mario Bros. 3 was quite possibly one of the best games on any system from any time period.  Mario 3 was also a pioneer of sorts.  It introduced (or at least made popular) a number of concepts that are still used in the modern Mario games such as level maps, flying, and special suits that allow Mario (or Luigi) to have additional powers.  (Remember the Tanooki suit anyone?) What really made this game, as well as many others from the old school special was the simple, yet difficult game play that relied mainly on precise timing. Often I also feel a nostalgic preference for the older games, whether they were in the arcade or on the console at home.</p>
+
+<p><img style="float: left; margin-top: 30px; margin-bottom: 30px; margin-right: 30px; border: 15px solid #fff; border-bottom: 65px solid #fff; box-shadow: 0px 0px 10px #161619; -moz-box-shadow: 0px 0px 10px #161619; -webkit-box-shadow: 0px 0px 10px #161619;" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/1601271654_2.png"/></p>
+
+<p style="font-size: 52px; text-shadow: 0px 3px 2px #161619; color: rgb(255,255,255); font-family: Lobster, arial, serif; text-align: center; margin-bottom: 0px;">Game Play&#8230;</p>
+
+<p style="margin-top: 0px; padding-top: 10px;">There was a time when the majority of gaming was done in the arcade, and during this time, the arcade business was, of course, thriving.  Many games were first released in the arcade, after which they were ported to the console (often with lower quality graphics than their arcade counterparts due to technical reasons).  A significant number of these games were difficult.  Why the difficulty one might ask?  Well, the games were basically designed to take one&#8217;s quarter(s).  One great example of this is the <a href="http://en.wikipedia.org/wiki/Super_Mario_Bros.#Vs._Super_Mario_Bros.">arcade version</a> of Super Mario Bros.  This version was much more difficult than its NES counterpart.  The levels were different (note harder), and there were far fewer items such as 1-ups to be found.  An example of this is that the NES version rewarded Mario an extra life after one collected 100 coins.  The arcade version upped the number of coins required for an extra life to 200.</p>  
+
+<p>These games, while difficult, were also extremely fun.  The game designers, after all, had to keep one coming back for more.  But difficult games were not always relegated only to the arcade.  One paradigm was the version of Ninja Gaiden that was released for the NES.  While the first few stages of this game were pretty easy, the last stage was impossibly hard. (It was impossibly hard to me at least.)</p>  
+
+<p>Please do not misunderstand.  I am not making the generalization that the games of today are not as difficult as the ones of yesteryear.  A statement like that would almost certainly be misleading.  There is something to be said, however, about a game that requires a certain skill level, practice, and/or a significant time commitment (and a lot of quarters in some cases) in order to be truly great at the game (or even complete the game).   One issue that made the completion of older games on the console more difficult was that only a select few allowed the ability to save one&#8217;s progress.  This brings me to my next point.  A majority of the games of my childhood were more simplistic.  There were fewer buttons, fewer crazy combos, and they were generally less complex. One couldn&#8217;t do as much I guess, but then again, maybe less is more.  I&#8217;m thinking about games like Ms. Pacman, the <a href="http://en.wikipedia.org/wiki/1942_(video_game)">arcade version of 1942</a>, <a href="http://en.wikipedia.org/wiki/Guerrilla_War_(video_game)">Guerilla War</a>, <a href="http://www.youtube.com/watch?v=EUNOQZ5S1bQ">Galaga 3</a> and <a href="http://en.wikipedia.org/wiki/Kung_Fu_(game)">Kung Fu</a>.  I wonder, aside from the sheer availability and the portability factor, if this is not one of the reasons that the iOS games are so popular.  In general, the learning curve for the majority of the good iOS games is not very steep.</p>
+
+<p><img style="float: right; padding-top: 10px; padding-left: 10px; padding-bottom: 10px" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/1601271654_3.png"/></p>
+
+<p style="font-size: 52px; text-shadow: 0px 3px 2px #161619; color: rgb(255,255,255); font-family: Lobster, arial, serif; text-align: center; margin-bottom: 0px;">Nostalgia&#8230;</p>
+
+<p style="margin-top: 0px; padding-top: 10px;">During my formative years, I spent a lot of time in arcades.  My sister was a figure skater, and when I was a kid, I was dragged along to the ice rink for her practices.  Fortunately I had two arcades to choose from, in which to pass the time.  There was an arcade in the ice rink itself, in which I would play when my sister&#8217;s practices were before mall hours (5AM before school in some cases), and sometimes I would play in the arcade in the mall upstairs, during mall hours, when she had practices after school.  I have many fond memories in both of these arcades.  Unfortunately, due to the proliferation of home consoles with better graphics and lower prices, along with a number of other economic reasons, the arcades that I knew and loved as a youth are mostly a thing of the past.</p>
+
+<p>Thankfully, for those of us who love retro games, there are a number of solutions available that will allow one to enjoy these games of the past.  Obviously one cannot beat an original arcade machine.  Unfortunately, space and spare cash make this an inviable solution, at least for me, since multiple arcade machines take up a large amount of room and are pricey to say the least.  For the console, one simply cannot surpass the rush of nostalgia that comes with playing on an original system.  I still have my original NES from 20-some years ago.  After some TLC, it still works perfectly.  If you don&#8217;t have an original system, the standard places like eBay, Craigslist, and yard sales may turn up some gems.  Depending on the system that one is looking for, as well as the scarcity thereof, an original system may not be economically feasible.  For example, Neo Geo systems still fetch a pretty hefty price, and/or a Sega Master System may be hard to find.</p>
+
+<p>Another great option is emulation.  It is my opinion that there is no better emulator out there than the <a href="http://www.nintendo.com/wii/online/virtualconsole">Virtual Console</a>, which one can access through the Wii&#8217;s Shop Channel.  Through the Virtual Console one can download NES, SNES, N64, Arcade, Commodore 64, NEOGEO, Sega Genesis, Sega Master System and TurboGrafx 16 games to play on the Wii.  The games are relatively inexpensive (in the neighborhood of $5-15, depending on the system and/or game), and it is probably the easiest way to play the widest variety of retro games, provided that one already owns a Wii.  Other avenues exist for Xbox 360 owners as well, as Microsoft also offers on-line games for download through Xbox Live.  I don&#8217;t have an XBox and have thus not tried this, but I hear through the grapevine that it is great.</p>
+
+</section> <!-- end #retro_body -->
+
+</section> <!-- end #retro -->
+
+<section id="beano">
+
+<section id="beano_body">
+
+<p style="text-align: center;"><img style="-webkit-transform: none; padding-top: 175px;" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/1601194286_1.png"/></p>
+
+<p style="margin-top: 100px;"><img style="float: right; padding: 60px;" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/1601194286_2.png"/></p>
+
+<p style="font-size: 22px; color: #fff; line-height: 1.75;">During what some would call the golden years of Sega (you know, the time that the Genesis was at the height of its popularity and people still lined up in arcades to pop quarters into Street Fighter II), Sega developed some nice games.  One of those games was a little-known title called &#8220;Dr. Robotnik&#8217;s Mean Bean Machine&#8221;, which <a href="http://notsosecretlifeofb.blogspot.com/">my beautiful wife</a>, B, and I affectionately call &#8220;Beano&#8221;.</p>
+
+<p>At first glance the game looks like a cross between Tetris and Dr. Mario.  It combines puzzle solving with a healthy dose of one-on-one competition.  The premise is to match the beans by color as they fall.  Match four colors in a row, and the beans will disappear, much like when you clear a line in Tetris.  If your screen fills with beans, much like Tetris also, your game is over.  The longer your game is, the faster the beans drop.</p>
+
+<p>What makes this game truly fun is its competitive aspect.  When you clear a group of four beans, a number of clear, dark beans are dropped on your opponent.  There are two challenge modes, one where you play the computer and one where you play another person.  The goal, if you can manage it, is to create a series of combinations whereby one bean group after another is cleared.  Reference the video to the right in order to better understand what I&#8217;m talking about.  Different numbers of combinations will cause a different number of beans to be dropped on your competitor&#8217;s side.  The more combinations you get, the more beans will dropped.</p>
+
+<p style="margin-top: 50px;"><object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/kklAO4FcJSc&amp;rel=0&amp;color1=0xb1b1b1&amp;color2=0xd0d0d0&amp;hl=en_US&amp;feature=player_embedded&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/kklAO4FcJSc&amp;rel=0&amp;color1=0xb1b1b1&amp;color2=0xd0d0d0&amp;hl=en_US&amp;feature=player_embedded&amp;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="385"></embed></object></p>
+
+<p style="margin-top: 50px;">I first discovered this game a few years ago, after buying one of those <a href="http://www.amazon.com/Sega-Genesis-Radica-Plug-Games/dp/B000N0T21K">Genesis plug and play</a> consoles that connects directly into the component ports on a TV.  The console had 5 games embedded in its flash memory.  On this console, &#8220;Beano&#8221; was only available as a one player game (due to only having one controller).  It was fun to play, and my wife really liked the game, which she found that she was quite good at.</p>
+
+<p>I rediscovered &#8220;Beano&#8221; this past fall, while I was browsing through the Virtual Console games on the Wii.  I subsequently <a href="http://www.nintendo.com/wii/online/virtualconsole/games/detail/HHdm70KQa2FIGw-d7Ek2QtVXEHtjRVnA">downloaded it</a> for only 800 Wii points, as I knew that this was a game my wife really liked too.  The Wii version, I assume, can be controlled with the Wii remote, the &#8220;classic&#8221; controller, or a GameCube controller, although I have only used the Wii remote.  As with a lot of Virtual Console games, you just turn the remote on its side and hold it like one of the old school NES controllers.  The cool thing about the Wii version is the fact that you can use both Wii remotes, which in turn, allows two-player mode. As my wife and I have discovered, two-player mode opens up the floodgates of fun with this game.</p>
+
+<p style="color: rgb(255,150,0); font-size: 32px;">Here&#8217;s how we play&#8230;</p>
+
+<p>I have to warn you, this game can be pretty addictive.  B and I play on the mode where we directly challenge each other.  The way we play, the first person to win 10 games is the winner.  It started as just something different to do after the kids were in bed, and it usually gives us a chance to talk (as opposed to sitting like lumps in front of a movie).  Sometimes our battles to see who can be the first to win 10 games are long.  Sometimes the battles are short-lived, but either way, she pretty much always beats me to 10.</p>
+
+<p><img style="-webkit-transform: none; padding-bottom: 100px;" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/1601194286_3.png"/></p>
+
+</section> <!-- end #beano_body -->
+
+</section> <!-- end #beano -->
+
+<section id="top5">
+
+<section id="top5content">
+
+<p style="font-size: 32px; color: #fff; margin-bottom: 5px; text-align: center;font-family: 'Press Start 2P', sans-serif; padding-top: 200px;">My Top 5 NES Games of All Time</p>
+
+<img style="float: left; margin-right: 20px; margin-bottom: 20px;" src="http://dl.dropbox.com/u/9043524/Experiments/The%20Retro%20Video%20Game%20Issue/1601097763_1.png"/><p style="line-height: 1.75; font-size: 20px; color: #fff;">As I have mentioned in previous posts, I have been a fan of Nintendo for as long as I can remember, and my favorite game system of all time is the NES.  The NES was not the most capable system at the time of its popularity (the <a href="http://en.wikipedia.org/wiki/Sega_Master_System">Sega Master System</a> was actually much better graphically and from a hardware design perspective), but I have many fond memories gaming on the NES with friends.  As such, the NES, and the games we played on them as little tykes give me a nostalgic feeling.</p>
+
+<p style="font-size: 18px; line-height: 1.5; color: #777;">I can recall countless Ninja Gaiden tournaments, many sleepless, joyful nights staying up trying to beat a game, and countless times my NES stayed on and paused for days at a time (for lack of a save feature). I still have my original NES, which is now over 20 years old, and it is in working condition.  It is currently boxed up in the garage (mainly due to the fact that our house is on the market and the Wii has a virtual console).  I also only have a hanful of games left, but it is fun to pull the system out every now and then to play on the original hardware.  Nevertheless, here are my top 5 games for the system (in no particular order).</p>
+
+<p class="retrotext">Super Mario Bros 1, 2, and 3.</p>
+
+<p style="-webkit-column-width: 350px; -moz-column-width: 350px; column-width: 350px; font-size: 18px; line-height: 1.5; color: #777;">I am lumping all three together because frankly, they were all quite good to me.  Mario 1 was the original, without which the NES could not have single-handedly revived the collapsing video game market in the early to mid 80&#8217;s. Mario 3 was awesome for the graphics and the sheer volume of secrets and Easter eggs in it.  But, my favorite of the three is Mario 2, simply for the fact that it was so different.</p>
+
+<p class="retrotext">Ninja Gaiden.</p>
+
+<p style="-webkit-column-width: 350px; -moz-column-width: 350px; column-width: 350px; font-size: 18px; line-height: 1.5; color: #777;">My first experience with this franchise was in the arcade, and that version was quite a different beast than the NES version.  In the NES version, Ryu always had a sword.  Like it&#8217;s arcade only cousin, different items in the stage could be broken to get health increases, weapons, and extra lives.  What really made the NES version stand out, however, was the inclusion of a back story and a story line as the game progressed.  This was one of the first games I remember to have this.  The other thing is the game&#8217;s difficulty.  To this day, the last stage is nearly impossible for me to play through without having to take a break from sheer frustration.  That is definitely missing from a lot of today&#8217;s games and was one of the reasons I always come back to this game today.</p>
+
+<p class="retrotext">Mike Tyson&#8217;s Punch Out / Punch Out.</p>
+
+<p style="-webkit-column-width: 350px; -moz-column-width: 350px; column-width: 350px; font-size: 18px; line-height: 1.5; color: #777;">Punch Out was also a very different beast than its arcade cousin, but the NES version was so much better.  As Little Mac, you fought your way to the title through various boxers, each with a different personality.  Each boxer had its own strengths and weaknesses, and success in the game relied on a knowledge of those weaknesses as well as split second timing.  For example, when King Hippo opened his mouth, a quick jab to the face would stun him and then you could punch him in the stomach (on the white &#8220;x&#8221;).  The other thing I was fond of were the running scenes, where Little Mac would chase his trainer, Doc, who was on a bike.  The funniest thing about is was the pink sweatsuit Little Mac wore.  Someone at Nintendo obviously had a sense of humor.  It&#8217;s cool Nintendo kept this in there for the Wii&#8217;s version of Punch Out.</p>
+
+<p class="retrotext">Contra.</p>
+
+<p style="-webkit-column-width: 350px; -moz-column-width: 350px; column-width: 350px; font-size: 18px; line-height: 1.5; color: #777;">I liked the fact that this game was impossibly hard, but the real fun factor was playing it with friends.  This is one of the first games I can remember where it was just fun to blow stuff up.  All that aside though this game had the ultimate cheat code: up, up, down, down, left, right, left, right, b, a, select, start.</p>
+
+<p class="retrotext">Megaman 2.</p>
+
+<p style="-webkit-column-width: 350px; -moz-column-width: 350px; column-width: 350px; font-size: 18px; line-height: 1.5; color: #777;">This, in my humble opinion, was, and probably still is, one of the best video games of all time.  The music was awesome, the graphics were good, and this game was just plain fun.  Not only was this game fun, but it was also challenging.  This is one of the games I stayed up all night playing as a kid, and everytime I play it, it still brings back great memories.</p>
+
+<p style="font-size: 20px; line-height: 1.5; color: #777; text-align: center; margin-top: 50px;">Return to <a href="http://theartdirectedjournal.github.com">The Art Directed Journal</a></p>
+
+</section> <!-- end #top5contents -->
+
+</section> <!-- end #top5 -->
+
+        
+</body>
+</html> 
