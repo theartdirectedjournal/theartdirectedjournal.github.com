@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>The Time Issue</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<link href="http://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+
+
+
+<style type="text/css" media="screen">
+
+                /* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+
+.clearfix:after {clear: both;content: ' ';display: block;font-size: 0;line-height: 0;visibility: hidden;width: 0;height: 0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}.clearfix {display: block;}
+/* END RESET CSS */
+
+html {
+background: rgb(255,255,255); 
+}
+
+:focus { 
+outline: none; 
+}
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+}
+
