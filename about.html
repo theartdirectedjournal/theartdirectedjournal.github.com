@@ -54,7 +54,9 @@ a:link, a:visited {
 color: rgb(88,129,170); 
 text-decoration: none; 
 border: none; 
--webkit-transition: color 0.2s ease-in-out; 
+-webkit-transition: .5s all ease-in-out; 
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
 }
 
 a:hover, a:focus { 
@@ -74,14 +76,15 @@ overflow: hidden;
 #header #nav { 
 margin-bottom: 20px; 
 margin-top: 20px; 
-margin-left: 20px;  
-width: 400px; 
+margin-left: auto;
+margin-right: auto;
+width: 800px; 
 }
 
 #header #nav li { 
 display: inline; 
 font-size: 16px; 
-font-family: 'Georgia', serif; 
+font-family: 'Oswald', sans-serif; 
 color: #444; 
 font-weight: normal; 
 padding: 15px; 
@@ -169,7 +172,7 @@ margin-bottom: 25px;
 #Copyright p {
 font-size: 14px; 
 text-align: center; 
-font-family: 'Georgia', serif; 
+font-family: 'Oswald', sans-serif; 
 text-shadow: 0px 1px 2px rgb(22,22,25); 
 color: #777; 
 }
