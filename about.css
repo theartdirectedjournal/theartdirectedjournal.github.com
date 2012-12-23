@@ -1,0 +1,139 @@
+/*--[ GLOBAL TAG STYLES ]---------*/
+html { 
+font-size: 100%; 
+}
+
+body { 
+font: normal 1em/1.5; 
+margin: 0; 
+padding: 0;
+background: rgb(38,38,38) url(https://5trula.blu.livefilestore.com/y1p4hgcYWZ6o_DTQNokN5qFA9djSyELpCPgEVFxWVa8LQHOkHft2X5rcF0KVDgHolLICKK9f9whEw1z6BIbK8oGv1HYsRqHI4dK/Black_Paper.png?psid=1) top left repeat;  
+color: rgb(255,255,255); 
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: rgb(88,129,170); 
+text-decoration: none; 
+border: none; 
+-webkit-transition: .5s all ease-in-out; 
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover, a:focus { 
+color: rgb(245,81,209); 
+}
+
+                                	
+/*--[ HEADER ]--------------------*/
+#header {   
+width: 100%; 
+overflow: hidden; 
+}		
+
+#header #nav { 
+margin-bottom: 20px; 
+margin-top: 20px; 
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: left;
+}		
+
+#header #nav li { 
+display: inline; 
+font-size: 16px; 
+font-family: 'Georgia', serif; 
+color: #fff; 
+font-weight: normal; 
+padding: 15px; 
+text-shadow: 0px 1px 1px rgb(22,22,25); 
+}
+
+#header #nav a {
+color: #777; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: rgb(245,81,209); 
+}
+
+/*--[ SUB-HEADER ]--------------------*/
+#sub-header {
+width: 100%; 
+overflow: hidden;  
+}
+
+#inner-header {
+margin-top: 75px; 
+margin-right: auto; 
+margin-left: auto; 
+width: 800px; 
+line-height: 1;
+}
+
+#inner-header h1 {
+color: rgb(255,255,255); 
+font-family: 'Mouse Memoirs', 'Helvetica', sans-serif; 
+font-size: 150px;   
+text-shadow: 0px 1px 2px rgb(22,22,25); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: .5s all ease-in-out; 
+text-align: left;
+font-weight: normal;
+}
+
+#inner-header h1:hover {
+-webkit-transform:rotate(-5deg); 
+-moz-transform:rotate(-5deg);
+-ms-transform: rotate(-5deg);
+opacity: .5;
+}
+                                               		         
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%; 
+overflow: hidden;  
+}  
+
+#contents-text {
+width: 800px;
+margin-left: auto; 
+margin-right: auto;
+font-family: 'Georgia', serif; 
+font-size: 22px; 
+color: #777; 
+font-weight: normal; 
+line-height: 1.5; 
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out;
+text-shadow: 0px 1px 2px rgb(22,22,25);
+}
+
+
+#Copyright {
+width: 600px; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p {
+font-size: 14px; 
+text-align: center; 
+font-family: 'Georgia', serif; 
+text-shadow: 0px 1px 2px rgb(22,22,25); 
+color: #777; 
+}
