@@ -7,7 +7,7 @@ body {
 font: normal 1em/1.5; 
 margin: 0; 
 padding: 0; 
-background: rgb(232,232,220); 
+background: rgb(232,232,220) url("http://dl.dropbox.com/u/9043524/Experiments/index_bckgrd.png") top left repeat; 
 width: 100%;   
 }
 
