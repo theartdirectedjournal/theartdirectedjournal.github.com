@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Template</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(33,33,33);
+width: 100%;
+}
+
+:focus { 
+outline: none; 
+}
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+}
+
+#Main Message {
+width: 800px;
+margin-top: 100px;
+margin-left: auto;
+margin-right: auto;
+font-family: 'Georgia', serif;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#Main Message ul {
+display: inline;
+}
+
+.four {
+font-family:
+font-size:
+color:
+}
+
+.oh {
+font-family:
+font-size:
+color:
+}
+                                                                                 
+</style>
+</head>
+
+<body>
+
+<section id="Main Message">
+
+<ul>
+   <li>Four</li>
+   <li>oh</li>
+   <li>Four</li>
+</ul>
+
+<p>The page you are looking for seems to have run off.  <a href="http://theartdirectedjournal.github.com">Try this</a> instead.</p>
+
+<img src="http://dl.dropbox.com/u/9043524/Reebok_Real_Flex_copy2.png" alt="Running Shoes">
+
+</section>
+        
+</body>
+</html> 
