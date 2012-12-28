@@ -38,17 +38,25 @@ font-size: 100%;
 body {
 margin: 0;
 padding: 0;
-background: rgb(52,52,52) url (http://dl.dropbox.com/u/9043524/Experiments/Screen%20shot%202012-12-26%20at%209.53.57%20AM.png) top left repeat;
+background: rgb(52,52,52) url(http://dl.dropbox.com/u/9043524/Experiments/Screen%20shot%202012-12-26%20at%209.53.57%20AM.png) top left repeat;
 width: 100%;
 }
 
 :focus { 
 outline: none; 
 }
+
 a:link, a:visited {
 text-decoration: none; 
 border: none;
-color: #777;
+color: pink;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;  
 }
 
 #MainMessage {
