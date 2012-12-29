@@ -16,7 +16,7 @@ outline: none;
 }
 
 a:link, a:visited { 
-color: rgb(88,129,170); 
+color: #336699; 
 text-decoration: none; 
 border: none; 
 -webkit-transition: .5s all ease-in-out; 
