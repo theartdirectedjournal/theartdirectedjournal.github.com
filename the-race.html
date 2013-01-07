@@ -1,17 +1,116 @@
-.post {width: 960px; margin-left: auto; margin-right: auto; padding: 50px;}
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Template</title>
 
-body {background: rgb(128,128,128); width: 100%;}
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
 
-p {color: #161619; font-family: Georgia, serif; font-weight: normal; font-size: 24px; line-height: 1.75; letter-spacing: -0.07em; }
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
 
-.caption {font-size: 18px; font-style: italic; text-align: right; }
+<link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
 
-.post a:link, a:visited {color: #fff; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; background: #161619; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; padding: 3px 5px; }
 
-.post a:hover {background: #003366; }
+<style type="text/css" media="screen">
 
-</style><p><img style="float: right;" src="http://dl.dropbox.com/u/9043524/Reebok_Real_Flex_copy2.png"/></p>
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(128,128,128);
+}
+
+:focus { 
+outline: none; 
+}
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: #fff; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out; 
+-o-transition: all 0.5s ease-in-out; 
+-ms-transition: all 0.5s ease-in-out; 
+background: #161619; 
+-webkit-border-radius: 5px; 
+-moz-border-radius: 5px; 
+-ms-border-radius: 5px; 
+-o-border-radius: 5px; 
+border-radius: 5px; 
+padding: 3px 5px; 
+}
+
+a:hover {background: #003366; }
+
+#outer {
+width: 100%;
+overflow: hidden;
+}
+
+#outer #inner {
+width: 960px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px;
+}
+
+#outer #inner p {
+color: #161619; 
+font-family: Georgia, serif; 
+font-weight: normal; 
+font-size: 24px; 
+line-height: 1.75; 
+letter-spacing: -0.07em; 
+}
+
+#outer #inner .caption {
+font-size: 18px; 
+font-style: italic; 
+text-align: right; 
+}
+
+#outer #inner .reebok {
+float: right;
+padding: 30px;
+}
+                                                                             
+</style>
+</head>
+
+<body>
+
+<section id="outer">
+<section id="inner">
+
+<img class="reebok" src="http://dl.dropbox.com/u/9043524/Reebok_Real_Flex_copy2.png"/>
 
 <p>Therefore, since we are surrounded by so great a cloud of witnesses, let us throw off everything that hinders and the sin that so easily entangles, and <span style="color: rgb(141,1,24);">let us run with perseverance the race marked out for us</span>.  Let us fix our eyes on Jesus, the author and perfecter of our faith, who for the joy set before him endured the cross, scorning its shame, and sat down at the right hand of the throne of God.</p>
 
 <p class="caption">Hebrews 12:1-2</p>
+
+</section>
+</section>
+        
+</body>
+</html> 
