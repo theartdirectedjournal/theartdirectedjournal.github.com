@@ -63,8 +63,12 @@ color: #999;
 width: 600px;
 margin-left: auto;
 margin-right: auto;
-margin-top: 100px;
-margin-bottom: 50px;
+-webkit-column-count: 2; 
+-moz-column-count: 2; 
+column-count: 2; 
+-webkit-column-gap: 40px; 
+-moz-column-gap: 40px; 
+column-gap: 40px;
 }
 
 #article p {
@@ -75,35 +79,41 @@ color: #fff;
 text-shadow: 0px 1px 2px #161619;
 }
 
-.send_me_on_home {
-margin-top: 75px;  
+# send_me_on_home {
+margin-top: 75px; 
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
 }
 
-.title {
+# title {
 font-family: 'Open Sans', 'Arial', sans-serif;
 font-weight: bold;
 text-transform: uppercase;
 font-size: 32px;
 text-align: center;
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+margin-bottom: 50px;
 }
 
-.two_column {
--webkit-column-count: 2; 
--moz-column-count: 2; 
-column-count: 2; 
--webkit-column-gap: 40px; 
--moz-column-gap: 40px; 
-column-gap: 40px;  
-}
+
   
 </style>
 </head>
 
 <body>
 
-<section id="article">
+<section id="title">
 
-<p class="title">I can <span style="font-family: 'Gentium Book Basic', 'serif'; font-style: italic; font-size: 32px;">only</p> get better</p>
+<p>I can <span style="font-family: 'Gentium Book Basic', 'serif'; font-style: italic; font-size: 32px;">only</span> get better</p>  
+
+</section>
+
+<section id="article">
   
 <p>This past fall, we saw "The Odd Life of Timothy Green". It is an excellent movie.  I highly recommend it.</p>
 
@@ -111,7 +121,9 @@ column-gap: 40px;
 
 <p>What a fantastic attitude to have!  If we all had this attitude, just think about what we could accomplish.  It reminded me that I need to choose to think positively.</p>
 
-<p class="send_me_on_home"><a href="http://theartdirectedjournal.github.com">Table of Contents</a></p>
+<section id="send_me_on_home">
+<p><a href="http://theartdirectedjournal.github.com">Table of Contents</a></p>
+</section>
 
 </section>
         
