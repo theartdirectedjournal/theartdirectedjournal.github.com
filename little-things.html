@@ -1,1 +1,104 @@
-<p>
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Template</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus { 
+outline: none; 
+}
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: rgb(153,124,66);
+font-style: italic;
+}
+
+a:hover {
+color: rgb(115,115,115);  
+}
+
+#content {
+background: rgb(240,239,237);
+width: 600px;
+margin-top: 150px;
+margin-bottom: 150px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
+border: 1px solid rgb(115,115,115);
+}
+
+#content p {
+color: rgb(115,115,115);
+font-family: 'Vollkorn', serif;
+font-size: 16px;
+}
+
+.title {
+text-transform: uppercase;
+margin-top: 50px;
+text-align: center;
+font-size: 24px;
+}
+
+.back {
+margin-top: 75px;
+text-align: center;
+}
+                                                                                 
+</style>
+</head>
+
+<body>
+
+<section id="content">
+
+<p class="title">Sometimes It's The Little Things</p>
+
+<p></p>A while back my <a href="http://notsosecretlifeofb.blogspot.com/">beautiful wife</a> and I were in the mall and happened to stop by <a hrtef="http://www.brooksbrothers.com/">Brooks Brothers</a>, in which I picked up two long sleeve tee shirts. A few days later, I received a hand-written thank-you note in the mail. The receipt of this note was certainly a pleasant surprise. I could understand receiving a hand-written thank-you note had I bought two suits or some other item of great value, but for something as simple as two tee shirts?</p>
+
+<p></p>The receipt of that card definitely left me with a highly favorable impression of Brooks Brothers and its employees. It's the little things like this, especially in a tough economy, which differentiates a good experience from a great experience.</p>
+
+<p><a href="http://theartdirectedjournal.github.com">Return to the Art Directed Journal</a></p>
+
+</section>
+        
+</body>
+</html> 
