@@ -48,7 +48,7 @@ display: inline;
 font-size: 16px; 
 font-family: 'Merriweather', 'Georgia', serif; 
 color: rgb(33,33,33); 
-font-weight: normal; 
+font-weight: 400; 
 padding: 15px; 
 text-shadow: 0px 1px 1px rgb(255,255,255);  
 }
@@ -76,7 +76,7 @@ color: rgb(33,33,33);
 h1 {
 font-family: 'Merriweather', 'Georgia', serif; 
 font-size: 52px; color: rgb(33,33,33); 
-font-weight: normal; 
+font-weight: 700; 
 margin-bottom: 50px; 
 -webkit-transition: all 0.5s ease-in-out; 
 -moz-transition: all 0.5s ease-in-out; 
@@ -91,9 +91,9 @@ h1:hover {
 
 p {
 font-family: 'Merriweather', 'Georgia', serif; 
-font-size: 20px; 
+font-size: 18px; 
 color: rgb(33,33,33); 
-font-weight: normal; 
+font-weight: 400; 
 line-height: 1.5; 
 -webkit-transition: all 0.5s ease-in-out; 
 -moz-transition: all 0.5s ease-in-out;
@@ -110,6 +110,7 @@ p:hover {
 .year {
 font-size: 28px; 
 color: rgb(51,102,153); 
+font-weight: 700;
 }
 
 .to-the-top {
