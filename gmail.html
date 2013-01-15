@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>GMail 2.0</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus { 
+outline: none; 
+}
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+}
+
+#candy_wrapper {
+width: 100%;
+background: rgb(255,255,255);
+}
+
+#main_content {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 75px;
+margin-bottom: 75px;
+}
+
+#main_content p {
+font-family: 'Georgia', serif;
+font-size: 20px;
+color: #333;
+line-height: 1.5;
+}
+
+.intro_paragraph {
+color: #000;
+line-height: 1.75;
+font-size: 24px;
+}
+
+.center {
+text-align: center;
+}
+
+.screenshots {
+text-align: center;
+}
+                                                                                 
+</style>
+</head>
+
+<body>
+
+<section id="candy_wrapper">
+
+<section id="main_content">
+
+<p class="intro_paragraph">Each time Google releases a new version of their GMail app for iOS, I download it and use it for a few days, hoping each time that this new version will be the one that finally has enough improvements to make it a viable replacement for Apple's stock iOS Mail app, but each time I unfortunately come away disappointed. Therefore when Google released GMail 2.0 for iOS this past December, I downloaded it with my fingers crossed, hoping that 2.0 finally had the improvements to make me switch, but alas, GMail 2.0 does not make the cut.</p>
+
+<p>First off, I must say that 2.0 isn't a bad app. It's definitely an improvement over its predecessors.  Whereby GMail 1.0 was unusable, having been pulled from the App Store by Google, 2.0 is very stable.  It has not crashed on me yet.  The interface is very fluid, with subtle animations throughout.  The in-app typography is also much improved.  It appears as though the same team behind the Google Search app or maybe the team behind the Google+ app could have been behind GMail's new look.  Gone is the darker interface, having been replaced with much more white space. Google also added a <a href="http://gmailblog.blogspot.com/2012/12/the-gmail-app-for-iphone-and-ipad.html?m=1">number of other features</a> to version 2.0, including the much anticipated multiple account support.</p>
+
+<p class="center"><img src="http://dl.dropbox.com/u/9043524/Experiments/GMail%202.0/gmail1.png"/></p> 
+
+<p>Unfortunately, the much improved UI and multiple accounts not make up for the lack of improvements in a few key areas.  </p>
+
+<p>First and foremost, the job of an email client is to display the content of an email.  It should get out of the way, putting the content in the forefront.  Unfortunately, GMail 2.0 does not do this in two different ways.  The GMail app places a border around the email content, which you should notice in the screenshot below. In contrast, take notice in the below screenshot of iOS Mail of how the content of the email stretches all the way to each side of the screen.  In iOS Mail, the content, not the chrome, is the king.</p>
+
+<p class="screenshots"><img style="float: left;" src="http://dl.dropbox.com/u/9043524/Experiments/GMail%202.0/gmail2.png"/>><img style="float: right;" src="http://dl.dropbox.com/u/9043524/Experiments/GMail%202.0/gmail3.png"/></p>
+
+<p style="clear: both;">Secondly, iOS Mail renders text in a more visually appealing manner.  Double tap to zoom works flawlessly.  Take a look at the two aforementioned screenshots again. The text in the body of the email that is displayed in GMail 2.0 is an unreadable mess.  Double tap to zoom does not work, and pinch to zoom renders the text fuzzy and makes reading the content of the email an arduous task.  In contrast, the iOS Mail app displays the text perfectly.  No muss, no fuss.</p>
+
+<p>Lastly, if one has only GMail accounts, then one can get by with GMail 2.0, provided they can get past the text rendering and readability issues.  However, even with multiple GMail accounts, I have found that one cannot sign out of just one account at a time.  It is either sign out of none or all at once. There is also no unified inbox. While these two things  are minor inconveniences, atop all the text rendering issues, they could be a show-stopper.</p>
+
+<p>Being a user of other email services in addition to my main GMail account, I find myself using iOS Mail a great deal anyway.  Given iOS Mail's better handling of text and the unified inbox, I am sticking with iOS Mail for now.  When the new GMail app comes out, I'll once again reevaluate. Until then, iOS mail remains king.</p>
+
+<p><a href="http://theartdirectedjournal.github.com">Table of Contents</a></p>
+
+</section>
+
+</section>
+        
+</body>
+</html> 
