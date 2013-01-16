@@ -45,8 +45,8 @@ margin-left: 25px;
 
 #header #nav li { 
 display: inline; 
-font-size: 16px; 
-font-family: 'PT Serif', serif; 
+font-size: 20px; 
+font-family: 'Droid Serif', serif; 
 color: rgb(33,33,33); 
 font-weight: 400; 
 padding: 15px; 
@@ -74,15 +74,14 @@ color: rgb(33,33,33);
 }         
                
 h1 {
-font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif; 
+font-family: 'Droid Serif', serif;
 font-size: 42px; color: rgb(33,33,33); 
-font-weight: 700; 
+font-weight: 400; 
 margin-bottom: 50px; 
 -webkit-transition: all 0.5s ease-in-out; 
 -moz-transition: all 0.5s ease-in-out; 
 text-shadow: 0px 1px 1px rgb(255,255,255); 
 text-align: center;
-text-transform: uppercase;
 }
 
 h1:hover {
@@ -91,8 +90,8 @@ h1:hover {
 }
 
 p {
-font-family: 'PT Serif', serif; 
-font-size: 18px; 
+font-family: 'Droid Serif', serif; 
+font-size: 24px; 
 color: rgb(33,33,33); 
 font-weight: 400; 
 line-height: 1.5; 
@@ -112,7 +111,7 @@ p:hover {
 font-size: 28px; 
 color: rgb(51,102,153); 
 font-weight: 400;
-font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif; 
+font-family: 'Droid Serif', serif; 
 }
 
 .to-the-top {
@@ -120,12 +119,11 @@ float: right;
 clear: both; 
 width: 200px; 
 position: relative; 
-font-size: 12px; 
-font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif; 
+font-size: 16px; 
+font-family: 'Droid Serif', serif; 
 color: #444; 
 font-weight: 400; 
 text-shadow: 0px 1px 1px rgb(22,22,25); 
-text-transform: uppercase;
 }
 
 .to-the-top a {
@@ -154,9 +152,11 @@ margin-bottom: 25px;
 }
 
 #Copyright p {
-font-size: 14px; 
+font-size: 16px; 
 text-align: center; 
 color: #666;
+font-family: 'Droid Serif', serif;
+font-weight: 400;
 }
         
 #Copyright p:hover {
