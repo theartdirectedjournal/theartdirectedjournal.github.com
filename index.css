@@ -76,12 +76,13 @@ color: rgb(33,33,33);
 h1 {
 font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif; 
 font-size: 42px; color: rgb(33,33,33); 
-font-weight: 700; 
+font-weight: 400; 
 margin-bottom: 50px; 
 -webkit-transition: all 0.5s ease-in-out; 
 -moz-transition: all 0.5s ease-in-out; 
 text-shadow: 0px 1px 1px rgb(255,255,255); 
-text-align: center; 
+text-align: center;
+text-transform: uppercase;
 }
 
 h1:hover {
@@ -110,7 +111,8 @@ p:hover {
 .year {
 font-size: 28px; 
 color: rgb(51,102,153); 
-font-weight: 700;
+font-weight: 400;
+font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif; 
 }
 
 .to-the-top {
@@ -118,12 +120,11 @@ float: right;
 clear: both; 
 width: 200px; 
 position: relative; 
-font-size: 12px; 
+font-size: 14px; 
 font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif; 
 color: #444; 
-font-weight: normal; 
+font-weight: 400; 
 text-shadow: 0px 1px 1px rgb(22,22,25); 
-font-weight: bold;
 }
 
 .to-the-top a {
