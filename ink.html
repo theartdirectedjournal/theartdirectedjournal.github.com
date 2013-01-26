@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Ink for iOS</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: #336699;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+#main_content {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-family: serif;
+font-size: 20px;
+font-weight: normal;
+line-height: 1.5;
+}
+
+.quote {
+font-family: serif;
+font-size: 52px;
+font-weight: normal;
+line-height: 1.75;
+text-align: right;
+margin-top: 75px;
+margin-bottom: 5px;
+color: rgb(173,5,52);
+}
+
+.attribution {
+font-family: serif;
+font-size: 12px;
+font-weight: normal;
+line-height: 1.75;
+text-align: right;
+margin-top: 5px;
+margin-bottom: 75px;
+color: #666;
+font-style: italic;
+}
+
+                                                                                 
+</style>
+</head>
+
+<body>
+
+<section id="main_content">
+
+<img class="title_image" src=""/>
+
+<p>Ink for iOS is a bare bones drawing app for iOS from the folks at <a href="">Minimal Tools</a>.  It is currently free in the App Store.</p>
+
+<p class="quote">"Ink is a canvas for instantly capturing a rough sketch or back-of-a-napkin idea. The only features are smooth ink on soft paper with built-in sharing."</p>
+
+<p class="attribution">-Minimal Tools</p>
+
+<p>Upon launch of the application one is presented with a blank canvas with a small button in the bottom right corner that initially bounces a bit to provide a subtle hint that it is actionable.  By double tapping this button, one is presented with a menu that will allow one to save their picture to the camera roll, email it, or clear the canvas entirely.  By swiping up on the button, one's drawing is automatically saved to the iOS camera roll, provided that permission has been granted though iOS.  The app is insanely simple, and as a person who loves to doodle, this app gets quite a lot of use.</p>
+
+<img class="internal_image" src=""/>
+
+<p>The folks at Minimal Tools should be applauded for this app, not only for its simplicity of use, but also for its effective and appropriate use of skeuomorphism.  Skeuomorphism not only embodies the use of real world user interface elements (for example, Corinthian leather textures and yellow legal pad backgrounds), but also real world behaviors.  While the fake textures I generally abhor, I am typically fond of skeuomorphism that mimics real world behavior, provided it is done in the appropriate context, and to that point, Ink really does embody the sense of using a pen and a napkin or piece of scratch paper.  If one makes a mistake with a real life pen and napkin, one has two options, throw the entire thing away, or work around it.  The same applies with Ink.  One can double tap and clear the screen (throwing it away) or just keep drawing around the mistake.</p>
+
+<p>This app is wonderful, and if you are a doodler, I suggest you go download it right now.  </p>
+
+
+</section>
+        
+</body>
+</html> 
