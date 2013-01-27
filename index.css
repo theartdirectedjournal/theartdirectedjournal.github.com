@@ -7,7 +7,7 @@ body {
 font: normal 1em/1.5; 
 margin: 0; 
 padding: 0; 
-background: rgb(232,232,220) url(https://dl.dropbox.com/u/9043524/Experiments/Index_Bkgrd_Small.png) top left repeat; 
+background: rgb(255,255,255); 
 width: 100%;   
 }
 
@@ -16,14 +16,14 @@ outline: none;
 }
 
 a:link, a:visited { 
-color: rgb(33,33,33); 
+color: #333; 
 text-decoration: none; 
 border: none; 
--webkit-transition: color 0.2s ease-in-out; 
+-webkit-transition: 0.5s all ease-in-out; 
 }
   
 a:hover, a:focus { 
-color: rgb(51,102,153);
+color: #777;
 }
                 		
 
@@ -49,18 +49,18 @@ font-size: 20px;
 font-family: 'Georgia', serif; 
 color: rgb(33,33,33); 
 font-weight: normal; 
-padding: 15px; 
-text-shadow: 0px 1px 1px rgb(255,255,255);  
+padding: 15px;   
 }
 
 #header #nav a {
-color: rgb(33,33,33); 
--webkit-transition: all 0.5s ease-in-out; 
--moz-transition: all 0.5s ease-in-out;
+color: #333; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
 }
 
 #header #nav a:hover {
-color: rgb(51,102,153); 
+color: #336699; 
 }
                                 		
                 
@@ -70,52 +70,38 @@ width: 800px;
 margin-left: auto; 
 margin-right: auto; 
 padding: 50px; 
-color: rgb(33,33,33);
+color: #333;
 }         
                
 #contents h1 {
 font-family: 'Georgia', serif;
-font-size: 62px; color: rgb(33,33,33); 
+font-size: 62px; 
+color: #333; 
 font-weight: normal; 
 margin-bottom: 50px; 
--webkit-transition: all 0.5s ease-in-out; 
--moz-transition: all 0.5s ease-in-out; 
-text-shadow: 0px 1px 1px rgb(255,255,255); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
 text-align: center;
-}
-
-#contents h1:hover {
--webkit-transform:rotate(-1deg); 
--moz-transform:rotate(-1deg);
 }
 
 #contents p {
 font-family: 'Georgia', serif; 
 font-size: 24px; 
-color: rgb(33,33,33); 
+color: #333; 
 font-weight: normal; 
 line-height: 1.5; 
--webkit-transition: all 0.5s ease-in-out; 
--moz-transition: all 0.5s ease-in-out;
--ms-transition: all 0.5s ease-in-out; 
-text-shadow: 0px 1px 1px rgb(255,255,255); 
-}
-
-#contents p:hover {
--webkit-transform:rotate(-1deg); 
--moz-transform:rotate(-1deg);
--ms-transform: rotate(-1deg);
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
 }
 
 #contents .year {
 font-size: 42px; 
-color: rgb(51,102,153); 
+color: #336699; 
 font-weight: normal;
 font-family: 'Georgia', serif; 
 margin-top: 75px;
-border-bottom: 1px dotted #777;
-padding: 25px;
-text-align: center;
 }
 
 #contents .to-the-top {
@@ -125,26 +111,27 @@ width: 200px;
 position: relative; 
 font-size: 12px; 
 font-family: 'Arial', serif; 
-color: #444; 
-font-weight: bold; 
-text-shadow: 0px 1px 1px rgb(22,22,25); 
+color: #777; 
+font-weight: bold;  
 }
 
 #contents .to-the-top a {
 padding: 15px; 
 text-align: center; 
-background: rgba(18,18,18,.85); 
+background: rgb(255,255,255); 
 color: #777; 
 -webkit-transition: .5s all ease-in-out; 
 -moz-transition: .5s all ease-in-out; 
+-ms-transition: .5s all ease-in-out;
 -webkit-border-radius: 7px; 
 -moz-border-radius: 7px; 
 border-radius: 7px;
 }
 
 #contents .to-the-top a:hover {
-background: rgb(51,102,153); 
-color: #fff
+background: #336699; 
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
 }
 
 #Copyright {
@@ -158,13 +145,8 @@ margin-bottom: 25px;
 #Copyright p {
 font-size: 16px; 
 text-align: center; 
-color: #666;
+color: #777;
 font-family: 'Georgia', serif;
 font-weight: normal;
 }
         
-#Copyright p:hover {
--webkit-transform: none; 
--moz-transform: none;
-}
- 
