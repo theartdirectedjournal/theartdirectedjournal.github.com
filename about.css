@@ -7,8 +7,8 @@ body {
 font: normal 1em/1.5; 
 margin: 0; 
 padding: 0;
-background: rgb(38,38,38) url(https://dl.dropbox.com/u/9043524/Experiments/Screen%20shot%202012-12-26%20at%209.53.57%20AM.png) top left repeat;  
-color: rgb(255,255,255); 
+background: rgb(255,255,255);  
+color: #333; 
 }
 
 :focus { 
@@ -48,16 +48,16 @@ text-align: left;
 
 #header #nav li { 
 display: inline; 
-font-size: 16px; 
+font-size: 18px; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
-color: #999; 
+color: #777; 
 font-weight: normal;  
 text-shadow: 0px 1px 1px rgb(22,22,25); 
 padding-right: 15px;
 }
 
 #header #nav a {
-color: #999; 
+color: #777; 
 -webkit-transition: color 0.5s ease-in-out;
 -moz-transition: color 0.5s ease-in-out;
 -ms-transition: color 0.5s ease-in-out;
@@ -82,10 +82,9 @@ line-height: 1;
 }
 
 #inner-header h1 {
-color: rgb(255,255,255); 
-font-family: 'Abril Fatface', 'Georgia', serif; 
-font-size: 80px;   
-text-shadow: 0px 1px 2px rgb(22,22,25); 
+color: rgb(0,0,0); 
+font-family: 'Playfair Display', 'Georgia', serif; 
+font-size: 90px;    
 -webkit-transition: 0.5s all ease-in-out; 
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: .5s all ease-in-out; 
@@ -112,14 +111,13 @@ width: 800px;
 margin-left: auto; 
 margin-right: auto;
 font-family: 'Open Sans', 'Arial', sans-serif; 
-font-size: 18px; 
-color: #999; 
+font-size: 20px; 
+color: #333; 
 font-weight: normal; 
 line-height: 1.5; 
 -webkit-transition: 0.5s all ease-in-out;
 -moz-transition: 0.5s all ease-in-out; 
 -ms-transition: 0.5s all ease-in-out;
-text-shadow: 0px 1px 2px rgb(22,22,25);
 }
 
 
@@ -135,7 +133,6 @@ margin-bottom: 25px;
 font-size: 16px; 
 text-align: center; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
-text-shadow: 0px 1px 2px rgb(22,22,25); 
 color: #777; 
 }
 
