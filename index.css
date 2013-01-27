@@ -112,8 +112,10 @@ font-size: 32px;
 color: rgb(51,102,153); 
 font-weight: bold;
 font-family: 'Georgia', serif; 
-margin-top: 50px;
+margin-top: 75px;
 border-bottom: 1px dotted #777;
+padding: 25px;
+text-align: center;
 }
 
 .to-the-top {
