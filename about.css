@@ -53,6 +53,7 @@ font-family: 'Open Sans', 'Arial', sans-serif;
 color: #fff; 
 font-weight: normal;  
 text-shadow: 0px 1px 1px rgb(22,22,25); 
+padding-right: 15px;
 }
 
 #header #nav a {
@@ -83,7 +84,7 @@ line-height: 1;
 #inner-header h1 {
 color: rgb(255,255,255); 
 font-family: 'Abril Fatface', 'Georgia', serif; 
-font-size: 125px;   
+font-size: 80px;   
 text-shadow: 0px 1px 2px rgb(22,22,25); 
 -webkit-transition: 0.5s all ease-in-out; 
 -moz-transition: 0.5s all ease-in-out;
