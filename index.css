@@ -76,7 +76,7 @@ color: rgb(33,33,33);
 h1 {
 font-family: 'Georgia', serif;
 font-size: 52px; color: rgb(33,33,33); 
-font-weight: normal; 
+font-weight: bold; 
 margin-bottom: 50px; 
 -webkit-transition: all 0.5s ease-in-out; 
 -moz-transition: all 0.5s ease-in-out; 
@@ -110,8 +110,8 @@ p:hover {
 .year {
 font-size: 32px; 
 color: rgb(51,102,153); 
-font-weight: normal;
-font-family: 'PT Serif', serif; 
+font-weight: bold;
+font-family: 'Georgia', serif; 
 }
 
 .to-the-top {
@@ -119,10 +119,10 @@ float: right;
 clear: both; 
 width: 200px; 
 position: relative; 
-font-size: 16px; 
-font-family: 'Georgia', serif; 
+font-size: 12px; 
+font-family: 'Arial', serif; 
 color: #444; 
-font-weight: normal; 
+font-weight: bold; 
 text-shadow: 0px 1px 1px rgb(22,22,25); 
 }
 
