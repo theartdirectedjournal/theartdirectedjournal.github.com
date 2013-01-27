@@ -73,7 +73,7 @@ padding: 50px;
 color: rgb(33,33,33);
 }         
                
-h1 {
+#contents h1 {
 font-family: 'Georgia', serif;
 font-size: 52px; color: rgb(33,33,33); 
 font-weight: bold; 
@@ -84,12 +84,12 @@ text-shadow: 0px 1px 1px rgb(255,255,255);
 text-align: center;
 }
 
-h1:hover {
+#contents h1:hover {
 -webkit-transform:rotate(-1deg); 
 -moz-transform:rotate(-1deg);
 }
 
-p {
+#contents p {
 font-family: 'Georgia', serif; 
 font-size: 24px; 
 color: rgb(33,33,33); 
@@ -101,13 +101,13 @@ line-height: 1.5;
 text-shadow: 0px 1px 1px rgb(255,255,255); 
 }
 
-p:hover {
+#contents p:hover {
 -webkit-transform:rotate(-1deg); 
 -moz-transform:rotate(-1deg);
 -ms-transform: rotate(-1deg);
 }
 
-.year {
+#contents .year {
 font-size: 32px; 
 color: rgb(51,102,153); 
 font-weight: bold;
@@ -118,7 +118,7 @@ padding: 25px;
 text-align: center;
 }
 
-.to-the-top {
+#contents .to-the-top {
 float: right; 
 clear: both; 
 width: 200px; 
@@ -130,7 +130,7 @@ font-weight: bold;
 text-shadow: 0px 1px 1px rgb(22,22,25); 
 }
 
-.to-the-top a {
+#contents .to-the-top a {
 padding: 15px; 
 text-align: center; 
 background: rgba(18,18,18,.85); 
@@ -142,7 +142,7 @@ color: #777;
 border-radius: 7px;
 }
 
-.to-the-top a:hover {
+#contents .to-the-top a:hover {
 background: rgb(51,102,153); 
 color: #fff
 }
