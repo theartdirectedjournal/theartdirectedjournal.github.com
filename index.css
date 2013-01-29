@@ -45,8 +45,8 @@ margin-left: 25px;
 
 #header #nav li { 
 display: inline; 
-font-size: 18px; 
-font-family: 'Open Sans', 'Arial', sans-serif; 
+font-size: 20px; 
+font-family: font-family: 'Abril Fatface', 'Georgia', serif; 
 color: #777; 
 font-weight: normal; 
 padding: 15px;   
@@ -110,10 +110,9 @@ float: right;
 clear: both; 
 width: 200px; 
 position: relative; 
-font-size: 12px; 
+font-size: 14px; 
 font-family: 'Open Sans', 'Arial', sans-serif;
-color: #777; 
-font-weight: bold;  
+color: #777;  
 }
 
 #contents .to-the-top a {
