@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Template</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: #336699;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+#main_content {
+
+}
+
+#main_content p {
+
+}
+
+                                                                                 
+</style>
+</head>
+
+<body>
+
+<section id="main_content">
+
+<p>One morning this past summer, our middle child, Luke, was attempting to watch Johnny Test on Netflix on our Wii.  I use the word "attempting" in the previous sentence because the particular episode he was trying to watch would not load.  As I watched him troubleshoot this problem, it amazed me what an analytical mind Luke has.</p>
+
+<p>His troubleshooting steps (none of which were prompted by me):</p>
+
+<ul>
+<li>1. He tried to load the show three times, but each time it stalled and would not play. His older brother walked away and got a book.</li>
+
+<li>2. He walked over to the modem and router.  All lights were blinking as they should be.</li>
+
+<li>3. He exited the Netflix app and re-entered it.  Same result - no Johnny Test</li>
+
+<li>4. He rebooted the Wii and entered the Netflix app again - same result.</li>
+
+<li>5. He switched to kid centric interface on the Netflix app on the Wii and navigated to the same episode.  Success.</li>
+
+<p>Not bad for a seven year old.</p>
+
+<p>If anyone of our three (although Livy is too young to tell) is going to be an engineer when they grow up, it will be Luke.</p>
+
+<p class="return_home"><a href="http://theartdirectedjournal.github.com">Table of Contents</a></p>
+
+</section>
+        
+</body>
+</html> 
