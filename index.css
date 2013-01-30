@@ -50,7 +50,7 @@ font-size: 20px;
 padding: 15px;
 }  
 
-#header #container .logo p {
+#header #container .logo {
 color: #000; 
 font-family: 'Abril Fatface', 'Georgia', serif; 
 font-weight: normal;   
