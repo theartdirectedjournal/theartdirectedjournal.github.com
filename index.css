@@ -36,15 +36,19 @@ width: 100%;
 overflow: hidden; 
 }
 
-#header #logo {
+#header #container {
 margin-bottom: 20px; 
 margin-top: 20px; 
 width: 800px; 
+}
+
+#header #container #logo {
+width: 400px;
 margin-left: 25px;
-float: right;
+float: left;
 }
   
-#header #logo li {
+#header #container #logo li {
 color: #000; 
 font-family: 'Abril Fatface', 'Georgia', serif; 
 font-weight: normal;  
@@ -52,15 +56,13 @@ display: inline;
 font-size: 20px; 
 }  
   
-#header #nav { 
-margin-bottom: 20px; 
-margin-top: 20px; 
-width: 800px; 
+#header #container #nav {  
+width: 400px; 
 margin-right: 25px;  
 float: right;
 }
 
-#header #nav li { 
+#header #container #nav li { 
 display: inline; 
 font-size: 20px; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
@@ -69,14 +71,14 @@ font-weight: normal;
 padding: 15px;   
 }
 
-#header #nav a {
+#header #container #nav a {
 color: #777; 
 -webkit-transition: 0.5s all ease-in-out; 
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: 0.5s all ease-in-out;
 }
 
-#header #nav a:hover {
+#header #container #nav a:hover {
 color: #336699; 
 }
                                 		
