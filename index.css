@@ -33,7 +33,7 @@ width: 100%;
 overflow: hidden; 
 }
 
-#header #container {
+#header #nav {
 margin-bottom: 20px; 
 margin-top: 20px; 
 width: 800px; 
@@ -41,28 +41,8 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#header #container .logo {
-float: left;
-color: #000; 
-font-family: 'Abril Fatface', 'Georgia', serif; 
-font-weight: normal;   
-font-size: 20px; 
-padding: 15px;
-}  
 
-#header #container .logo {
-color: #000; 
-font-family: 'Abril Fatface', 'Georgia', serif; 
-font-weight: normal;   
-font-size: 20px; 
-padding: 15px;
-}  
-  
-#header #container #nav {  
-float: right;   
-}
-
-#header #container #nav li { 
+#header #nav li { 
 display: inline; 
 font-size: 20px; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
@@ -71,14 +51,14 @@ font-weight: normal;
 padding: 15px;   
 }
 
-#header #container #nav a {
+#header #nav a {
 color: #777; 
 -webkit-transition: 0.5s all ease-in-out; 
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: 0.5s all ease-in-out;
 }
 
-#header #container #nav a:hover {
+#header #nav a:hover {
 color: #336699; 
 }
                                 		
