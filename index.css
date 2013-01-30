@@ -43,7 +43,6 @@ margin-right: auto;
 
 #container #logo {
 width: 300px;
-float: left;
 }
   
 #container #logo li {
@@ -57,7 +56,6 @@ padding: 15px;
   
 #container #nav {  
 width: 300px;   
-float: right;
 }
 
 #container #nav li { 
