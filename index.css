@@ -33,7 +33,7 @@ width: 100%;
 overflow: hidden; 
 }
 
-#container {
+#header #container {
 margin-bottom: 20px; 
 margin-top: 20px; 
 width: 800px; 
@@ -41,12 +41,8 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#container #logo {
-width: 300px;
-}
-  
-#container #logo li {
-display: inline;  
+#header #container .logo {
+float: left;
 color: #000; 
 font-family: 'Abril Fatface', 'Georgia', serif; 
 font-weight: normal;   
@@ -54,11 +50,11 @@ font-size: 20px;
 padding: 15px;
 }  
   
-#container #nav {  
-width: 300px;   
+#header #container #nav {  
+float: right;   
 }
 
-#container #nav li { 
+#header #container #nav li { 
 display: inline; 
 font-size: 20px; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
@@ -67,14 +63,14 @@ font-weight: normal;
 padding: 15px;   
 }
 
-#container #nav a {
+#header #container #nav a {
 color: #777; 
 -webkit-transition: 0.5s all ease-in-out; 
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: 0.5s all ease-in-out;
 }
 
-#container #nav a:hover {
+#header #container #nav a:hover {
 color: #336699; 
 }
                                 		
