@@ -70,10 +70,14 @@ font-size: 24px;
 line-height: 1.75;
 }
 
-#main_content li {
+#main_content .rotate_right {  
+webkit-transform: rotate(10deg);
+moz-transform: rotate(10deg);
+ms-transform: rotate(10deg);
+transform: rotate(10deg);
 color: #333;
 font-family: 'Arial', sans-serif;
-font-size: 24px;
+font-size: 16px;
 display: block;
 line-height: 1.75;
 background: rgb(255,255,255);
@@ -82,9 +86,20 @@ margin-top: 30px;
 margin-bottom: 30px;
 }
 
-#main_content li .rotate_right {  
-webkit-transform: rotate(10deg);
-transform: rotate(10deg);
+#main_content .rotate_left {
+webkit-transform: rotate(-10deg);
+moz-transform: rotate(-10deg);
+ms-transform: rotate(-10deg);
+transform: rotate(-10deg);  
+color: #333;
+font-family: 'Arial', sans-serif;
+font-size: 16px;
+display: block;
+line-height: 1.75;
+background: rgb(255,255,255);
+padding: 20px;
+margin-top: 30px;
+margin-bottom: 30px;
 }
 
 #main_content .title {
@@ -109,17 +124,15 @@ font-family: 'Arial', sans-serif;
 
 <p>His troubleshooting steps (none of which were prompted by me):</p>
 
-<ol>
-<li class="rotate_right">He tried to load the show three times, but each time it stalled and would not play. His older brother walked away and got a book.</li>
+<p class="rotate_right">He tried to load the show three times, but each time it stalled and would not play. His older brother walked away and got a book.</p>
 
-<li>He walked over to the modem and router.  All lights were blinking as they should be.</li>
+<p class="rotate_left">He walked over to the modem and router.  All lights were blinking as they should be.</p>
 
-<li>He exited the Netflix app and re-entered it.  Same result - no Johnny Test</li>
+<p class="rotate_right">He exited the Netflix app and re-entered it.  Same result - no Johnny Test</p>
 
-<li>He rebooted the Wii and entered the Netflix app again - same result.</li>
+<p class="rotate_left">He rebooted the Wii and entered the Netflix app again - same result.</p>
 
-<li>He switched to kid centric interface on the Netflix app on the Wii and navigated to the same episode.  Success.</li>
-</ol>
+<p class="rotate_right">He switched to kid centric interface on the Netflix app on the Wii and navigated to the same episode.  Success.</p>
 
 <p>Not bad for a seven year old.</p>
 
