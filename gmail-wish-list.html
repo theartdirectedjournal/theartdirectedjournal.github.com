@@ -133,29 +133,30 @@ text-align: center;
 color: #333;
 }
 
-#suggestion_one_content ul {
+#suggestion_one_content #dots {
 float: right;  
 }
 
-#suggestion_one_content ul .bounce1 {
+#suggestion_one_contenr #dots li {
+display: inline;  
+}
+
+#suggestion_one_content #dots .bounce1 {
 -webkit-animation: bounce 5s infinite ease-in-out;  
 color: red;
 font-size: 40px;
-display: inline;
 }
 
-#suggestion_one_content ul .bounce2 {
+#suggestion_one_content #dots .bounce2 {
 -webkit-animation: bounce 10s infinite ease-in-out; 
 color: green;
 font-size: 50px;
-display: inline;
 }
 
-#suggestion_one_content ul .bounce3 {
+#suggestion_one_content #dots .bounce3 {
 -webkit-animation: bounce 15s infinite ease-in-out; 
 color: blue;
 font-size: 50px;
-display: inline;
 }
 
 @-webkit-keyframes bounce {
@@ -186,7 +187,7 @@ display: inline;
 <section id="suggestion_one">
 <section id="suggestion_one_content">
  
-<p><ul><li class="bounce1".</li><li class="bounce2".</li><li class="bounce3".</span></li></ul></p> 
+<p><ul id="dots"><li class="bounce1".</li><li class="bounce2".</li><li class="bounce3".</span></li></ul></p> 
 
 <p>The ability to share attachments from Google Drive</p>
 
