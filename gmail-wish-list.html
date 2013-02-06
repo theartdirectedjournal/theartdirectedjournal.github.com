@@ -131,6 +131,26 @@ font-size: 32px;
 text-align: center;
 color: #333;
 }
+
+#suggestion_one .animate_1 {
+-webkit-animation: bounce_1 5s infinite ease-in-out;  
+}
+
+#suggestion_one .animate_2 {
+-webkit-animation: bounce_1 10s infinite ease-in-out;  
+}
+
+#suggestion_one .animate_3 {
+-webkit-animation: bounce_1 15s infinite ease-in-out;  
+}
+
+@-webkit-keyframes jump {
+  0% {top: 1px; }
+	25% {top: 2px; }
+	50% {top: 1px; }
+	75% {top: 0px; }
+	100% {top: -2px; }
+}
                                                                                  
 </style>
 </head>
@@ -152,7 +172,7 @@ color: #333;
 <section id="suggestion_one">
 <section id="suggestion_one_content">
  
-<p>The ability to share attachments from Google Drive</p> 
+<p>The ability to share attachments from Google Drive<span class="animate_1".</span><span class="animate_2".</span><span class="animate_3".</span></p> 
 
 <p class="next"></p>
  
