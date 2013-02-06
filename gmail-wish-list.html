@@ -133,18 +133,21 @@ color: #333;
 }
 
 #suggestion_one .animate_1 {
--webkit-animation: bounce_1 5s infinite ease-in-out;  
+-webkit-animation: bounce 5s infinite ease-in-out;  
+color: red;
 }
 
 #suggestion_one .animate_2 {
--webkit-animation: bounce_1 10s infinite ease-in-out;  
+-webkit-animation: bounce 10s infinite ease-in-out; 
+color: green;
 }
 
 #suggestion_one .animate_3 {
--webkit-animation: bounce_1 15s infinite ease-in-out;  
+-webkit-animation: bounce 15s infinite ease-in-out; 
+color: blue;
 }
 
-@-webkit-keyframes jump {
+@-webkit-keyframes bounce {
   0% {top: 1px; }
 	25% {top: 2px; }
 	50% {top: 1px; }
