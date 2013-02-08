@@ -160,9 +160,8 @@ position: relative;
 -webkit-transition: .5s all ease-in-out;
 }
 
-#suggestion_one_content .bounce2:hover {
--webkit-animation: moveit 5s infinite linear; 
--webkit-transform:rotate(-2deg) scale(1.2);
+#suggestion_one_content .bounce2:hover { 
+-webkit-transform:scale(1.2);
 }
 
 #suggestion_one_content .bounce4 {
@@ -190,11 +189,6 @@ font-family: 'Georgia', serif;
 50% {-webkit-transform:translate(10px,20px); }
 75% {-webkit-transform:translate(-10px,-20px); }
 100% {-webkit-transform:translate(10px,20px); }
-}
-
-@-webkit-keyframes moveit {
-  from { background-position: 0 0; }
-	to   { background-position: 50px 0; }
 }
 
 #suggestion_one_content .next {
