@@ -22,6 +22,7 @@ border: none;
 -webkit-transition: .5s all ease-in-out; 
 -moz-transition: .5s all ease-in-out;
 -ms-transition: .5s all ease-in-out;
+font-weight: 700;
 }
 
 a:hover, a:focus { 
@@ -46,7 +47,7 @@ display: inline;
 font-size: 16px; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
 color: #777; 
-font-weight: normal;   
+font-weight: 300;   
 padding-right: 15px;
 text-transform: uppercase;
 }
@@ -105,7 +106,7 @@ margin-right: auto;
 font-family: 'Open Sans', 'Arial', sans-serif; 
 font-size: 20px; 
 color: #333; 
-font-weight: normal; 
+font-weight: 300; 
 line-height: 1.5; 
 -webkit-transition: 0.5s all ease-in-out;
 -moz-transition: 0.5s all ease-in-out; 
@@ -127,6 +128,7 @@ font-size: 16px;
 text-align: center; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
 color: #777; 
+font-weight: 300;
 }
 
 
