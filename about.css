@@ -47,6 +47,8 @@ width: 800px;
 margin-bottom: 20px; 
 margin-top: 20px; 
 width: 400px;  
+margin-left: auto;
+margin-right: auto;
 text-align: center;
   }
 }
@@ -61,13 +63,9 @@ text-transform: uppercase;
 }
 
 @media screen and (max-width: 480px) {
-#header #nav li { 
-display: inline; 
+#header #nav li {  
 font-size: 20px; 
-font-family: 'Open Sans', 'Arial', sans-serif; 
-color: #777; 
-padding-right: 15px;
-text-transform: uppercase;
+padding-right: none;
   }
 }
 
