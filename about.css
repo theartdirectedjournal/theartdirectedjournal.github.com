@@ -50,6 +50,8 @@ width: 400px;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
+padding-left: 20px;
+padding-right: 20px;
   }
 }
 
@@ -65,7 +67,6 @@ text-transform: uppercase;
 @media screen and (max-width: 480px) {
 #header #nav li {  
 font-size: 20px; 
-padding-right: none;
   }
 }
 
@@ -100,6 +101,8 @@ line-height: 1;
 width: 400px;
 margin-left: auto;
 margin-right: auto;
+padding-left: 20px;
+padding-right: 20px;
   }
 }                                
 
@@ -153,6 +156,8 @@ width: 400px;
 margin-left: auto; 
 margin-right: auto;
 font-size: 24px;
+padding-left: 20px;
+padding-right: 20px;
   }
 }
 
@@ -170,6 +175,8 @@ margin-bottom: 25px;
 width: 400px;
 margin-left: auto;
 margin-right: auto;
+padding-left: 20px;
+padding-right: 20px;
   } 
 }  
 
