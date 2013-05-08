@@ -60,7 +60,7 @@ padding-right: 15px;
 text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 #header #nav li { 
 display: inline; 
 font-size: 20px; 
@@ -97,7 +97,7 @@ width: 800px;
 line-height: 1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 #inner-header {
 width: 400px;
 margin-left: auto;
@@ -117,7 +117,7 @@ font-weight: normal;
 margin-bottom: 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 #inner-header h1 {
 font-size: 68px;
 text-align: center;
@@ -149,7 +149,7 @@ line-height: 1.5;
 margin-top: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 #contents-text {
 width: 400px;
 margin-left: auto; 
