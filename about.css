@@ -42,7 +42,7 @@ margin-top: 20px;
 width: 800px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 #header #nav { 
 margin-bottom: 20px; 
 margin-top: 20px; 
@@ -50,8 +50,17 @@ width: 300px;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
-padding-left: 20px;
-padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+#header #nav { 
+margin-bottom: 20px; 
+margin-top: 20px; 
+width: 300px;  
+margin-left: auto;
+margin-right: auto;
+text-align: center;
   }
 }
 
@@ -64,7 +73,13 @@ padding-right: 15px;
 text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
+#header #nav li {  
+font-size: 20px; 
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
 #header #nav li {  
 font-size: 20px; 
   }
@@ -96,15 +111,21 @@ width: 800px;
 line-height: 1;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 #inner-header {
 width: 300px;
 margin-left: auto;
 margin-right: auto;
-padding-left: 20px;
-padding-right: 20px;
   }
-}                                
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+#inner-header {
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+  }
+}
 
 #inner-header h1 {
 color: rgb(0,0,0); 
@@ -118,7 +139,14 @@ font-weight: normal;
 margin-bottom: 0px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
+#inner-header h1 {
+font-size: 68px;
+text-align: center;
+  }
+}  
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
 #inner-header h1 {
 font-size: 68px;
 text-align: center;
@@ -150,17 +178,23 @@ line-height: 1.5;
 margin-top: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 #contents-text {
 width: 300px;
 margin-left: auto; 
 margin-right: auto;
 font-size: 24px;
-padding-left: 20px;
-padding-right: 20px;
   }
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px) {
+#contents-text {
+width: 300px;
+margin-left: auto; 
+margin-right: auto;
+font-size: 24px;
+  }
+}
 
 #Copyright {
 width: 800px; 
@@ -170,13 +204,19 @@ margin-top: 50px;
 margin-bottom: 25px; 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
 #Copyright {
 width: 300px;
 margin-left: auto;
 margin-right: auto;
-padding-left: 20px;
-padding-right: 20px;
+  } 
+}  
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+#Copyright {
+width: 300px;
+margin-left: auto;
+margin-right: auto;
   } 
 }  
 
