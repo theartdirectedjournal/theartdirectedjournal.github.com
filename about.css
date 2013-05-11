@@ -57,7 +57,7 @@ text-align: center;
 #header #nav { 
 margin-bottom: 20px; 
 margin-top: 20px; 
-width: 300px;  
+width: 400px;  
 margin-left: auto;
 margin-right: auto;
 text-align: center;
@@ -75,13 +75,13 @@ text-transform: uppercase;
 
 @media screen and (max-width: 320px) {
 #header #nav li {  
-font-size: 20px; 
+font-size: 18px; 
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
 #header #nav li {  
-font-size: 20px; 
+font-size: 18px; 
   }
 }
 
@@ -121,7 +121,7 @@ margin-right: auto;
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
 #inner-header {
-width: 300px;
+width: 400px;
 margin-left: auto;
 margin-right: auto;
   }
@@ -183,16 +183,16 @@ margin-top: 50px;
 width: 300px;
 margin-left: auto; 
 margin-right: auto;
-font-size: 24px;
+font-size: 18px;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
 #contents-text {
-width: 300px;
+width: 400px;
 margin-left: auto; 
 margin-right: auto;
-font-size: 24px;
+font-size: 18px;
   }
 }
 
@@ -214,7 +214,7 @@ margin-right: auto;
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
 #Copyright {
-width: 300px;
+width: 400px;
 margin-left: auto;
 margin-right: auto;
   } 
