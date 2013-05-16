@@ -76,12 +76,14 @@ text-transform: uppercase;
 @media screen and (max-width: 320px) {
 #header #nav li {  
 font-size: 18px; 
+padding-right: none;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
 #header #nav li {  
 font-size: 18px; 
+padding-right: none;
   }
 }
 
