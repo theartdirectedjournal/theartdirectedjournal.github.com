@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>A Few Thoughts on Chrome for iOS</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #336699;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+#main_content {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+@media screen and (max-width: 320px) {
+#main_content {
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+#main_content {
+width: 400px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+margin-bottom: 100px;
+  }
+}
+
+#main_content p {
+font-family: 'PT Serif', 'Georgia', serif;
+font-size: 22px;
+line-height: 1.5;
+color: #333333;
+}
+
+@media screen and (max-width: 320px) {
+#main_content p {
+font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+#main_content p {
+font-size: 18px;
+  }
+}
+
+#main_content .article_title {
+color: #000000;
+font-size: 42px;
+text-align: left;
+line-height: 1;
+font-family: 'Oswald', 'Arial', sans-serif;
+text-transform: uppercase;
+}
+
+@media screen and (max-width: 320px) {
+#main_content .article_title {
+font-size: 36px;
+text-align: center;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+#main_content .article_title {
+font-size: 32px;
+text-align: center;
+  }
+}
+
+#main_content .caption {
+font-style: italic;
+color: #777;
+font-size: 12px;
+margin-top: 0px;
+padding-top: 0px;
+}
+
+#main_content img {
+margin-top: 50px;
+}
+
+#main_content .desktop_shot {
+margin-top: 50px;
+}
+
+@media screen and (max-width: 320px) {
+#main_content .desktop_shot {
+margin-top: 50px;
+width: 300px;
+height: 266px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+#main_content .desktop_shot {
+margin-top: 50px;
+width: 300px;
+height: 266px;
+  }
+}
+
+
+#main_content .Return {
+margin-top: 50px;
+text-align: right;
+}
+
+                                                                                
+</style>
+</head>
+
+<body>
+
+<section id="main_content">
+
+<p class="article_title">A Few Thoughts on Chrome for iOS</p>
+
+<p>Chrome for iOS is an excellent browser in many respects, and although this review is a little late to the party, I thought I would share a few things that I like about the browser, as well as an issue that in my humble opinion is a show stopper.</p>
+
+<p>There are a lot of things to like about Chrome for iOS.  The user interface is clean and intuitive.  I really enjoy the way that tabs are managed, as well as the fact that when one clicks a link to open in a new tab, the new tab opens in the background. I like that one can flick tabs away with a simple swipe. I also like the fact that the browser seems pretty fast, even with web page pre-rendering turned off.  Lastly, the bookmark and open tab syncing is really useful.  Did I mention voice search is second to none?</p>
+
+<p>That said, there is a show stopper that may seem like minor issue in the grand scheme of things, but nevertheless, it prevents me from using Chrome for iOS as my daily driver. This showstopper has to do with the way that Chrome for iOS manages cookies, specifically third-party "tracking cookies".  (<a href="http://will.thestranathans.com/post/40271742148/online-advertising-privacy">This article</a> provides a really good overview on why this is important.)</p>
+
+<p>Chrome for iOS gives you two options, accept all cookies or block all cookies.  In contrast, Safari for iOS allows one to accept all cookies, never accept cookies, or accept cookies only "from visited".  As Chrome on the desktop gives one the option to block third party cookies, I don't understand why this option is not available on the mobile version of the browser.  Could this be a simple oversight on Google's part?  Maybe. Could it be a limitation of iOS?  Maybe.  There are after all some limitations that Apple puts on third party apps on iOS that Chrome simply has to work around and/or just deal with.  A few that come to mind specific to Chrome are the fact that the native rendering engine and JavaScript engine for desktop Chrome cannot be used, as Apple requires their version of WebKit and their JavaScript engine instead.  There is also the limitation of HTML5 local storage being shared between normal and <a href="https://support.google.com/chrome/answer/95464?hl=en">Incognito*</a> browsing sessions.</p>
+
+<p>Interestingly enough, it appears that Chrome for Android has the same all or nothing cookie policy. My dad has a Droid 4, and I looked at his Chrome settings recently.  I could not find a way to block third party cookies.</p>
+
+<img src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Chrome%20for%20iOS/Photo%20Jun%2020%2C%2010%2006%2020%20AM.png"/>
+
+<p class="caption">The cookie settings on Chrome for iOS</p>
+
+<img src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Chrome%20for%20iOS/Photo%20Jun%2020%2C%2010%2006%2040%20AM.png"/>
+
+<p class="caption">The cookie settings on Safari for iOS</p>
+
+<img class="desktop_shot" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Chrome%20for%20iOS/Photo%20Jun%2020%2C%2010%2009%2017%20AM.png"/>
+
+<p class="caption">The cookie settings for the desktop version of Chrome (Chrome OS specifically)</p>
+
+<p class="Return"><a href="http://theartdirectedjournal.github.com">Table of Contents</a></p>
+
+</section>
+        
+</body>
+</html> 
