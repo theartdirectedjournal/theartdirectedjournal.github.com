@@ -1,0 +1,421 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Android</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900,700,100' rel='stylesheet ' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: #ddd;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: rgb(51,102,153);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+
+#header { 
+background: rgba(221,221,221,.85); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2;
+}                
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Roboto', sans-serif; 
+color: #fff; 
+font-weight: 700; 
+padding: 15px;  
+}
+
+#header #nav a {
+color: #222; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+
+
+
+#article_title {
+background: #222 url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/Android.png) bottom center no-repeat;
+overflow: hidden;
+height: 100px;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#article_title:hover {
+height: 400px;
+}
+
+
+#intro_container {
+width: 100%;
+overflow: hidden;
+background: #444 url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/grey_bckgrd.png) top left repeat;
+}
+
+#intro {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200px;
+margin-bottom: 200px;
+}
+
+
+#intro p {
+font-family: 'Roboto', sans-serif;
+font-size: 32px;
+color: #fff;
+line-height: 1.75;
+font-weight: 100;
+text-shadow: 0px 1px 2px #161619;
+text-align: center;
+}
+
+
+
+#caveat {
+width: 100%;
+overflow: hidden;
+background: yellow url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/yellow.bmp) top left repeat;
+}
+
+#caveat_text {
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200px;
+margin-bottom: 200px;
+}
+
+#caveat_text p {
+color: #222; 
+font-family: 'Sorts Mill Goudy', serif;
+font-size: 20px;
+line-height: 1.75;
+}
+
+#caveat_text .subtitle {
+font-size: 42px;
+font-family: 'Roboto', 'Arial', sans-serif;
+font-weight: 900;
+text-transform: uppercase;
+}
+
+#why_choose_container {
+width: 100%;
+overflow: hidden;
+background: #222 url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/paper.png) top left repeat;
+}
+
+#why_choose {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 250px;
+margin-bottom: 250px;
+}
+
+#why_choose p {
+font-family: 'Roboto', 'Arial', sans-serif;
+font-size: 22px;
+color: #444;
+line-height: 1.75;
+font-weight: 100;
+}
+
+#why_choose .topic {
+font-size: 42px;
+font-family: 'Roboto', 'Arial', sans-serif;
+color: #444;
+font-weight: 900;
+text-transform: uppercase;
+}
+
+.G2 {
+border: 10px solid #fff;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+margin-top: 75px;
+margin-bottom: 75px;
+}
+
+.pic_holder {
+text-align: center;
+}
+
+
+#why_choose_container_two {
+width: 100%;
+overflow: hidden;
+background: rgb(51,102,153) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/Why_Choose_Background.png) top left repeat;
+}
+
+#why_choose_two {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200px;
+margin-bottom: 200px;
+}
+
+#why_choose_two p {
+font-family: 'Roboto', 'Arial', sans-serif;
+font-size: 20px;
+color: #eeeeee;
+line-height: 1.5;
+text-shadow: 0px 1px 2px #161619;
+font-weight: 100;
+}
+
+#why_choose_two .topic_two {
+font-size: 42px;
+font-family: 'Roboto', 'Arial', sans-serif;
+color: #ffffff;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+
+.software_shot {
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+float: left;
+margin: 40px;
+}
+
+.software_shot_2 {
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+float: right;
+margin: 40px;
+}
+
+.topic_two_shot {
+float: right;
+margin: 40px;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+}
+
+
+#software_container {
+width: 100%;
+overflow: hidden;
+background: rgb(255,255,255) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/paper.png) top left repeat;
+}
+
+#software {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200px;
+margin-bottom: 200px;
+}
+
+#software p {
+font-family: 'Sorts Mill Goudy', serif;
+font-size: 20px;
+color: #333;
+line-height: 1.5;
+}
+
+#software .entrance {
+font-size: 42px;
+font-family: 'Roboto', 'Arial', sans-serif;
+color: #666;
+font-weight: 900;
+text-transform: uppercase;
+}
+
+
+                                                                                
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+    <ul id="nav">
+        <li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</a></li>
+    </ul>
+               
+</section> <!-- end #header -->
+
+<section id="article_title">
+
+</section> <!-- end #article_title -->
+
+<section id="intro_container">
+
+<section id="intro">
+
+<p>For as long as I can remember, I have been known amongst my circle of friends as the resident "Apple guy".  As such, it may come as a shock to some that I recently ditched my old iPhone 3GS in favor of an LG G2.</p>
+
+</section>
+
+</section> <!-- end #intro_container -->
+
+<section id="caveat">
+
+<section id="caveat_text">
+
+<p class="subtitle">Why the G2 and why Android?</p>
+
+<p>To answer that question, a little background is in order.  When I first got my iPhone 3GS, I appreciated its simplicity. However, over the course of the years that followed the purchase of my 3GS, my iPhone gradually became my most used "computer", especially after the untimely demise of my Chromebook. As I came to rely on my iPhone more and more as a productivity tool, the simplicity that I had been fond of became a nuisance. There were some tasks I just could not perform on my iPhone, even though there was supposed to be "an app for that".  There were also some things about the iPhone that I really wished were different; things that would, in my opinion, make the iPhone better, such as a larger display and access to the file system.</p>
+
+<p>The LG G2 fits my needs perfectly, and I would like to share with you some of the things that I think make it a fantastic device.</p>
+
+</section>
+
+</section> <!-- end #caveat -->
+
+<section id="why_choose_container">
+
+<section id="why_choose">
+
+<p class="topic">The Hardware</p>
+
+<p>The LG G2 is a beast in terms of specs, starting with a 5.2 inch 1080x1920 pixel display that has a pixel density of 423 ppi.  In comparison, the display of the iPhone 5S is only 4 inches, and it has a resolution of only 640x1136 pixels, with a pixel density of only 336 ppi.  In non-geek speak, the bottom line for me was that I wanted more screen real estate. Given its "phablet" sized screen, the G2 itself is surprisingly not too big, as the phone is practically all display, the bezel around the display being extremely thin. This makes the phone seem smaller than it actually is and still very pocketable.  The power button and volume rocker are also on the rear of the G2, right below the camera and flash.  While this feature has been panned in some reviews, I actually prefer the placement of these controls.</p>
+
+<p class="pic_holder"><img class="G2" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/G2.png"/></p>
+
+<p>One of my criteria for a new phone was a fantastic camera.  They say the best camera is often the one you have with you, but when you have kids, sometimes a mobile phone camera just won't cut it.  I always found myself taking crappy shots with my 3GS, simply because my kids would never sit still quite long enough.  Action shots were always quite blurred.  As such, I wanted something that would at least rival a point and shoot.  The cameras on the three phones that I was seriously looking at when I chose the G2 (the iPhone 5S and Nokia Lumia 925 being the other two) were reviewed by various news outlets and tech blogs as being great, and it turns out that in real life, the 13 megapixel shooter on the G2 is simply fantastic. It takes amazingly crisp stills and video, in part thanks to its optical image stabilization.  Instead of modifying my photos with Instagram filters, like I did when I had my 3GS, I find myself simply uploading the original photos produced by my G2.  I could not be more happy with the camera on this phone.</p>
+
+<p>Last, but most certainly not least, I wanted something with high end processing power.  The G2 has a fast processor (quad-core Qualcomm Snapdragon 800) and 2GB RAM, which is more than enough to allow this phone to scream, as well as make it as future proof as possible.  I would like to get at least three years use out if this phone.</p>
+
+<p>While there is no micro SD card slot for storage expansion, I have found that the available storage on the G2 is more than enough for me.  Coming from an iPhone, where there is no expandable storage, this is not a big deal to me.  Even so, I currently have 17.67 GB free space, after all my music, photos, apps and the space taken by Android itself is accounted for.</p>  
+
+<p>The battery on the G2, while not removable, is large.  It seems to last an eternity between charges, especially given the vibrant screen and my constant use of Bluetooth.  Really, as far as the hardware is concerned, my only complaint so far with the G2 is that some graphically intensive games (specifically Plants vs Zombies 2) cause the phone to get a bit hot.</p>
+
+</section>
+
+</section> <!-- end #why_choose_container -->
+
+<section id="why_choose_container_two">
+
+<section id="why_choose_two">
+
+<p class="topic_two">The Software</p>
+
+<img class="topic_two_shot" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/Screenshot_2013-11-08-09-41-14.png" /img>
+
+<p> No operating system, either on the traditional desktop or mobile, is perfect.  What Android brings to the table is choice, and coming from the perspective of a former iOS user, I have come to appreciate the fact that Android is so customizable.  For example, my G2 came with a default keyboard that was developed by LG.  I did not care much for it, as the on screen buttons were too small and the auto correct features did not work as I wanted them to.  I simply switched out the default LG keyboard for the stock Google Android keyboard, which I had downloaded from the Google play store.  Problem solved.  As another example, I really like the Google Play music app, but don't care for the stock LG music app.  I simply disabled the stock music app in the settings and no more would the application show up in my application list.  Contrast that with iOS, where if you don't like the Newsstand app or the stock calculator or whatever, you are stuck with it.  The best that could be done is to hide it in a folder.</p>
+
+<img class="software_shot" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/Screenshot_2013-11-11-06-28-09.png" /img>
+
+<p>Application management is better on Android than it is on iOS.  Take for example the screenshot on the left.  This comes from the application settings menu.  As you can see from this screen, one has options to force quit the application, uninstall it, clear the application data, and clear the application cache, in addition to telling the application whether or not to show notifications.  I really like this functionality, because it can be used to limit app sizes and wasted space.  This was one of my major complaints I had with iOS, with the Facebook application being a notorious offender in this regard.  On my iPhone, the Facebook application would grow considerably large (frequently in the hundreds of megabytes) due to the large size of the application's cached data.  The only way I knew of to reduce the application footprint was to uninstall and reinstall the app.  Contrast that with Android, where you can clear this type of data with the touch of a button.</p>
+
+<img class="software_shot_2" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/image.jpg" /img>
+
+<p>Another very cool thing about Android is the fact that like a PC (or Mac or Linux distro), you have access to the file system.  You can choose to save files wherever you want, and files can be moved around with ease.  I sorely hated the fact that iOS does not even let you view the file system, let alone modify it without a jailbreak, and it is one of the reasons that I feel that iOS is a "dumbed down" operating system.  Sure, by limiting access to the file system you can prevent inexperienced users from screwing things up, but for me, I find this functionality enables me to perform certain tasks on my phone that I could not do on my iPhone.</p>
+
+<p>The G2 has Bluetooth file transfer capabilities. Files of all types can be sent from one phone (or computer) to another via Bluetooth (as well as NFC).  I have always found it stupid that iOS restricts this functionality.  The phone I had before my 3GS, a Symbian S60 powered Nokia, could transfer files via Bluetooth, and it blows my mind that the iPhone still cannot do this.  It's not a technical constraint, or even a security one.  Rather it seems like another case of Apple dictating what they think is best for their users.</p>
+
+<p>There is also the concept of "openness".  The two topics above regarding Bluetooth file transfer and access to the file system touch on this concept.  Now, for the purpose of this article, I don't mean "open" in the sense of open source software, although Android at its core is open source.  That's a topic for another article.  Rather, I mean open in the sense that you're not restricted in terms of software choice.  Continuing on what I touched on in the section above where I discussed the fact that Android is customizable and one can swap out default apps, let's say I did not like the Google Play bookstore or app, and my digital books are all on Amazon's Kindle platform.  On Android, I can disable the Google Play Books application and download the Amazon Kindle app, where I then would have access to all my books and can buy them from Amazon, all within the app itself.  The key thing here is the ability to purchase from within the app itself. Contrast that with iOS, where to purchase Kindle books on the iPhone, it cannot be done from within the Kindle app. Books have to be purchased from the web (and last I checked, it was quite clunky).  Additionally, you can even choose to side load apps.  Try that on vanilla, non-jailbroken iOS.</p>
+
+</section>
+
+</section> <!-- end #why_choose_container_two -->
+
+<section id="software_container">
+
+<section id="software">
+
+<p class="entrance">The Best of Google</p>
+
+<img class="software_shot_2" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Android/2013-11-22-06-18-41.png" /img>
+
+<p>If you're like me and are a heavy user of Google's various services, Android is the platform to use.  While Google's service offerings on iOS are great (think gateway drug to Android in the same vein as iTunes on Windows and the iPod was at one time a gateway drug to the Mac), they pale in comparison with their Android counterparts.  For example, in GMail for iOS, you can attach a picture to an email, but attaching most other types of files is out of the question, due to limitations of iOS.  In contrast, the GMail app on Android allows you to attach any type of file to an email from a number of sources, including Google Drive.  I also like the new Google Play Newstand app.  It is a combination of magazine subscription service and RSS aggregator.  Think Flipboard combined with the iOS Newsstand app, but much better designed than iOS Newsstand.</p>
+
+<p>Google Now is fantastic.  Sure, you can use Google Now on iOS, and when I had my iPhone, I used it as a way to quickly search the web and stay up to date on the teams I cared about.  However, Google Now for Android takes things to a whole new level.  I frequently use Now to make phone calls, set reminders for myself and send texts, much the same way that iOS users do this with Siri, but the speech recognition technology Google uses is second to none.  I rarely have to repeat a command, as Now gets it right the first time, most times. Now is really cool because it automagically gives me info I need when I need it.  For example, when I wake up in the mornings, I have a notification on my phone that shows the current temp, and it will show me the shortest distance to the office based on traffic conditions.  In all fairness, Now was recently updated on iOS to include a lot of features to make it on par with the offering on Android.  But nonetheless, Now is still something I really like about Android, and it will never be as integrated with the overall Google experience on iOS as it is with Android.</p>
+
+<p>I love Google Chrome.  It is hands down my favorite web browser.  However, the iOS version of Chrome was hampered due to the restrictions Apple places on third party apps.  As a result of those restrictions, Chrome is a bit slower when accessing JavaScript heavy sites, because Google's native V8 JavaScript engine is not allowed on iOS. The rendering engine for Chrome (Blink, which is based on WebKit) is also not used in iOS. Instead, the iOS version uses a UIWebView rendering engine, which is similar to the native iOS Safari engine, but a little slower.  On Android, you get real Chrome, so to speak.  Blink and V8 are both present, and with the G2's horsepower, sites render exceedingly fast and perform well.  Also with Android, even if you're not on the latest version of Android, Google still provides updates for Chrome through <a href=" http://arstechnica.com/gadgets/2013/09/balky-carriers-and-slow-oems-step-aside-google-is-defragging-android/">Google Play Services</a>.  Contrast that with iOS, where users stuck on iOS 6 will not receive Safari updates (or updates to any Apple apps for that matter).  Plus, again, going back to the concept of choice, if you don't like Chrome on Android, there is always the option to use <a href=" https://www.mozilla.org/en-US/firefox/new/?icn=tabz">Firefox</a>.  Firefox on Android is actually a quite capable and well built browser, and in fact, it does things, like block third party cookies, that Chrome on Android does not yet do.</p>
+
+<p>In conclusion, I am extremely happy with my G2 and my decision to switch from iOS to Android.  I couldn't imagine at this point switching back to iOS.  Again, not that there is anything inherently wrong with iOS; it's just not for me anymore.</p>
+
+<p style="margin-top: 100px; text-align: right;">Return to the <a href="http://theartdirectedjournal.github.io">Table of Contents</a>.</p>
+
+</section>
+
+</section> <!-- end #software_container-->
+
+
+
+</body>
+</html> 
