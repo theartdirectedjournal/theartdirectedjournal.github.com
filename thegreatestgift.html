@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Template</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(238,238,238);
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: #336699;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+#main_content {
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200px;
+margin-bottom: 100px;
+}
+
+#main_content p {
+font-family: 'Lusitana', serif;
+font-size: 52px;
+font-weight: normal;
+line-height: 1.5;
+color: #222;
+text-align: center;
+}
+
+#main_content .return {
+font-size: 14px;
+margin-top: 300px;
+}                                                                                 
+</style>
+</head>
+
+<body>
+
+<section id="main_content">
+
+<p><img class="manger" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Christmas%202013/2088761046_1.png" /> </p>
+
+<p>The <a href=" http://www.esvbible.org/Luke+2/">Greatest</a> Gift.</p>
+
+<p class="return"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+        
+</body>
+</html> 
