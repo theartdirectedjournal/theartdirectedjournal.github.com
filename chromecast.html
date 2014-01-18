@@ -1,0 +1,300 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Chromecast</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: #336699;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+#header { 
+background: rgba(221,221,221,.85); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Open Sans', 'Arial', sans-serif; 
+color: #fff; 
+font-weight: 700; 
+padding: 15px;  
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: #222; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+
+
+
+#article_title_holder {
+width: 100%;  
+background: rgb(33,33,33) url(https://dl.dropboxusercontent.com/u/9043524/Chromecast/CAM00068.jpg) center center no-repeat;
+background-attachment: fixed;
+-moz-background-size: cover;
+background-size: cover; 
+overflow: hidden;
+}
+
+#article_title {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 300px;
+margin-bottom: 350px;
+text-align: center;
+}
+
+#article_title H1 {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-size: 92px;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+font-weight: 300;
+}
+
+article_title img {
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+opacity: 25%;
+}
+
+article_title img:hover; {
+opacity: 100%;
+} 
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(255,255,255);
+}
+
+#main_content {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200px;
+margin-bottom: 200px;
+}
+
+#main_content p {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: rgb(33,33,33);
+}
+
+#main_content .screenshot {
+float: right;
+margin-top: 60px;
+margin-bottom: 20px;
+margin-right: 20px;
+margin-left: 20px;
+}
+
+#main_content .screenshot2 {
+float: left;
+margin-top: 40px;
+margin-bottom: 20px;
+margin-right: 30px;
+margin-left: 5px;
+}
+
+#main_content .sub_heading {
+font-size: 62px;
+line-height: 1;
+margin-top: 100px;
+margin-bottom: 0px;
+text-transform: lowercase;
+}
+
+#return_home {
+width: 100%;
+overflow: hidden;
+background: rgb(33,33,33);
+}
+
+#buy {
+margin-right: auto;
+margin-left: auto;
+width: 800px;
+text-align: center;
+margin-top: 100px;
+margin-bottom: 100px;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-size: 16px;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+font-weight: 300;
+line-height: 1.75;
+text-transform: uppercase;
+}
+
+#buy a {
+color: #777;
+border-bottom: 1px dotted #777;
+padding-bottom: 2px;
+font-weight: 700;
+}
+
+#buy a:hover {
+color: #fff;
+border-bottom: 1px dotted #fff;
+}
+
+                                                                                
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+    <ul id="nav">
+        <li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed <span style="font-weight: 300; text-transform: lowercase;">Journal</span></a></li>
+    </ul>
+               
+</section> <!-- end #header -->
+
+<section id="article_title_holder">
+
+<section id="article_title">
+
+<h1>Thoughts on the <span style="font-weight: 600;">Chrome</span>cast</h1>
+
+<a href="#main_content"><img src="https://dl.dropboxusercontent.com/u/9043524/Chromecast/Down_Arrow.png" /></a>
+
+</section>
+
+</section>  <!-- article_title_holder -->
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p>My wife and I got a new TV for our bedroom this past Christmas. It was a Black Friday purchase, and it was long over due.  It replaced a barely functioning TV that I had bought in 1999.  When my wife asked me what else I wanted for Christmas, with this new TV in mind, I told her I wanted a Chromecast. I figured at only $35, it was cheaper than the cheapest model Roku, and it turns out, in terms of bang for your buck, the Chromecast blows both the Apple TV and the Roku away.  In fact, I like my Chromecast so much, that it is now being used downstairs on our living room TV, and our Roku HD is now relegated to the bedroom TV.  Here's why...</p>
+
+<p class="sub_heading"><span style="text-transform: uppercase; font-weight: 700;">First, What is a Chromecast</span> and How Does It Work?</p>
+
+<p>The Chromecast is a tiny device, about the size of a USB stick, that plugs into the HDMI port on your TV and streams video and music from a variety of online sources, just like you can do with a Roku or an Apple TV.  What makes the Chromecast different is that it is controlled from a wide variety of devices you probably already have, such as your iPhone or Android phone, your iPad or Android tablet, and/or your PC, Mac or Chromebook.</p>
+
+<img class="screenshot" src=" https://dl.dropboxusercontent.com/u/9043524/Chromecast/2014-01-17-13-28-13.jpg" />
+
+<p>To set up the Chromecast, simply plug the Chromecast into an available HDMI port on your TV, and plug in the micro USB power adapter.  Google recommends plugging the adapter into a wall outlet versus plugging the adapter into the USB port on your TV.  I agree with this recommendation, as this way the Chromecast is always powered on and ready to go.  Once I had connected to my TV and powered the Chromecast up, the rest of the initial set up, which can be done from a computer, tablet or phone, was extremely simple. I simply downloaded and installed the Chromecast app onto my phone and followed the on-screen instructions.</p>
+
+<img class="screenshot2" src=" https://dl.dropboxusercontent.com/u/9043524/Chromecast/2014-01-17-14-01-25.jpg " />
+
+<p>Using the Chromecast is easy. On my phone, for example, if I am in the Netflix app, and I want to "cast" what I am watching to my TV, I simply click the "cast" button from within the app, and in a matter of seconds, I'm watching on my TV. What is really cool about this is that the phone basically just points the Chromecast to the content.  The Chromecast itself then does all the heavy lifting, so to speak, with regards to the actual streaming of the video. This then frees up your device to be used for other things.  There is also an extension for the Chrome browser that will allow you to cast the contents of any tab in Chrome to your TV.</p>
+
+<p class="sub_heading"><span style="text-transform: uppercase; font-weight: 700;">Picture</span> Quality...</p>
+
+<p>The Chromecast supports 1080p video, and to my eye, the picture quality is fantastic.  My Roku HD supports only 720p video, and there is a slight degradation in picture quality when compared to that of the Chromecast.  It must be noted here that I am making comparisons between the Chromecast and my Roku HD.  The Roku 3 supports 1080p, but costs $100.  The Roku 1 also supports 1080p, but costs $60.  The Chromecast wins this category because of the bang for your buck factor.</p>
+
+<p class="sub_heading"><span style="text-transform: uppercase; font-weight: 700;">You</span>Tube...</p>
+
+<p>I watch a lot of YouTube, yet I have never had the ability to watch YouTube on my TV, since my Roku HD does not support the YouTube channel.  Only the Roku 3 supports YouTube at the present.  Needless to say, the ability to watch YouTube through the Chromecast is one of my favorite "features" of the device.  Again, the Chromecast wins in the bang for your buck department.  As stated before, the Roku 3 has a YouTube channel, but the Roku 3 is $65 more than the Chromecast.  The Apple TV also has a YouTube channel, but again, the Apple TV is $100.</p>
+
+<p class="sub_heading"><span style="text-transform: uppercase; font-weight: 700;">Who is the Chromecast for</span> and who is it not for?</p>
+
+<p>The Chromecast is ideal for anyone who has other devices, as a phone, tablet or computer is a must-have in order to use the Chromecast.  While not as traditional as a set top box like the Roku or Apple TV, the Chromecast is most definitely the best value, as it can do most of the things that the Apple TV and Roku can do at a fraction of the cost.</p>
+
+<p>The Apple TV is a good device for those who are heavily invested in the Apple ecosystem or just really hate Google.  As far as content sources, all the usual suspects (Netflix, Hulu, Crackle, PBS, etc.) are available.  <a href=" http://www.apple.com/appletv/airplay/ ">Air Play</a> is a really cool piece of technology, and if you have compatible Apple devices, this feature alone may be worth the additional cost of the Apple TV.  However, if you're not an Apple only person, then the Chromecast in my opinion is the better deal.</p>
+
+<p>What about the Roku?  More content is available on the Roku than probably any other stand alone streaming device.  However, quantity does not always mean quality.  I originally chose the Roku HD over the Apple TV because at the time, the Roku presented the better value.  It had more channels and a lower price.  Plus, I am not very invested in the Apple ecosystem.  I have never used the Roku 3, and as such I cannot speak to its reliability, but I have not been overly impressed with the reliability of my Roku HD.  It constantly freezes and constantly requires a reboot.  I am also not impressed by the fact that Roku appears to now be neglecting its older models.  For example, I am not sure why YouTube is not available yet for the Roku HD, or even the Roku 2 or 1 for that matter.  The only thing that I can think of is that <a href="http://m.roku.com/products/compare">Roku</a> wants to push the higher priced model, and the availability of certain channels could be a selling point.  That's just my theory.</p>
+
+<p class="sub_heading"><span style="text-transform: uppercase; font-weight: 700;">That's a</span> wrap...</p>
+
+<p>In my humble opinion, why not try the Chromecast?  At just $35 it is a fantastic value.  I am very excited about the future of this product.  Google, after the failure of the <a href=" http://www.google.com/tv/ ">Google TV</a> and the <a href=" http://en.m.wikipedia.org/wiki/Nexus_Q">Orb thing</a> they had, is finally getting streaming right.</p>
+
+</section>
+
+</section> <!-- main_content_holder -->
+
+<section id="return_home">
+
+<section id="buy">
+
+<p><a href="http://www.google.com/intl/en-US/chrome/devices/chromecast/">Buy a Chromecast</a>   <span style="text-transform: lowercase;">or return to the</span>   <a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+        
+</body>
+</html> 
