@@ -8,7 +8,6 @@ font: normal 1em/1.5;
 margin: 0; 
 padding: 0;
 background: rgb(255,255,255);  
-color: #333; 
 }
 
 :focus { 
@@ -81,9 +80,9 @@ line-height: 1;
 
 
 #inner-header h1 {
-color: rgb(0,0,0); 
+color: rgb(33,33,33); 
 font-family: 'Abril Fatface', 'Georgia', serif; 
-font-size: 90px;    
+font-size: 80px;    
 -webkit-transition: 0.5s all ease-in-out; 
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: .5s all ease-in-out; 
@@ -104,12 +103,12 @@ overflow: hidden;
 }  
 
 #contents-text {
-width: 800px;
+width: 600px;
 margin-left: auto; 
 margin-right: auto;
 font-family: 'Open Sans', 'Arial', sans-serif; 
-font-size: 20px; 
-color: #333; 
+font-size: 18px; 
+color: rgb(33,33,33); 
 font-weight: 300; 
 line-height: 1.5; 
 -webkit-transition: 0.5s all ease-in-out;
@@ -130,7 +129,7 @@ margin-bottom: 25px;
 
 
 #Copyright p {
-font-size: 12px; 
+font-size: 10px; 
 text-align: center; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
 color: #777; 
