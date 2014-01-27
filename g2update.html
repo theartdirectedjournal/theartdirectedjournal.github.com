@@ -1,0 +1,582 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>...</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(67,66,71);
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none;
+color: rgb(98,109,127);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: rgb(34,40,51);
+}
+
+#header { 
+background: rgba(178,187,204,.85); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Open Sans', 'Arial', sans-serif; 
+color: rgb(34,40,51); 
+font-weight: 700; 
+padding: 15px;  
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(34,40,51); 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: rgb(98,109,127); 
+}
+
+
+#title_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(34,40,51) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/G2%20Update/stardust.png) top left repeat; 
+-webkit-animation: space 60s infinite linear; 
+-moz-animation: space 60s infinite linear; 
+animation: space 60s infinite linear;
+}
+
+		@-webkit-keyframes space {
+	from { background-position: 0 0; }
+	to   { background-position: -533px 0; }
+}
+
+		@-moz-keyframes space {
+	from { background-position: 0 0; }
+	to   { background-position: -533px 0; }
+}
+
+		@keyframes space {
+	from { background-position: 0 0; }
+	to   { background-position: -533px 0; }
+}
+
+#title {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 350px;
+margin-bottom: 5px;
+}
+
+#title h1 {
+text-align: center;
+font-family: 'Raleway', 'Arial', sans-serif;
+font-weight: 300;
+font-size: 100px;
+text-transform: uppercase;
+line-height: 1;
+color: rgb(178,187,204);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#arrow_holder {
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+width: 200px;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 350px;
+text-align: center;
+opacity: .5
+}
+
+#arrow_holder:hover {
+opacity: 1;
+}
+
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(178,187,204);
+}
+
+#intro {
+width: 800px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 200px;
+margin-bottom: 200px;
+}
+
+#intro p {
+font-family: 'Josefin Slab', 'Garamond', 'Georgia', serif;
+font-size: 24px;
+line-height: 1.75;
+font-weight: normal;
+color: rgb(33,33,33);
+}
+
+#intro a {
+border-bottom: 1px dotted rgb(98,109,127);
+padding: 2px;
+}
+
+#intro a:hover {
+border-bottom: 1px dotted rgb(34,40,51);
+}
+
+#first {
+width: 800px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 200px;
+margin-bottom: 200px;
+}
+
+#first p {
+font-family: 'Josefin Slab', 'Garamond', 'Georgia', serif;
+font-size: 20px;
+line-height: 1.5;
+font-weight: normal;
+color: rgb(33,33,33);
+}
+
+#first a {
+border-bottom: 1px dotted rgb(98,109,127);
+padding: 2px;
+}
+
+#first a:hover {
+border-bottom: 1px dotted rgb(34,40,51);
+}
+
+#first .bullet {
+font-family: 'Raleway', 'Arial', sans-serif;
+font-weight: 300;
+font-size: 100px;
+text-align: right;
+}
+
+#first .right_shot {
+float: right;
+margin-left: 50px;
+margin-right: 5px;
+margin-top: 50px;
+margin-bottom: 50px;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+}
+
+#first .image_holder {
+text-align: center;
+}
+
+#first .launcher_left {
+float: left;
+margin-left: 50px;
+margin-top: 75px;
+margin-bottom: 25px;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+}
+
+#first .launcher_right {
+float: right;
+margin-right: 50px;
+margin-top: 75px;
+margin-bottom: 25px;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+}
+
+#first .caption{
+clear: both;
+text-align: center;
+font-size: 14px;
+color: #777;
+font-style: italic;
+margin-top: 0px;
+margin-bottom: 75px;
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+font-family: 'Raleway', 'Arial', sans-serif;
+font-weight: 300;
+}
+
+
+#second {
+width: 800px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 100px;
+margin-bottom: 200px;
+background: rgb(34,40,51);
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+}
+
+#spacing {
+width: 600px;
+margin-right: auto;
+margin-left: auto;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+#spacing p {
+font-family: 'Raleway', 'Arial', sans-serif;
+font-weight: normal;
+font-size: 18px;
+line-height: 1.5;
+color: rgb(178,187,204);
+text-shadow: 0px 1px 2px #161619;
+font-weight: 300;
+}
+
+
+#notebook_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(34,40,51) url( https://dl.dropboxusercontent.com/u/9043524/experiments/G2%20Update/CAM00084.jpg ) center center no-repeat;
+background-attachment: fixed;
+-moz-background-size: cover;
+background-size: cover;
+}
+
+#notebook {
+width: 400px;
+margin-left: 50px;
+margin-top: 350px;
+margin-bottom: 350px;
+background: rgba(0,0,0,.25);
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+#notebook p {
+font-family: 'Loved by the King', cursive;
+font-size: 24px;
+font-weight: normal;
+line-height: 1.5;
+color: rgb(255,255,255);
+text-shadow: 0px 1px 2px #161619;
+padding: 20px;
+}
+
+#apps_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(235,235,230) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/G2%20Update/graph.png) top left repeat;
+}
+
+
+#apps {
+width: 600px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 100px;
+margin-bottom: 200px;
+}
+
+#apps p {
+font-family: 'Loved by the King', cursive;
+font-size: 24px;
+font-weight: normal;
+line-height: 1.5;
+color: rgb(33,33,33);
+}
+
+#apps .app_name {
+font-size: 32px;
+text-transform: uppercase;
+text-align: center;
+margin-top: 75px;
+clear: both:
+}
+
+#apps .notebook_image {
+float: right;
+margin: 30px;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+width: 300px;
+height: 533px;
+}
+
+#acknowledgement {
+width: 100%;
+overflow: hidden;
+background: rgb(34,40,51) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/G2%20Update/stardust.png) top left repeat; 
+-webkit-animation: space 60s infinite linear; 
+-moz-animation: space 60s infinite linear; 
+animation: space 60s infinite linear;
+}
+
+#note {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#note p {
+font-family: 'Loved by the King', cursive;
+font-weight: normal;
+font-size: 18px;
+line-height: 1.75;
+color: rgb(178,187,204);
+text-shadow: 0px 1px 2px #161619;
+font-weight: 300;
+}
+
+#note a {
+color: #fff;
+border-bottom: 1px dotted #fff;
+padding: 2px;
+}
+
+#note a:hover {
+color: rgb(98,109,127);
+border-bottom: 1px dotted rgb(98,109,127);
+}
+
+                                                                                
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+    <ul id="nav">
+        <li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed <span style="font-weight: 300; text-transform: lowercase; font-style: italic;">Journal</span></a></li>
+    </ul>
+               
+</section> <!-- end #header -->
+
+<section id="title_holder">
+
+<section id="title">
+
+<h1>An <span style="font-weight: 700;">update</span> on the <span style="font-weight: 700;">LG G2</span></h1>
+
+</section>  <!-- end #title -->
+
+<div id="arrow_holder"><a href=#main_content_holder><img src="https://dl.dropboxusercontent.com/u/9043524/Experiments/G2%20Update/Arrow.png" /></a></div>
+
+</section> <!-- end #title_holder -->
+
+<section id="main_content_holder">
+
+<section id="intro">
+
+<p>A few months back, I wrote about <a href="http://theartdirectedjournal.github.io/android">some of the reasons</a> that I switched from iOS to Android, and in that article, I wrote a bit about the phone that I selected, the LG G2. So far, I have only a few minor annoyances with this phone, and I have largely been happy with both my choice of the Android operating system over iOS and Windows Phone, as well as my choice of the G2 over other Android phones.</p>
+
+<p>I am quite fond of Android on the whole.  I love the way it works.  It is well thought out and well designed.  I love the openness.<a style="border: none;" href="#note">**</a>  I love the level of customization that Android brings to the table, and I love the fact that Android is much more like a real computer.  This article is mainly going to be about the G2, and my experiences with the phone's hardware, as well as LG's take on Android.</p>
+
+</section>  <!-- end #intro -->
+
+<section id="first">
+
+<p class="bullet">The Launcher</p>
+
+<img class="right_shot" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/G2%20Update/Screenshot_2014-01-21-22-09-48.png" />
+
+<p>I am largely happy with LG's launcher and overall user interface.  LG's take on Android is clean, and some of the customizations that they have made to the OS are actually quite helpful.  While it appears to "borrow" a lot of things from Samsung's TouchWiz UI, such as tabbed settings and the square app drawer icon, LG's UI seems less bloated, and I think it uses far fewer system resources than TouchWiz uses.  One of the helpful customizations that LG has made is the task manager (accessed by holding down the on-screen home button for a few seconds), and it is a nice touch over stock Android.  You can easily kill running apps and see available RAM.  I also really like LG's <a href="http://www.lg.com/us/mobile-phones/g2">KnockOn</a> feature.  You simply tap twice on the display to wake the phone up, and you simply tap twice on the home screen to put the phone to sleep. I use this feature as the primary way that I sleep and wake my phone, and out of habit, I even catch myself tapping twice on my son's tablet or my wife's Galaxy S4 to try to wake those devices up and put them to sleep.</p>
+
+<p>When the <a href="http://www.google.com/nexus/5/">Nexus 5</a> was released, it was the first Android device to come with Android 4.4 KitKat preinstalled, and as a part of the exclusivity of the device came a new launcher and Google search app.  On your home screen, you can simply say, "Ok, Google", and Google Now will immediately launch.  You can then send texts, emails, search the web, get directions, etc. without ever having to touch your phone.  Some might think this is a bit gimmicky, but I really like this capability.  So, I replaced LG's launcher with this new "Google Experience Launcher" (along with the updated Google search app, which the launcher needs).</p>
+
+<p class="image_holder"><img class="launcher_left" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/G2%20Update/Screenshot_2014-01-21-21-22-44.png" /> <img class="launcher_right" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/G2%20Update/Screenshot_2014-01-21-21-22-17.png" /></p>
+
+<p class="caption">The Google Experience Launcher is on the left.  The stock LG launcher is on the right.  Notice the subtle differences between the two launchers, such as the transparent menu bar on the LG launcher and the labels under the icons in the dock.  The icons on LG's launcher are also a bit smaller.</p>
+
+<p>After having used the Google Experience Launcher for a while, I honestly have to say that I mostly prefer the stock LG launcher.  Both launchers were silky smooth and fast, and I believe that they actually used roughly the same amount of system resources.  On each launcher, I kept my home screen fairly simple, only having one home screen, which contains only Google Play and Play Music (my music player of choice).  I either use Google Now to open apps or I just use the app drawer.</p>
+
+<p>My hope is that with Google <a href="http://www.androidcentral.com/solving-impossible-problem-android-updates">removing everything that they can out of Android itself</a>, Google will improve upon and offer this launcher in the Play Store.  As of now, you can get it by clicking the link in <a href="http://www.youtube.com/watch?v=qHGMrq4rCJs&list=UUGq7ov9-Xk9fkeQjeeXElkQ&feature=c4-overview">this video by Danny Winget</a>.  In the video description, there is a link to xda forums where you can download and then side load first the Google Search app and then the Google Experience launcher.</p>
+
+<p>There are a few down sides to the Google Experience Launcher on an unrooted, basically stock G2.  If you are a fan of KnockOn, then you'll have a bit of an adjustment.  While the ability to double tap the screen when the phone is asleep to wake it up is unchanged (the Google Experience Launcher does not change the lock screen), the ability to double tap the home screen to put the phone to sleep appears at first to be broken.  Because the KnockOn feature relies on LG's launcher, the only place that one can tap to put the phone to sleep is on the very top menu bar.  While this is only a minor annoyance, it is sometimes a bit cumbersome to put the phone to sleep using one hand, as the G2 is a larger phone.  The power button on the back also works, so again, this is only a minor issue.</p>
+
+<p>With regards to the menu bar, because the LG G2 is stuck for the time being on Android 4.2.2, the menu bar at the top is not transparent, as it is on Android 4.4.x. What this means is that when you use the Google experience Launcher on a phone that runs Android 4.2, like the G2, the menu bar at the top is solid, because the Google Experience Launcher uses the system menu bar.  The stock LG launcher uses a custom transparent menu bar at the top, and I simply prefer that look.</p>
+
+<p class="bullet">Updates</p>
+
+<img class="right_shot" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/G2%20Update/13%20-%201.png" />
+
+<p>I did not realize this when I bought the G2, and it is not really a deal breaker, but apparently LG has somewhat of a reputation for being slow to update their phones.  While being on the latest version of Android is less of a big deal now then it was in the past (as Google seems to be packing more and more functionality into Play Services), it still kind of bugs me that I have to wait on LG and T-Mobile to get their collective acts together to update the G2 to 4.4.  A while back, I sent an email to LG customer care to inquire about updates to the G2.  What I got back was a joke of an email that basically said they had no clue about when or even if the G2 will be updated.  Let's remember here that the G2 is currently LG's flagship phone, and aside from the better 13 megapixel camera (to the Nexus 5's 8 megapixel camera), the G2 uses basically the same hardware as the Nexus 5 (also made by LG). Running Kit Kat on the G2 should be no problem. My hope is that this was just a response from a clueless customer service rep and that LG has an update in the works.  That said, it should be noted that if you are in the market for a new high end Android phone, the Nexus 5 is the one to get, provided you care about using the latest and greatest version of Android. As for me, I'm giving LG and T-Mobile one year to update the G2 to Kit Kat.  After that year is up (along with my warranty), if they have not updated the G2, I will root and install <a href="http://www.cyanogenmod.org">CyanogenMod</a>.  That's the beauty of Android after all.</p> 
+
+</section>  <!--end #first -->
+
+<section id="second">
+
+<div id="spacing">
+
+<p>On a side note, there are two other hardware related items I would like to revisit.  First, the screen on the G2 really is fantastic.  I touched on this in my previous Android article, where I provided specs and compared the screen of the G2 with the screen of the iPhone 5S, but in terms of real world use, I truly have been spoiled by how sharp and bright the G2's screen actually is.  My non-techie wife even commented at one point on how much better the G2's screen was compared to the screen of her Galaxy S4.</p>
+
+<p>The camera on the G2 is really amazing.  While not the best camera available on a phone (that prize goes to the Nokia Lumia 1020), it certainly takes great photos.  In fact, I use the G2 as my main camera, and I appreciate the range of settings LG's camera app offers over the AOSP (Android Open Source Project) camera app.  The G2's optical image stabilization really does help it to take better videos as well.  As an FYI, I'm not a great photographer (although practice makes perfect, right?), but I used the G2 to take the background image on my Chromecast article, as well as the image below. I say this to say that if a mediocre photographer such as myself can take a few good photos, imagine what an experienced photographer could do with this camera.</p>
+
+</div>
+
+</section>  <!--end #second -->
+
+</section>  <!-- end #main_content_holder -->
+
+<section id="notebook_holder">
+
+<section id="notebook">
+
+<p>Given that my phone is basically my main computer, Android allows me to be more productive than I ever was on my iPhone. In fact, I wrote and designed this entire article on my LG G2. Here are just a few of the apps I use for getting stuff done and for play...</p>
+
+</section>
+
+</section>
+
+<section id="apps_holder">
+
+<section id="apps">
+
+<p class="app_name">~ For Getting Stuff Done ~</p>
+
+<p>Chrome is my main web browser, and it is probably the most used app on my phone.  I use Firefox occasionally, mainly just to make sure that the articles I create render well on Firefox. I disabled the stock Android browser.  It sucks.</p>
+
+<p>For email, I use Google's GMail app, as well as Microsoft's Outlook app.  I find the Outlook app to be well designed, but it is more Windows like than Android like, in my opinion.  Nevertheless it is a good enough app that I use it over the stock LG email app for my Outlook.com account.  I use the stock LG email app for my iCloud account, as I still use this email account on rare occasions.  As for the GMail app, it is the best of all three apps, and of course, it offers the best GMail experience.  With the exception of GMail, I rarely access these apps from their actual application icons, instead only accessing them from the notification panel in Android if I get a new email.</p>
+
+<p>For document creation and editing, I have been using a combination of Google Docs and Quick Office.  Both of these Android apps are great, and while Google's spreadsheet app is not quite as robust as Microsoft Excel, it is just fine for home use. While I have been tempted to try Office 365, I just don't find it worthwhile to pony up the money when Google Docs works just fine. My wife is also a heavy Google Docs user, and we share documents quite frequently. I also use a free app called 920 Text Editor to edit HTML and CSS files on occasion.</p>
+
+<p>For "ubiquitous capture" I use Google Keep, in conjunction with an <a href=" http://theartdirectedjournal.github.io/organization">analog journal</a>.  The analog journal is mainly used for work, while Google Keep houses my personal stuff.  Keep is a fantastically useful app that I use (in combination with Google Now) for everything from drafting out quick ideas, to taking notes, to setting reminders, to making quick to do lists.  If you are a heavy user of Google services like I am, this app is a no-brainer.  Keep can also be used from the web, and there is a nice Chrome extension.  I have tried other apps of this nature, such as Simplenote, Microsoft One Note, Any.do, and Evernote, but I keep coming back to Keep.</p>
+
+<img class="notebook_image" src="https://dl.dropboxusercontent.com/u/9043524/experiments/G2%20Update/Screenshot_2014-01-26-15-42-21.png" />
+
+<p>Regarding cloud storage, I use Google+ photos to automatically back up my photos when on WiFi and charging.  This backup tool works great and is hassle free.  Having it set to backup only while my phone charges is a nice way for me to control when the backups happen. I also use the Dropbox app, which has a very useful built in plain text editor.  In fact, I used the Drop Box app's plain text editor to write and code the majority of this article.  I also back things up with Microsoft's Skydive app, just in case.  However, it must be noted (in case someone from Microsoft ever happens to read this), while the Skydrive app is well designed, it is slooooow.</p>
+
+
+<p class="app_name">~ For Play ~</p>
+
+<p>For reading, I use the Kindle app and the Kobo app.  The Kobo app works well with .epub files.  I also use the Google Play Newsstand app, as an RSS reader of sorts, as well as for reading magazines, such as Wired.</p>
+
+<img class="notebook_image" src="https://dl.dropboxusercontent.com/u/9043524/experiments/G2%20Update/Screenshot_2014-01-27-13-02-25.png" />
+
+<p>My main music player is the Google Play Music app.  I took all my iTunes music and uploaded it to Google Play Music, and I now buy most of my music from the Google Play store.  I am quite fond of the user interface of the Play Music app.  For streaming music, I mainly use Spotify, unless I want to cast music to my TV through my Chromecast, in which case, I use Pandora.  Spotify is much better, and when they offer Chromecast capability, I will ditch Pandora.</p>
+
+<p>For streaming video, I mainly use Chrome, the Netflix app, or the YouTube app.  The Netflix and YouTube apps have Chromecast capabilities, and I use this functionality just about daily.</p>
+
+
+<p class="app_name">~ Misc. & Utilities ~</p>
+
+<p>There are some other apps I use quite frequently, such as the stock LG calculator and alarm/clock apps.  I like the stock LG calculator. It has a clean, simple interface and the buttons in portrait orientation are big.  When you rotate the phone, the calculator becomes a scientific calculator. You can also minimize the calculator window to truly multitask.</p>
+
+<p>I use Google Maps for navigation.  It is the best navigation app.  I also use Google's Calendar app.  My wife and I have our calendars synced, and I like the clean UI of the Calendar app.  I have tried Any.do's calendar app, as well as a few others, but I always revert to Google's calendar.</p>
+
+<p>Lastly, I use LG's Quick Remote app to control my TV in our living room, my cable box, the TV in our bedroom, the bedroom cable box, and the DVD player. It is a handy little app that I rely on, especially since remotes tend to go missing in my house.  I use the Roku app to control the Roku in our bedroom.</p>
+
+
+<p class="app_name">~ Conclusion ~</p>
+
+<p>Hopefully this article provided some insight into some of the benefits of the LG G2 along with some of its shortcomings.  Again, I really like this phone.  Would I have chosen the G2 if the Nexus 5 had been available when I upgraded?  In all honesty, I would have probably still chosen the G2.  I really like the screen and camera, and I appreciate some of the UI elements and apps that LG has added.</p>
+
+<p class="app_name"><a href="http://theartdirectedjournal.github.io">~ Table of Contents ~</a></p>
+
+</section>
+
+</section>
+
+
+<section id="acknowledgement">
+
+<section id="note">
+
+<p><span style="color: rgb(98,109,127);">*</span> The original background image for the title of this article can be found on <a href="http://subtlepatterns.com/stardust/">Subtle Patterns</a>. I have slightly modified the one you see here by changing the color and adding an animation.</p>
+
+<p><span style="color: rgb(98,109,127)">**</span>  See <a href="http://theartdirectedjournal.github.io/android">previous article</a>.</p>
+
+</section> <!-- end #note -->
+
+</section> <!-- end #acknowledgement -->
+        
+</body>
+</html> 
