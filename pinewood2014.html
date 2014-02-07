@@ -1,0 +1,470 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Pinewood Derby 2014</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(176,122,77) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/Wood_Bkgrd.png) top left repeat;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none;
+color: rgb(98,109,127);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: rgb(34,40,51);
+}
+
+#header { 
+background: rgba(255,243,173,.85); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 18px; 
+font-family: 'Reenie Beanie', 'Open Sans', 'Arial', sans-serif; 
+color: rgb(34,40,51); 
+font-weight: 700; 
+padding: 15px;  
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(34,40,51); 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: rgb(98,109,127); 
+}
+
+
+#title {
+width: 400px;
+padding: 50px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: 50px;
+background: rgb(255,243,173) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/Yellow_Noise.png) top left repeat;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-webkit-border-bottom-left-radius: 20px 450px; 
+-webkit-border-bottom-right-radius: 450px 30px; 
+-webkit-border-top-right-radius: 10px 120px; 
+-moz-border-radius-bottomleft: 20px 450px; 
+-moz-border-radius-bottomright: 450px 30px; 
+-moz-border-radius-topright: 10px 120px; 
+border-radius-bottomleft: 20px 450px; 
+border-radius-bottomright: 450px 30px; 
+border-radius-topright: 10px 120px;
+}
+
+
+
+#title p {
+font-family: 'Playball', cursive;
+font-size: 62px;
+font-weight: normal;
+text-align: center;
+color: rgb(33,33,33);
+}
+
+
+
+#intro {
+width: 1024px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 200px;
+}
+
+
+
+#intro .intro_photo {
+border: 20px solid rgb(255,255,255);
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+float: right;
+margin:50px;
+transform:rotate(5deg);
+-ms-transform:rotate(5deg); 
+-webkit-transform:rotate(5deg);
+-moz-transform:rotate(5deg); 
+z-index: 2;
+}
+
+
+
+#intro_text {
+width: 200px;
+padding: 50px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: 40px;
+background: rgb(255,243,173) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/Yellow_Noise.png) top left repeat;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-webkit-border-bottom-left-radius: 20px 450px; 
+-webkit-border-bottom-right-radius: 450px 30px; 
+-webkit-border-top-right-radius: 10px 120px; 
+-moz-border-radius-bottomleft: 20px 450px; 
+-moz-border-radius-bottomright: 450px 30px; 
+-moz-border-radius-topright: 10px 120px; 
+border-radius-bottomleft: 20px 450px; 
+border-radius-bottomright: 450px 30px; 
+border-radius-topright: 10px 120px;
+z-index: 1;
+}
+
+
+
+#intro_text p {
+font-family: 'Reenie Beanie', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 28px;
+font-weight: 300;
+line-height: 1.5;
+color: rgb(33,33,33);
+}
+
+
+#middle_photo_holder {
+width: 1024px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 75px;
+margin-bottom: 100px;
+clear: both;
+text-align: center;
+}
+
+
+
+#middle_photo_holder .middle_photo {
+border: 20px solid rgb(255,255,255);
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+}
+
+#middle_photo_holder .caption {
+font-family: 'Reenie Beanie', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 24px;
+font-weight: 300;
+line-height: 1.5;
+color: rgb(33,33,33); 
+font-style: italic;
+padding: 10px;
+background: rgb(255,243,173) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/Yellow_Noise.png) top left repeat;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-webkit-border-bottom-left-radius: 20px 450px; 
+-webkit-border-bottom-right-radius: 450px 30px; 
+-webkit-border-top-right-radius: 10px 120px; 
+-moz-border-radius-bottomleft: 20px 450px; 
+-moz-border-radius-bottomright: 450px 30px; 
+-moz-border-radius-topright: 10px 120px; 
+border-radius-bottomleft: 20px 450px; 
+border-radius-bottomright: 450px 30px; 
+border-radius-topright: 10px 120px;
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+#second_right {
+width: 512px;
+float: right;
+margin-top: 75px;
+margin-bottom: 75px;
+}
+
+#second_right .photo_right {
+border: 20px solid rgb(255,255,255);
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+}
+
+#second_right .caption_right {
+font-family: 'Reenie Beanie', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 24px;
+font-weight: 300;
+line-height: 1.5;
+color: rgb(33,33,33); 
+font-style: italic;
+padding: 10px;
+background: rgb(255,243,173) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/Yellow_Noise.png) top left repeat;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-webkit-border-bottom-left-radius: 20px 450px; 
+-webkit-border-bottom-right-radius: 450px 30px; 
+-webkit-border-top-right-radius: 10px 120px; 
+-moz-border-radius-bottomleft: 20px 450px; 
+-moz-border-radius-bottomright: 450px 30px; 
+-moz-border-radius-topright: 10px 120px; 
+border-radius-bottomleft: 20px 450px; 
+border-radius-bottomright: 450px 30px; 
+border-radius-topright: 10px 120px;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#second_left {
+width: 512px;
+margin-top: 75px;
+margin-bottom: 75px;
+}
+
+#second_left .photo_left {
+border: 20px solid rgb(255,255,255);
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+transform:rotate(-2deg);
+-ms-transform:rotate(-2deg); 
+-webkit-transform:rotate(-2deg);
+-moz-transform:rotate(-2deg);
+}
+
+#second_left .caption_left {
+font-family: 'Reenie Beanie', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 24px;
+font-weight: 300;
+line-height: 1.5;
+color: rgb(33,33,33); 
+font-style: italic;
+padding: 10px;
+background: rgb(255,243,173) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/Yellow_Noise.png) top left repeat;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-webkit-border-bottom-left-radius: 20px 450px; 
+-webkit-border-bottom-right-radius: 450px 30px; 
+-webkit-border-top-right-radius: 10px 120px; 
+-moz-border-radius-bottomleft: 20px 450px; 
+-moz-border-radius-bottomright: 450px 30px; 
+-moz-border-radius-topright: 10px 120px; 
+border-radius-bottomleft: 20px 450px; 
+border-radius-bottomright: 450px 30px; 
+border-radius-topright: 10px 120px;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.text_box {
+font-family: 'Reenie Beanie', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 24px;
+font-weight: 300;
+line-height: 1.5;
+color: rgb(33,33,33); 
+font-style: italic;
+padding: 10px;
+background: rgb(255,243,173) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/Yellow_Noise.png) top left repeat;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-webkit-border-bottom-left-radius: 20px 450px; 
+-webkit-border-bottom-right-radius: 450px 30px; 
+-webkit-border-top-right-radius: 10px 120px; 
+-moz-border-radius-bottomleft: 20px 450px; 
+-moz-border-radius-bottomright: 450px 30px; 
+-moz-border-radius-topright: 10px 120px; 
+border-radius-bottomleft: 20px 450px; 
+border-radius-bottomright: 450px 30px; 
+border-radius-topright: 10px 120px;
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.text_box_final {
+font-family: 'Reenie Beanie', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+font-size: 24px;
+font-weight: 300;
+line-height: 1.5;
+color: rgb(33,33,33); 
+font-style: italic;
+padding: 10px;
+background: rgb(255,243,173) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/Yellow_Noise.png) top left repeat;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-webkit-border-bottom-left-radius: 20px 450px; 
+-webkit-border-bottom-right-radius: 450px 30px; 
+-webkit-border-top-right-radius: 10px 120px; 
+-moz-border-radius-bottomleft: 20px 450px; 
+-moz-border-radius-bottomright: 450px 30px; 
+-moz-border-radius-topright: 10px 120px; 
+border-radius-bottomleft: 20px 450px; 
+border-radius-bottomright: 450px 30px; 
+border-radius-topright: 10px 120px;
+width: 300px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+                                                                                
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+    <ul id="nav">
+        <li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed <span style="font-weight: 300; text-transform: lowercase; font-style: italic;">Journal</span></a></li>
+    </ul>
+               
+</section> <!-- end #header -->
+
+<section id="title">
+
+<p>Pinewood Derby 2014</p>
+
+</section>  <!-- end #title -->
+
+
+<section id="intro">
+
+<img class="intro_photo" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/CAM00100.jpg" />
+
+<div id="intro_text">
+
+<p>One of the things that Cub Scouts look forward to is the annual Pinewood Derby. This year marked the second Derby for our youngest son, Luke. We all had a fantastic time. Read on to find out more about our experience at this year's derby.</p>
+
+</div> <!-- end #intro_text -->
+
+</section> <!-- end #intro -->
+
+<section id="middle_photo_holder">
+
+<img class="middle_photo" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/CAM00089.jpg" />
+
+<p class="caption">This was Luke's car as it looked before check-in. Pinewood Derby has a number of rules, one of which is that the car cannot weigh more than 5 oz.  Luke picked his design, his color scheme, and he decided that he wanted a dragon on the hood, flames on the side, and a Lego man sitting in the car.  The Lego man is supposed to look like he is freaking out because the steering wheel broke off.</p>
+
+<div id="second_right">
+
+<img class="photo_right" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/CAM00104.jpg" />
+
+<p class="caption_right">After originally weighing in at 5.3 oz, I had to reduce weight by pretty much cutting out the entire bottom of the car.  I finally got the car down to 5 oz.</p>
+
+</div> <!-- end #second_right -->
+
+<div id="second_left">
+
+<img class="photo_left" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Pinewood%20Derby%202014/14%20-%201.jpg" />
+
+<p class="caption_left">Here is Luke at Pinewood Derby workshop #1 after we had cut his car.  Pinewood Derby cars start as a solid block of wood.  It's actually a kit that comes from the BSA.</p>
+
+</div> <!-- end #second_left -->
+
+<div class="text_box">
+
+<p>As I was shaving all that weight from the car, I inadvertently broke one of the spaces that holds the axle for the right, rear wheel.  So, I did what any reasonable person (who by the way sucks at building Pinewood Derby cars) would do.  I super glued the wood back on, inserted the axle, had Luke test the car after the glue had dried, re-weighed the car to make sure the extra glue did not put it over the 5 oz weight limit, and checked the car in for the race the next day.</p>
+
+</div><!-- end #text_box -->
+
+<div class="text_box">
+
+<p>We arrived the next day, ready for the race and ready to have fun, but there was a slight problem.  The place where I had super glued the night before did not quite get dry, and the glue had leaked down into the axle and wheel, causing the wheel to lock up.  We quickly had to unstick the wheel (we ended up pulling off the glued one and replacing it with a new one). Once that crisis was averted, we re-checked the car.  Unfortunately, by the time that we were finished with all the McGuyvering on Luke's car, it looked less like the British roadster it was intended to be and more like a rat rod.</p>
+
+</div><!-- end #text_box -->
+
+<div class="text_box">
+
+<p>Luke's car was not the fastest, but it made it down the track in one piece. His car did not win any design awards, although it surprisingly got a couple of votes for best design.  When all was said and done, Luke had fun, and that's what matters most.</p>
+
+</div> <!-- end #text_box -->
+
+<img class="middle_photo" src=" https://dl.dropboxusercontent.com/u/9043524/experiments/Pinewood%20Derby%202014/CAM00096.jpg" />
+
+<p class="caption">Luke with his grandfather during the event</p>
+
+<div class="text_box_final">
+
+<p><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</div> <!-- end #text_box -->
+
+</section> <!-- end #middle_photo_holder -->
+
+</body>
+</html> 
