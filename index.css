@@ -146,4 +146,16 @@ color: #777;
 font-family: 'Open Sans', 'Arial', sans-serif;
 font-weight: normal;
 }
-        
+
+
+#Copyright a:link, a:visited { 
+color: #336699; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+font-weight: bold;
+}
+  
+#Copyright a:hover, a:focus { 
+color: #777;
+}        
