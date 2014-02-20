@@ -20,6 +20,8 @@ color: #333;
 text-decoration: none; 
 border: none; 
 -webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
 }
   
 a:hover, a:focus { 
@@ -153,7 +155,8 @@ color: #336699;
 text-decoration: none; 
 border: none; 
 -webkit-transition: 0.5s all ease-in-out; 
-font-weight: bold;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
 }
   
 #Copyright a:hover, a:focus { 
