@@ -72,10 +72,17 @@ padding-top: 100px;
 padding-bottom: 100px;
 padding-left: 50px;
 padding-right: 50px;
--webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
--moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
 } 
+
+#letter:hover {
+transform:rotate(-2deg);
+-ms-transform:rotate(-2deg); 
+-webkit-transform:rotate(-2deg);
+-moz-transform:rotate(-2deg);
+}
 
 
 #letter p {
@@ -92,31 +99,39 @@ margin-right: auto;
 margin-bottom: 200px;
 text-align: center;
 }
-                                                                                 #photo .shoes {
+                                                                                 
+#photo .shoes {
 width: 600px;
 height: 338px;
 border-top: 20px solid #fff;
 border-right: 20px solid #fff;
 border-left: 20px solid #fff;
 border-bottom: 90px solid #fff;
--webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
--moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
 transform:rotate(-2deg);
 -ms-transform:rotate(-2deg); 
 -webkit-transform:rotate(-2deg);
 -moz-transform:rotate(-2deg);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+#photo .shoes:hover {
+transform:rotate(2deg);
+-ms-transform:rotate(2deg); 
+-webkit-transform:rotate(2deg);
+-moz-transform:rotate(2deg);
 }
 
 #photo .back_holder {
 text-align: right;
-margin-top: 100px;
+margin-top: 150px;
 }
 
 #photo .back {
-color: #666;
+color: #777;
 font-family: "Open Sans", "Arial", sans-serif;
-font-size: 20px;
+font-size: 18px;
 font-weight: 300;
 -webkit-transition: .5s all ease-in-out;
 -moz-transition: .5s all ease-in-out;
