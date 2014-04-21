@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Template</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+
+
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: #444;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: #336699;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+
+#letter {
+background: rgb(255,255,255);
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+margin-bottom: 100px;
+border: 10px solid #222;
+padding-top: 100px;
+padding-bottom: 100px;
+padding-left: 50px;
+padding-right: 50px;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+} 
+
+
+#letter p {
+font-family: "Reenie Beanie", cursive;
+font-size: 22px;
+color: #000;
+text-transform: uppercase;
+}
+
+#photo {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 200px;
+text-align: center;
+}
+                                                                                 #photo .shoes {
+width: 600px;
+height: 338px;
+border-top: 20px solid #fff;
+border-right: 20px solid #fff;
+border-left: 20px solid #fff;
+border-bottom: 90px solid #fff;
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
+transform:rotate(-2deg);
+-ms-transform:rotate(-2deg); 
+-webkit-transform:rotate(-2deg);
+-moz-transform:rotate(-2deg);
+}
+
+#photo .back_holder {
+text-align: right;
+margin-top: 100px;
+}
+
+#photo .back {
+color: #666;
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 20px;
+font-weight: 300;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#photo .back:hover {
+color: #fff;
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="letter">
+
+<p>Dear Reebok,</p>
+
+<p>Below is a photo of my trusty RealFlex running shoes that I purchased in 2011.  I just wanted to let you know that I absolutely love these shoes.  They have been worn in at least some capacity everyday since I bought them, and they are the most comfortable shoes I have ever owned.</p>  
+
+<p>I typically replace my running shoes at least once a year, and while almost three years of everyday use is probably not going to win any awards, these Reebok's are still going strong.</p>  
+
+<p>Here's to at least another few years. Thanks for making such great shoes.</p>
+
+<p> -Steve </p>
+
+</section>
+
+<section id="photo">
+
+<img class="shoes" src=" https://dl.dropboxusercontent.com/u/9043524/Experiments/reebok/20140413_163910_HDR.jpg " />
+
+<p class="back_holder"><a class="back" href="http://theartdirectedjournal.github.com">Table of Contents</a></p>
+
+</section>
+        
+</body>
+</html> 
