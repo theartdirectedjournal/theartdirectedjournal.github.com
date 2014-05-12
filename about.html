@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> 
 <html>
 <head>
@@ -34,6 +35,164 @@ $(function(){
 
 <link href="http://theartdirectedjournal.github.com/about.css" rel="stylesheet">
 
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL TAG STYLES ]---------*/
+html { 
+font-size: 100%; 
+}
+
+body { 
+font: normal 1em/1.5; 
+margin: 0; 
+padding: 0;
+background: rgb(255,255,255);  
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #336699; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: .5s all ease-in-out; 
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+font-weight: 700;
+}
+
+a:hover, a:focus { 
+color: rgb(122,184,0); 
+}
+
+                                	
+/*--[ HEADER ]--------------------*/
+#header {   
+background: rgba(255,255,255,.65); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2; 
+}		
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}
+
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Open Sans', 'Arial', sans-serif; 
+color: #777; 
+padding-right: 15px;
+text-transform: uppercase;
+}
+
+
+#header #nav a {
+color: #222; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 700;
+}
+
+#header #nav a:hover {
+color: rgb(122,184,0); 
+}
+
+/*--[ SUB-HEADER ]--------------------*/
+#sub-header {
+width: 100%; 
+overflow: hidden; 
+background: rgb(33,33,33) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Knights_Game.png) center center no-repeat;
+background-attachment: fixed;
+-moz-background-size: cover;
+background-size: cover;  
+}
+
+#inner-header {
+margin-top: 300px; 
+margin-bottom: 300px;
+margin-right: auto; 
+margin-left: auto; 
+width: 800px; 
+line-height: 1;
+}
+
+
+#inner-header h1 {
+color: rgb(255,255,255); 
+font-family: 'Abril Fatface', 'Georgia', serif; 
+font-size: 90px;    
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: .5s all ease-in-out; 
+text-align: center;
+font-weight: normal;
+margin-bottom: 0px;
+text-shadow: 1px 2px 2px #161619;
+}
+
+
+#inner-header h1:hover {
+opacity: .5;
+}
+                                               		         
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%; 
+overflow: hidden;  
+}  
+
+#contents-text {
+width: 600px;
+margin-left: auto; 
+margin-right: auto;
+font-family: 'Open Sans', 'Arial', sans-serif; 
+font-size: 18px; 
+color: rgb(33,33,33); 
+font-weight: 300; 
+line-height: 1.5; 
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out;
+margin-top: 150px;
+text-align: center;
+}
+
+
+#Copyright {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 150px; 
+margin-bottom: 25px; 
+}
+
+
+#Copyright p {
+font-size: 12px; 
+text-align: center; 
+font-family: 'Open Sans', 'Arial', sans-serif; 
+color: #777; 
+font-weight: 300;
+}
+
+
+</style>
 </head>
 
 <body>
@@ -58,7 +217,7 @@ $(function(){
                 
         <div id="contents-text"> 
 
-<p>Hi, I'm Steve. The premise of this journal is that each post is uniquely styled, like an article in a magazine. I was inspired to create my own art directed blog after stumbling upon the article entitled <a href="http://www.smashingmagazine.com/the-death-of-the-blog-post/">"The Death of the Boring Blog Post?"</a> on Smashing Magazine.  I also drew inspiration from the pioneering art directed blogs of <a href="http://trentwalton.com/">Trent Walton</a>, <a href="http://gregorywood.co.uk">Gregory Wood</a>, and <a href="http://www.travisneilson.com/">Travis Neilson.</a> Although art directed blogs (also sometimes called blogazines) are not as trendy as they once were, I find this blogging format to be quite enjoyable because it scratches my itch to design.  As such, this journal is basically an excuse to allow me to practice web design, play around with various HTML and CSS techniques, and (hopefully) improve my writing skills.</p>
+<p><span style="color: rgb(122,184,0); font-weight: 700;">Hi, I'm Steve.</span> The premise of this journal is that each post is uniquely styled, like an article in a magazine. I was inspired to create my own art directed blog after stumbling upon the article entitled <a href="http://www.smashingmagazine.com/the-death-of-the-blog-post/">"The Death of the Boring Blog Post?"</a> on Smashing Magazine.  I also drew inspiration from the pioneering art directed blogs of <a href="http://trentwalton.com/">Trent Walton</a>, <a href="http://gregorywood.co.uk">Gregory Wood</a>, and <a href="http://www.travisneilson.com/">Travis Neilson.</a> Although art directed blogs (also sometimes called blogazines) are not as trendy as they once were, I find this blogging format to be quite enjoyable because it scratches my itch to design.  As such, this journal is basically an excuse to allow me to practice web design, play around with various HTML and CSS techniques, and (hopefully) improve my writing skills.</p>
 
 <p>On a personal note, I have been blessed with a <a href="http://notsosecretlifeofb.blogspot.com">beautiful wife</a>, two awesome boys, and a beautiful baby girl. I consider myself to be somewhat of a geek in the sense that I am into pretty much anything tech related. I love cars (anything Japanese or European and fast), and I also like to play sports and video games with my boys.</p>
 
