@@ -110,10 +110,6 @@ padding: 50px;
 -webkit-animation-duration: 3500ms;  
 -webkit-animation-iteration-count: 1; 
 -webkit-animation-timing-function: ease-in-out;
--ms-animation-name: bouncy_drop; 
--ms-animation-duration: 3500ms;  
--ms-animation-iteration-count: 1; 
--ms-animation-timing-function: ease-in-out;
 -moz-animation-name: bouncy_drop; 
 -moz-animation-duration: 3500ms;  
 -moz-animation-iteration-count: 1; 
@@ -128,6 +124,21 @@ padding: 50px;
         100% {margin-top: 0px;}
 }
 
+@-moz-keyframes bouncy_drop {
+        0% {margin-top: -2000px; opacity: 0;}
+        25% {opacity: 1;}
+	50% {margin-top: 0px;}
+        75% {margin-top: -35px;}
+        100% {margin-top: 0px;}
+}
+
+@-keyframes bouncy_drop {
+        0% {margin-top: -2000px; opacity: 0;}
+        25% {opacity: 1;}
+	50% {margin-top: 0px;}
+        75% {margin-top: -35px;}
+        100% {margin-top: 0px;}
+}
 
 #main_content p {
 color: #fff; 
