@@ -1,0 +1,211 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Craftsmanship</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(46,64,87) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Craftsmanship/Blue_Noise.png) top left repeat;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: orange;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+#header { 
+background: rgba(255,255,255,.65); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: "Playfair Display", "Georgia", sans-serif;
+font-weight: normal;  
+padding: 15px;  
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+}
+
+#header #nav a {
+color: #222; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: #444; 
+}
+
+
+#main_content {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px; 
+-webkit-animation-name: bouncy_drop; 
+-webkit-animation-duration: 3500ms;  
+-webkit-animation-iteration-count: 1; 
+-webkit-animation-timing-function: ease-in-out;
+-ms-animation-name: bouncy_drop; 
+-ms-animation-duration: 3500ms;  
+-ms-animation-iteration-count: 1; 
+-ms-animation-timing-function: ease-in-out;
+-moz-animation-name: bouncy_drop; 
+-moz-animation-duration: 3500ms;  
+-moz-animation-iteration-count: 1; 
+-moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes bouncy_drop {
+        0% {margin-top: -2000px; opacity: 0;}
+        25% {opacity: 1;}
+	50% {margin-top: 0px;}
+        75% {margin-top: -35px;}
+        100% {margin-top: 0px;}
+}
+
+
+#main_content p {
+color: #fff; 
+font-family: "Playfair Display", "Georgia", sans-serif; 
+font-weight: normal; 
+font-size: 20px; 
+line-height: 1.75; 
+text-shadow: 0px 1px 1px #161619;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+}
+
+h1 {
+color: #fff; 
+font-size: 100px; 
+text-align: center; 
+font-family: "Playfair Display", "Georgia", sans-serif; 
+font-weight: normal;
+line-height: 1.5; 
+text-shadow: 0px 1px 1px #161619;
+}
+
+.video {
+text-align: center; 
+}
+
+.makeaborder {
+border: 10px solid #fff; 
+box-shadow: 0px 0px 7px #161619; 
+-moz-box-shadow: 0px 0px 7px #161619; 
+-webkit-box-shadow: 0px 0px 7px #161619; 
+}
+
+.text {
+margin-top: 100px; 
+margin-bottom: 100px; 
+line-height: 1.75;
+text-align: center;
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.return_home {
+margin-top: 100px;
+text-align: center;
+}
+                                                                                 
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</span></a></li>
+</ul>
+               
+</section> <!-- end #header -->
+
+<section id="main_content">
+
+<h1>Craftsmanship</h1>
+
+<div class="video">
+
+<iframe class="makeaborder" src="http://player.vimeo.com/video/16480069?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="601" height="338" frameborder="0"></iframe>
+
+<p style="font-size: 12px;"><a href="http://vimeo.com/16480069">Wings: Making the Field Notes 2010 Fall Edition</a> from <a href="http://vimeo.com/user4372033">Coudal Partners</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+</div>
+
+<p class="text">The older I get, the more I value American craftsmanship.  At the risk of sounding like I am on a political soapbox, in a day and age where everything seems to be made in China, it is refreshing to see that <a href="http://fieldnotesbrand.com/">Field Notes</a> notebooks are well crafted and American made.  This video is also very interesting to me because I love the behind the scenes look into how these notebooks are made.</p>
+
+<p class="return_home"><a href="http://theartdirectedjournal.com">Table of Contents</a>
+
+</section>
+        
+</body>
+</html>
