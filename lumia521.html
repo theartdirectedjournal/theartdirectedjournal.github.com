@@ -1,0 +1,840 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Nokia Lumia 521</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: rgb(122,184,0);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+}
+
+#header { 
+background: rgba(255,255,255,.65); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: "Lora", "Georgia", serif;
+font-weight: bold;  
+padding: 15px;  
+text-transform: uppercase;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.03em;
+}
+
+#header #nav a {
+color: #222; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: rgb(0,160,240); 
+}
+
+.first_char { 
+float: left; 
+font-size: 82px; 
+line-height: 60px; 
+padding-top: 4px; 
+padding-right: 8px; 
+padding-left: 3px; 
+}
+
+#title_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(255,255,255);
+z-index: 1;
+}
+
+#title {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+#title h1 {
+padding-top: 50px;
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+font-size: 72px;
+text-align: center;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+}
+
+#window {
+width: 420px;
+float: left;
+margin-right: 50px;
+}
+
+#pane_1 {
+width: 200px;
+height: 200px;
+background: rgb(245,80,20);
+border: 5px solid rgb(255,255,255);
+float: left;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+#pane_1:hover {
+opacity: .5;
+-webkit-transform: scale(1.25);
+transform: scale(1.25);
+z-index: 2;
+}
+
+#pane_2 {
+width: 200px;
+height: 200px;
+background: rgb(122,184,0);
+border: 5px solid rgb(255,255,255);
+float: right;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+#pane_2:hover {
+opacity: .5;
+-webkit-transform: scale(1.25);
+transform: scale(1.25);
+z-index: 3;
+}
+
+#pane_3 {
+width: 200px;
+height: 200px;
+background: rgb(0,160,240);
+border: 5px solid rgb(255,255,255);
+float: left;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+#pane_3:hover {
+opacity: .5;
+-webkit-transform: scale(1.25);
+transform: scale(1.25);
+z-index: 4;
+}
+
+#pane_4 {
+width: 200px;
+height: 200px;
+background: rgb(252,181,0);
+border: 5px solid rgb(255,255,255);
+float: right;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+#pane_4:hover {
+opacity: .5;
+-webkit-transform: scale(1.25);
+transform: scale(1.25);
+z-index: 5;
+}
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+}
+
+#main_content #article_intro {
+background: rgb(0,160,240);
+margin-bottom: 100px;
+padding-top: 150px;
+padding-bottom: 50px;
+padding-left: 25px;
+padding-right: 150px;
+width: 550px;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+#main_content #article_intro:hover {
+opacity: .75;
+}
+
+#main_content #article_intro p {
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+font-size: 42px;
+text-align: left;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+}
+
+
+#main_content_holder_part2 {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content_part2 {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+}
+
+#main_content_part2 p {
+font-family: "Lora", "Georgia", serif;
+font-size: 20px;
+color: #333;
+line-height: 1.75;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.03em;
+}
+
+
+#main_content_part2 .topic {
+margin-top: 75px;
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+font-size: 72px;
+color: rgb(0,0,0);
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;	
+}
+
+
+
+#hardware_container {
+width: 100%;  
+background: rgb(33,33,33) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Microsoft/Lumia%20521.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+background-size: cover; 
+overflow: hidden;
+}
+
+#hardware_intro {
+width: 800px;
+margin-top: 300px;
+margin-bottom: 300px;
+margin-left: 100px;
+}
+
+#hardware_intro p {
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+font-size: 38px;
+color: rgb(255,255,255);
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+text-shadow: 0px 1px 2px #161619;
+line-height: 2;
+}
+
+#hardware_review_container {
+width: 100%;
+overflow: hidden;
+background: rgb(255,255,255);
+}
+
+#hardware_review_content {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+}
+
+#hardware_review_content p {
+font-family: "Lora", "Georgia", serif;
+font-size: 20px;
+color: #333;
+line-height: 1.75;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.03em;
+}
+
+#hardware_review_content .topic {
+margin-top: 75px;
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+font-size: 72px;
+color: rgb(0,0,0);
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;	
+}
+
+
+
+#software_container {
+width: 100%;  
+background: rgb(33,33,33) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Microsoft/IMG_20140608_144703%282%29.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+background-size: cover; 
+overflow: hidden;
+}
+
+#software_intro {
+width: 800px;
+margin-top: 300px;
+margin-bottom: 300px;
+margin-left: 100px;
+}
+
+#software_intro p {
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+font-size: 72px;
+color: rgb(255,255,255);
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#software_review_container {
+width: 100%;
+overflow: hidden;
+background: rgb(238,238,238);
+}
+
+#software_review_content {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+}
+
+#software_review_content p {
+font-family: "Lora", "Georgia", serif;
+font-size: 20px;
+color: #333;
+line-height: 1.75;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.03em;
+}
+
+#software_review_content .topic {
+margin-top: 75px;
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+font-size: 72px;
+color: rgb(0,0,0);
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+margin-bottom: 0px;	
+}
+
+#software_review_content .software_photo_holder_1 {
+float: right;
+margin-bottom: 30px;
+margin-left: 30px;
+}
+
+#software_review_content .software_photo_holder_2 {
+float: left;
+margin-bottom: 30px;
+margin-right: 30px;
+}
+
+#software_review_content .software_photo {
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+-ms-border-radius: 20px;
+border-radius: 20px;
+border-top: 40px solid rgb(33,33,33);
+border-bottom: 80px solid rgb(33,33,33);
+border-left: 10px solid rgb(33,33,33);
+border-right: 10px solid rgb(33,33,33);
+-webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,.45);
+-moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,.45);
+box-shadow: 12px 18px 37px -18px rgba(22,22,25,.45);
+}
+
+
+#not_like_intro_container {
+width: 100%;  
+background: rgb(33,33,33) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Microsoft/IMG_20140423_102903.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+background-size: cover; 
+overflow: hidden;
+}
+
+#not_like_intro {
+width: 800px;
+margin-top: 300px;
+margin-bottom: 300px;
+margin-left: 100px;
+}
+
+#not_like_intro p {
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+font-size: 72px;
+color: rgb(255,255,255);
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+text-shadow: 0px 1px 2px #161619;
+line-height: 2;
+}
+
+#not_like_container {
+width: 100%;
+overflow: hidden;
+background: rgb(255,255,255);
+}
+
+#not_like {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+}
+
+#not_like p {
+font-family: "Lora", "Georgia", serif;
+font-size: 20px;
+color: #333;
+line-height: 1.75;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.03em;
+}
+
+#not_like .topic {
+margin-top: 75px;
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+font-size: 72px;
+color: rgb(0,0,0);
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+margin-bottom: 0px;	
+}
+
+#not_like .left_store_screenshot {
+float: left;
+margin-bottom: 30px;
+margin-right: 30px;
+}
+
+
+#end_holder {
+width: 100%;
+background: rgb(33,33,33) url(https://dl.dropboxusercontent.com/u/9043524/Experiments/Microsoft/WP_20140720_002.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#end {
+width: 800px;
+margin-top: 300px;
+margin-bottom: 300px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#end p {
+font-family: "Lora", "Georgia", serif;
+font-size: 20px;
+color: rgb(255,255,255);
+line-height: 1.75;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.03em;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#end .home_james {
+text-align: center;
+text-transform: uppercase;
+font-size: 16px;
+margin-top: 150px;
+font-family: "Segue UI Light", "Helvetica Neue Light", "Open Sans", "Arial", sans-serif;
+font-weight: normal;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+}
+
+#end a {
+padding: 20px;
+color: rgb(255,255,255);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+border: 1px solid rgb(255,255,255);
+}
+
+#end a:hover {
+background: rgb(255,255,255);
+color: rgb(0,0,0);
+text-shadow: none;
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+#notes_holder {
+width: 100%;
+background: rgb(33,33,33);
+overflow: hidden;
+}
+
+#notes {
+width: 800px;
+margin-top: 300px;
+margin-bottom: 300px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#notes p {
+font-family: "Lora", "Georgia", serif;
+font-weight: normal;
+font-size: 16px;
+text-shadow: 0px 1px 2px #161619;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+line-height: 1.5;
+color: rgb(255,255,255);
+letter-spacing: -0.03em;
+}
+
+#notes .link_holder {
+margin-bottom: 75px;
+}
+
+#notes a {
+color: #777;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+#notes a:hover {
+color: rgb(255,255,255);
+}
+
+				   
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed <span style="font-weight: normal;text-transform: lowercase; font-style: italic;">Journal</span></a></li>
+</ul>
+               
+</section> <!-- end #header -->
+
+
+<section id="title_holder">
+
+<section id="title">
+
+<div id="window">
+
+<div id="pane_1"></div>
+<div id="pane_2"></div>
+<div id="pane_3"></div>
+<div id="pane_4"></div>
+
+</div>
+
+<h1>Nokia <span style="color: rgb(0,160,240);">Lumia</span> 521</h1>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<div id="article_intro">
+
+<p>Sometimes something fantastic does not have to cost a lot.  Sometimes you really do get more than you pay for.</p>
+
+</div>
+
+</section>
+
+</section>
+
+<section id="main_content_holder_part2">
+
+<section id="main_content_part2">
+
+<p><span class="first_char">M</span>y wife came home after taking our two sons to our neighborhood pool and said, &ldquo;You're having a bad day.&rdquo;  Just to give you a little bit of context around that, earlier in the day, she and my oldest son had played a practical joke on me that actually had me shaken up quite a bit. Thinking that she was playing another practical joke on me, I playfully asked her why I was having a bad day, and she then preceded to inform me that she accidentally dropped my <a href="http://theartdirectedjournal.com/android">LG G2</a> while she was at the pool, destroying the screen and rendering it pretty much unusable.  I should have been upset.  However, in a moment of zen-like composure, I realized that it was just one of those things that happens &ndash; <a href="http://minimalmac.com/post/40193527821/the-cup-is-already-broken">the cup is already broken</a>, I thought to myself.  Instead, I looked at it as an opportunity to get a new phone.</p>
+
+<p>Being someone who had come to prefer Android, I thought either the <a href="http://www.motorola.com/us/moto-g-pdp-1/Moto-G/moto-g-pdp.html">Moto G</a> or <a href="http://www.motorola.com/us/consumers/shop-all-mobile-phones/Moto-E/moto-e.html">Moto E</a> could serve as a budget friendly replacement, as both phones run basically stock versions of Android 4.4 (KitKat) and are supposed to be guaranteed to receive the new version of Android when it comes out. I needed to buy a phone out right (i.e. unlocked / no contract), and I wanted to spend less on a new phone than it would have cost to replace the screen on the G2. <a href=#notes>[ 1 ] &darr;</a></p>  
+
+<p>In examining the specs between the Moto G and Moto E, the Moto G certainly wins on paper.  It has a slightly bigger, sharper screen with a higher ppi (pixels per inch, or pixel density) than that of the Moto E.  It also comes with more native storage (although not expandable via micro SD) and a front facing camera, but the trade off is that the Moto G is more expensive than the Moto E.</p>
+
+<p>The Moto E received some good reviews, such as <a href="http://www.engadget.com/2014/05/26/moto-e-review/">this one</a>, in which it was pointed out that it is pretty decent for a low cost smart phone.  However, I was not too keen on having only 4GB of internal storage, of which Android itself would take a decent chunk.  The Moto E's storage is expandable with an SD card, and as such, the low native storage capacity is not as big of a deal breaker. However, it should be noted that there are some apps that <a href="http://www.androidcentral.com/kitkat-sdcard-changes">do not play nicely with SD cards</a> on KitKat.</p>
+
+<p>To tell you the truth, I was also nervous about Android on lower cost hardware.  Even though all the reviewers have been saying that the Moto E is a pretty snappy phone, I have experienced basically stock Android on low end hardware before, and I found the overall experience to be somewhat lacking.  For instance, out middle son, Luke, has an 8&rdquo; Android tablet with 1GB RAM.  We bought it for him because it got good reviews, it was cheap, and we did not want to be out a lot of money should he drop it and crack the screen.  He is only nine years old after all. Granted, the tablet is running Jelly Bean (Android 4.2), but doing things like casual web browsing with Chrome or watching YouTube videos can be a chore. There is a lot of lag even in just getting around the OS.  While I understand that KitKat is supposed to be optimized to run on devices with hardware specs on the lower end of the spectrum, I am still a bit skeptical. I expected my LG G2 (with its 2GB RAM) to be much snappier when I upgraded from Jelly Bean to KitKat, but alas, it was not.  This could be due to LG's customizations of Android, but I don't know for sure.  All I know is that the phone seemed to perform the same on KitKat as it did on Jelly Bean.</p>  
+
+<p>I thought briefly about the iPhone 4S, which is now Apple&rsquo;s &ldquo;low end&rdquo; phone.  However, when I say I thought about it briefly, I mean very, very briefly. There were a few factors that stopped me dead in my tracks from considering the iPhone 4S as a suitable replacement phone.  The first is that I dislike the iPhone in general, and I have not missed my 3GS &ndash; not one little bit. The second is that I abhor iOS 7 and its pastel interface that is reminiscent of something made by Fisher Price.  Last but not least, the 4S is still $450 unlocked on Apple’s site.  Only a hardcore Apple fan boy would buy this phone at that price.  Furthermore, going to a 4S would mean a 3.5&rdquo; screen.  I'll pass.</p>
+
+<p>There was yet another factor in my search for a new phone, a dark horse, if you will &ndash; <a href="http://www.windowsphone.com/en-us">Windows Phone</a>.  I knew from personal experience that the Nokia Lumia 521 was a decent phone, as my son has been using one since Christmas.  Even though it only has half the RAM the Moto E has, the Lumia is actually a very responsive and fluid device. The secret is that with Windows Phone, you don’t need a lot of RAM in order to get great performance out of the phone.  In fact, the only area that I can think of where the lack of RAM is an issue is in terms of gaming, as there are some games in the Windows Store that will not work on phones with less than 1GB.  However, since I am not a hard core mobile gamer, this is not a deal breaker for me.</p>
+
+<p>As I have <a href="http://theartdirectedjournal.github.io/3GS">said before</a>, specs aren’t everything, and after much deliberation, I placed an order for a Nokia Lumia 521 on Amazon.  I had some Amazon points, and after using my points, I only ended up spending about $40 on the phone.  I'm glad that I opted for the Lumia 521 over the Moto E, and I am enjoying Windows Phone immensely. Now that I have used it for a while, I can tell you that I prefer Windows Phone over Android, and, assuming my preferences and needs don’t change in the near future (and/or assuming Microsoft does not royally screw things up with Windows Phone), I will probably replace the 521 at its end of life with another Windows Phone.</p>  
+
+</section>
+
+</section>
+
+<section id="hardware_container">
+
+<section id="hardware_intro">
+
+<p>In typical Nokia fashion, the Lumia 521 is well built.  It is very light, yet feels solid in the hand.  I love the texture of the removable matte polycarbonate back, as well as the refreshing lack of carrier branding.</p>
+
+</section>
+
+</section>
+
+<section id="hardware_review_container">
+
+<section id="hardware_review_content">
+
+<p><span class="first_char">R</span>emoving the back cover of the Lumia reveals a replaceable 1430 mAh battery.  Man did I miss having a replaceable battery! (My G2 and my iPhone 3GS before it did not have removable batteries.)  Even though the battery in the Lumia is not as big as the battery in the LG G2, in terms of real world use, the Lumia actually seems to last longer between charges. The Lumia also packs a micro SD card slot under the battery cover, which will take up to a 64GB card.  I'm going to have to get one of these, if I decide to store any music on this phone. Right now, I only stream music via Pandora with the Lumia, and I am also using a 5th Gen iPod Nano in my car. (I still use the <a href="http://theartdirectedjournal.com/shuffle">Shuffle</a> for running, just in case you were wondering.)</p> 
+
+<p>The Lumia&rsquo;s 4&rdquo; screen has a double tap to awaken feature, just like the &ldquo;Knock On&rdquo; feature on my old G2.  It is one of my favorite things about this phone. The screen is actually super sensitive, enough so that you can even use it with gloves on. Be that as it may, I'm not going to sit here and pretend to enjoy the screen <i>size</i> of this phone, because I really miss the larger, more pixel dense screen of the G2.  In thinking about the smaller screen from a positive perspective, the smaller screen is most likely responsible for the increased battery life (as opposed to my G2, whose screen ate a lot of battery power).  Since I've become used to the 521&rsquo;s 4&rdquo; screen, I can see how iPhone 5/5S/5C owners might just be content with their 4&rdquo; screens, as the only people I regularly hear complain about phones with small screen size are users of large screen phones, who have stepped on the lush, green grass on the other side of that fence.  Oh well, I guess that is the trade off for a cheaper-in-price phone. On another positive note, because of the smaller screen size, the 521 does lend itself to better one-handed use.  I know I probably sound like one of those Apple apologists attempting to justify the iPhone's screen size, but the thing is, even though I could use my G2 one-handed (since my hands are on the larger side), it was still a bit awkward.</p>
+
+<p>Although there is no flash, the 5 mega-pixel autofocus camera on the 521 is decent enough in low light, and it takes pretty great shots in well lit settings.  The Lumia's camera shutter is actually much faster than the shutter was on my G2. This means that the picture is actually taken faster.  There is also a two-stage hardware button for the camera. You simply squeeze the button lightly to focus, then squeeze the button again to take the photo.  However, selfie takers beware &ndash; there is no front facing camera. When I was deciding whether or not to purchase the 521, I realized that I only used the front facing camera on my G2 twice &ndash; once to test Skype video calling with my son and another time to test Google Hangouts video calling with my dad.  If I want to video chat, I&rsquo;ll just use my PC. It should be noted that the Moto E does not have a front facing camera either.  Additionally, the rear camera on the Moto E does <i>not</i> have autofocus, which was another factor in choosing the 521.</p>
+
+<p>Nokia phones have always had a reputation for stellar call quality and reception.  Further bolstering this reputation, the Lumia 521 is no exception.  The call quality is crystal clear, and the volume levels on both the speaker and the ear piece are fantastic.  The reception is also second to none.  My wife has a Galaxy S4, and we recently discovered that she and I can be standing side beside in a certain Costco near our house and she will have almost no signal, not being able to make or receive calls, browse the web or send and receive texts, while my Lumia can do all of the above with almost full signal. The same goes for our church.  Lastly, with regards to cellular connectivity, while the 521 does not have LTE, the data speeds that it does have (HSDPA - 21.1 Mbps) are perfectly fine with me.</p>
+
+</section>
+
+</section>
+
+
+<section id="software_container">
+
+<section id="software_intro">
+
+<p>The software is where the Lumia 521 really shines. </p>
+
+</section>
+
+</section>
+
+
+<section id="software_review_container">
+
+<section id="software_review_content">
+
+<div class="software_photo_holder_1"><img class="software_photo" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Microsoft/wp_ss_20140612_0002.png" /></div>
+
+<p><a href="http://www.windowsphone.com/en-us">Windows Phone</a> is an all together different beast than Android or iOS. The home screen (also called the Start screen in Windows terminology) has tiles that provide real-time, at-a-glance information, and the tiles also serve as icons for the apps they represent. For example, the tile for the Microsoft Weather app displays the current weather information, simply updating itself in the background. Swiping from right to left on the home screen reveals an alphabetical listing of all apps that are installed on the phone.  This would be similar to Android's app drawer.  Of course, preferences regarding user interface design are purely subjective, but I happen to think that this approach works better than the icon/widget based approach of Android and the static icon based approach of iOS. The Windows Phone home screen is not nearly as customizable as the Android home screen, but when I was an Android user, I had a very minimal home screen anyway. If complete customization of the user interface is your thing, Android is still king, but if you want something simple and clean, that is more functional and well designed than iOS, definitely give Windows Phone a shot.</p>
+
+<p>Windows Phone 8.1 brings some changes to the home screen tiles, including the ability to add a background image to them, as well as the ability to change the number of tiles on the home screen.  Windows 8.1 also adds a notification menu into the mix. While this feature is not particularly innovative, as Android and iOS have had this for a while, it is nonetheless a much needed addition to Windows Phone.  The Windows Phone notification menu works in a very similar manner to the notification menus of Android and iOS. As a former Android user, I greatly appreciate this new functionality and use it quite frequently.</p>
+
+<p>As stated before, Windows Phone is a fast and fluid operating system, and even on a phone with only 512MB RAM, it performs well.  Windows Phone is extremely easy to use on the surface, yet powerful under the hood.  Like Android (and soon with iOS 8 for iDevices), information can be shared between applications, meaning that you can, for example, pull up a photo from your camera roll and share it to any number of sources, including Instagram, Messaging, Outlook, OneDrive, etc.  However, I have found that to share a document via email, for example, one has to actually open the Office hub on the phone and share the file directly from there by selecting share file and then choosing Outlook.  This works for sharing files in OneDrive as well as those saved locally on the phone.  If the file is saved locally on the phone, one could also open the Files app and share it with Outlook from the there.  Either way, Outlook then opens and pops up a blank message template with the file attached. In a way, Android is better at this because you can actually attach more than just photos from the email interface.  I am happy that Microsoft has a proper file browser for Windows Phone.  As of right now, it is an optional download.  Those that want the functionality of a proper file manager can have it, and those that don't will not have to worry about it.</p>
+
+<p>The OS update mechanism, while somewhat carrier dependent, works in a fashion that is a hybrid of the iOS and the Android model. With the iOS update model, the software comes straight from Apple, bypassing the carrier.  With the Android model (unless you own a Nexus device), the updates come from Google, are passed to the device manufacturer for tweaks and customization, and then make their way to the carrier for testing and final push to the consumer.  So, for example, while my LG G2 did receive an update from Jelly Bean to KitKat, it took a very long time for LG to test the update and push it to T-Mobile, and it took a long time for T-Mobile to test the update and push it to the consumer.  Windows Phone works similarly, but the phone maker has less to customize. (Nokia is now owned by Microsoft and Windows Phone does not come with custom skins or many custom features.) Plus, if one desires, they can get the Windows Phone Developer Preview updates officially from Microsoft (so as long as you don't mind registering as a developer and running beta software).  Those updates are pushed from Microsoft directly and bypass the carrier.  I am using the Windows Phone 8.1 Developer Preview, and actually plan to write a Windows Phone app.  I have had zero issues with the beta version of the OS.  I assume that the Lumia Cyan update (Windows Phone 8.1 with Nokia's tweaks) will be delivered in due time.  It is currently in the testing phases for T-Mobile.</p>
+
+<p>The version of Android that LG provided contained a highly customized skin and unique, LG specific features.  While a lot of those features were useful, especially the camera related ones, I grew tired of most of the UI changes that LG made, and in fact, I went to great efforts to make the user experience of my G2 as close to stock Android as possible.  Windows Phone is Windows Phone.  There are no custom skins over the UI, no matter whether you buy an HTC, a Nokia, or some other brand, and in a sense, even though there are multiple manufacturers, that sameness of user interface makes Windows Phone more like iOS.  There are some Nokia specific applications pre-installed, since the Lumia 521 is manufactured by Nokia, but most of those applications are actually useful.  It should be noted that they can also be deleted.  The 521 also came with some T-Mobile related apps pre-installed, but unlike Android, where you can only &ldquo;disable&rdquo; some unwanted carrier installed applications, the T-Mobile apps that came on the 521 could be completely deleted. Kudos to Microsoft in this regard.</p>
+
+<p class="topic">Cortana</p>
+
+<div class="software_photo_holder_2"><img class="software_photo" src="https://dl.dropboxusercontent.com/u/9043524/Experiments/Microsoft/wp_ss_20140612_0001.png" /></div>
+
+
+<p>Windows 8.1 also brings <a href="http://www.windowsphone.com/en-us/features#Cortana">Cortana</a>.  Cortana is Microsoft's answer to Siri and Google Now, and Cortana provides the same basic functionality of those two services.  In terms of the type of data that these virtual assistants provide, all three services are on par with one another, give or take.  In terms of commands, they will all allow one to send a text, open various apps, make calls, schedule reminders, create calendar entries, as well as other related things.  It should be noted that Cortana (as of the time of this writing) will not directly send an email, but I am confident that that capability is sure to come.  A work around for now is to tell Cortana to open Outlook and use voice dictation to compose the email.</p>
+
+<p>Where Cortana and Siri both have one up on Google Now is in terms of personality.  Quite simply, Siri and Cortana have it, Google Now does not.  I personally think that Cortana has slightly more personality than Siri, but that is entirely subjective.  If you are familiar with the way Siri operates in this regard, you'll find that Cortana is very similar.  Cortana will even do impressions and tell jokes.  Although not very useful, this is a cool trick to show your friends when showing off what Cortana is capable of.</p>
+
+<p>As someone who texts quite a bit, one of the coolest features that I have found with Cortana has to do with sending texts via the Bluetooth integration with my car. I drive a 2013 Honda Civic. When I had my LG G2, when someone sent me a text, the Civic would read the text out loud, but there were no options to respond to it. It would simply tell me to put the car in park to read the actual text.  With the Windows Phone, when I am sent a text while driving, Cortana interrupts my music and verbally prompts me that I received a text, proceeds to read the text out loud, and asks me what I want to do next (for example, be done with the text or respond).  If I choose to respond, I can verbally say so, and Cortana will ask me what I want the text to say.  I then say what I want the text to say, and after Cortana confirms it by reading the text out loud back to me, I send the text by telling Cortana to send it.  In full disclosure, I am not sure if my Lumia could so this before the 8.1 update, meaning I am not sure if this functionality is because of Cortana or just a part of Windows Phone in general. One of the first things that I did after getting my phone was to upgrade to 8.1, and as such, I have only used the phone in the car while the phone has Windows 8.1 installed.</p>
+
+<p class="topic">Internet Explorer</p>
+
+<p>This past October, when I was switching to T-Mobile, getting rid of my then ancient iPhone 3GS and trying to decide whether to go with an iPhone 5S, a Lumia 925, or the LG G2, one of my factors in not choosing the Lumia was my trepidation about using Internet Explorer. You see, with Windows Phone, the only browser available is Internet Explorer (IE), which has a reputation (at least on the desktop) for being a sub-par browser that is not compliant with web standards.  It turns out my concerns about Internet Explorer were completely unfounded, as I must admit that IE is actually a very good browser. As of now, for Windows Phone 8.1, the version of IE is 11, and most sites render just like they are supposed to, with IE 11 actually being pretty web standards compliant, containing support for <a href="http://msdn.microsoft.com/en-us/library/ie/bg124103(v=vs.85).aspx">lots of CSS features</a>, including animations, media queries, transforms, transitions, and so on.</p>
+
+<p>Honestly, I thought I would miss Chrome (and Firefox to a lesser extent) when I made the switch from Android to Windows Phone, but I don't miss either at all.  As a side note, one of the things that I did not like about Chrome on iOS and Android was that you <a href="http://theartdirectedjournal.com/chrome-for-ios">could not</a> make Chrome block third party cookies like you can on the desktop browser.  On mobile, it is either block all cookies or allow all cookies.  Internet Explorer on Windows Phone allows you block third party tracking cookies.</p>
+
+<p>The only real issue that I have had thus far with IE 11 on Windows Phone 8.1 is that unlike the desktop version of IE, you cannot separately delete cache, cookies, and history like you can on Chrome, Firefox or Safari.  It is either clear nothing or clear everything.  I hope Microsoft allows the ability to selectively delete cache and cookies while leaving history intact.</p>
+
+<p class="topic">One Note</p>
+
+<p>One Note is simply awesome.  I had used it before on previous platforms but never to a large extent, as I was sort of set in my ways using Google Keep.  However, when I switched to Windows Phone, I also switched my preferred notes taking application from Google Keep to One Note.  I like the design of One Note better, and it works seamlessly with my Lumia, my PC and my iMac. <a href=#notes>[ 2 ] &darr;</a></p>
+
+</section>
+
+</section>
+
+<section id="not_like_intro_container">
+
+<section id="not_like_intro">
+
+<p>There are a few things that I do not like.</p>
+
+</section>
+
+</section>
+
+<section id="not_like_container">
+
+<section id="not_like">
+
+<p><span class="first_char">A</span> review of the Lumia 521's hardware and software would not be honest without discussing some of the things that I do not like.  However, none of these are deal breakers that would make me run screaming back to Android, per se.  After all, I am only out $40 after I used my Amazon points on this phone, but nonetheless, these are things that I feel should be brought to your attention in the effort of full disclosure.</p>
+
+<p class="topic">App Ecosystem</p>
+
+<p>Right now the elephant in the room with regards to Windows Phone is apps, or rather the perceived lack thereof.  Windows Phone has this reputation for not having a vast app ecosystem, as well as not having apps that are on par with that of iOS and Android.  In fact, I had come across a deal on a <a href="http://www.nokia.com/global/products/phone/lumia820/">Lumia 820</a>, back when I was still with AT&T and had my iPhone 3GS.  After posting something about it on Facebook, I received a number of comments, all having to do with Windows Phone's lack of apps.</p>
+
+<p>Regardless of whether this is true or just a myth, the perceived dearth of quality apps on Windows Phone seems to me like the age old question of which comes first, the chicken or the egg. If not a lot of people are buying phones running the Windows Phone operating system, developers will not want to waste the time and resources to develop for a platform that no one uses.  On the other hand, if there are no quality apps available, people who care about apps will not buy Windows Phone, instead buying iPhones and Android powered phones where there are lots of quality apps.</p>
+
+<p>I have never been an &ldquo;app person&rdquo;, per se, as no matter the operating system, I have always tended to rely mainly on the apps that come on my phone, plus a few select others that I define as &ldquo;major apps&rdquo;.  For the most part, I feel that the app selection available on Windows Phone is just fine, although I am currently disappointed in the lack of an HBO Go app. By and large, the &ldquo;major apps&rdquo; and games, including but not limited to Pandora, Netflix, iHeart Radio, Jetpack Joyride, Twitter, Facebook, Vine, Bank of America, Kindle and Instagram, are all there.  For the most part, most of these apps are on par with their iOS and Android counterparts, and sometimes they actually look much better on Windows phone.  The <a href="http://www.windowsphone.com/en-us/store/app/imdb/ff971299-eed8-df11-a844-00237de2db9e">IMDB app</a> is a great example.</p>
+
+<p>However, there are some cases where the development and updates for certain apps for Windows Phone does lag behind their iOS and/or Android counterparts.  A specific example is Spotify.  As of the time of this writing, users with free Spotify accounts (you know, us cheapskates who don't pay the monthly fee and who put up with the ads) can stream in shuffle mode from the respective iOS and Android Spotify apps.  However, with Windows Phone version of Spotify, if you don't have a paid account, you will not be able to stream, and a notification telling you as much will be displayed.</p>
+
+<p>There are apps that are missing from the Windows Store.  A number of the top games on iOS are not available, as outlined <a href="http://www.wpcentral.com/ios-app-store-vs-windows-phone-store-2014">here</a>.  If you are a hard core Google user who actually uses the Google versions of GMail, Drive, Sheets, etc. on iOS or Android, you will find that Google has made absolutely zero effort in creating Windows Phone versions of these apps.  You'll also find that an official Dropbox app is missing.  The same goes for email apps like Mailbox or journalling apps like <a href="http://dayoneapp.com">Day One</a>.</p>
+
+<p>On a positive note, I feel that there is hope for this situation.  Windows Phone 8.1 really steps up the bar in terms of Windows Phone's functionality. Things like a great notification menu and Cortana, along with Windows Phone's ease of use and clean design should help drive adoption of the platform.  Additionally, things like <a href="http://blogs.windows.com/windows/b/buildingapps/archive/2014/04/02/extending-platform-commonality-through-universal-windows-apps.aspx">universal apps</a> will allow developers to target Windows phones, tablets and PCs all at the same time. Examples of these universal apps are already starting to show up in the Windows Store.</p>
+
+<p class="topic">No Chromecast Support</p>
+
+<p>One of the things that I really liked most about my LG G2 was the ability to send content from various Chromecast compatible apps on my phone to my TV.  I really like the Chromecast, and I still use mine, albeit now via my laptop or my son's Android tablet.  However, using it from my own phone was very convenient. This is by no means a deal breaker. If you don't have a Chromecast and/or use another method to stream content to your TV, like an Apple TV, XBox or Roku, this is a non-issue, but I thought I should mention it, as there is absolutely no way to &ldquo;cast&rdquo; anything from a Windows Phone device to the Chromecast.</p>
+
+</section>
+
+</section>
+
+<section id="end_holder">
+
+<section id="end">
+
+<p><span class="first_char">A</span>ll in all, Windows Phone is a fantastic operating system, and I am really enjoying my Lumia 521. I have long been a fan of Nokia (dating back to their &ldquo;dumb&rdquo; phones and Symbian phones), and I am very glad to be a Nokia user once again.  I cannot believe that the 521 is available for so cheap. While I have a few issues with Windows Phone as a platform, I sincerely feel that it is better than Android in terms of ease of use, the update process and smoothness/speed and stability.  Windows Phone is silky and smooth on low end hardware. As previously stated, unless Microsoft really screws things up, I plan to keep using Windows Phone for a long time to come.</p>
+
+<p class="home_james"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+
+
+<section id="notes_holder">
+
+<section id="notes">
+
+<p>[ 1 ] Based on some research that I have done, the average cost to have the screen and digitizer for the G2 (D801) replaced is around $190.  I could, of course, buy the parts for a lot cheaper and perform the screen replacement myself, but I don't have the tools, time, nor the steady hand required to do a good job.  It should also be noted that when we first signed up with T-Mobile, I had phone insurance through their Jump program, but when we looked at the fine print associated with the claims process, it would have been roughly a $175 deductible to replace a lost or damaged phone.  As such, I did not feel the insurance was worth the extra monthly cost, and we dropped that insurance long ago.</p>
+
+<p class="link_holder"><a href=#main_content_part2> Continue reading the article &uarr;</a></p>
+
+<p>[ 2 ] As a quick side note, while I still keep my GMail address, I am slowly but surely migrating away from Google's services to those offered by Microsoft.  In general, I find Microsoft's services, such as their online Office suite, One Note, Outlook.com, etc. to be more feature rich and polished.</p>
+
+<p class="link_holder"><a href=#not_like_intro> Continue reading the article &uarr;</a></p>
+
+</section>
+
+</section>
+    
+    
+</body>
+</html> 
