@@ -56,11 +56,12 @@ color: #777;
 -webkit-transition: 0.5s all ease-in-out; 
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: 0.5s all ease-in-out;
+border-bottom: 4px solid rgb(255,255,255);
 }
 
 #header #nav a:hover {
 color: #336699; 
-border-bottom: 2px solid #336699;
+border-bottom: 4px solid #336699;
 }
                                 		
                 
