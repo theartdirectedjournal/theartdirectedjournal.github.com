@@ -1,0 +1,442 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Expressions Limo</title>
+	
+	      	
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">	
+		
+/*--[ GLOBAL TAG STYLES ]---------*/
+		
+html { 
+font-size: 100%; 
+}
+		
+body {  
+margin: 0; 
+padding: 0; 
+background: rgb(0,0,0);  
+color:rgb(255,255,255);
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #336699; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: .5s all ease-in-out; 
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+font-weight: 700;
+}
+
+a:hover, a:focus { 
+color: rgb(254,191,75); 
+}
+                
+a:active {
+position: relative; 
+top: 1px; 
+}
+		
+				                
+/*--[ HEADER ]--------------------*/
+		
+#header { 
+background: rgba(0,0,0,.75);  
+position: fixed; 
+z-index: 2; 
+top: 0; 
+left: 0; 
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+}
+		
+#header #nav { 
+margin-bottom: 20px; 
+margin-top: 20px; 
+margin-left: auto; 
+margin-right: auto; 
+width: 40em; 
+text-align: center; 
+float: left; 
+clear: both; 
+}
+		
+#header #nav li { 
+display: inline; 
+font-size: 16px; 
+font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; 
+color: #444; 
+text-transform: lowercase; 
+padding: 10px; 
+}
+                
+#header #nav a {
+color: #777; 
+padding: 5px; 
+-webkit-transition: .5s all ease-in-out; 
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+font-weight: 400; 
+}
+
+#header #nav a:hover {
+color: rgb(255,255,255); 
+font-weight: 700;
+}
+
+#header #nav a:active {
+position: relative; 
+top: 1px; 
+}
+
+                
+/*--[ GREETING ]--------------------*/
+
+#greeting { 
+width: 100%; 
+overflow: hidden; 
+background: rgb(0,0,0); 
+}
+
+#greeting #logo-holder {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding-top: 50px; 
+padding-bottom: 50px; 
+}
+
+#greeting #logo-holder #logo { 
+width: 800px; 
+margin-top: 20px; 
+margin-right: auto; 
+margin-left: auto; 
+text-align: center; 
+}
+
+#greeting #greeting-text {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+font-family: 'Playfair Display', Georgia, serif; 
+font-size: 28px; 
+font-weight: 400; 
+text-shadow: 0px 1px 1px #161619; 
+text-align: center; 
+padding-top: 100px; 
+padding-bottom: 275px; 
+color: #777;
+}
+
+#greeting #greeting-text .first_statement {
+font-size: 72px; 
+margin-bottom: 30px;
+font-family: 'Playfair Display', Georgia, serif;
+color: rgb(255,255,255);
+font-weight: 900;
+}
+
+                
+/*--[ About ]--------------------*/
+
+#about-container {
+background: rgb(0,0,0) url(https://dl.dropboxusercontent.com/u/9043524/Expressions%20Limo/home_page_large.jpg) center center no-repeat;  
+width: 100%; 
+overflow: hidden; 
+min-height:100%;
+-moz-background-size: cover;
+background-size: cover; 
+}
+              
+#about {
+width: 800px; 
+margin-top: 300px; 
+margin-bottom: 300px; 
+margin-left: auto; 
+margin-right: auto; 
+}
+             
+#about #blurb h1 {
+font-size: 62px; 
+line-height: 1; 
+margin-bottom: 1em; 
+font-family: 'Playfair Display', Georgia, serif; 
+color: #fff; 
+text-shadow: 0px 1px 1px #161619; 
+font-weight: 900; 
+}
+               
+#about #blurb {
+color: rgb(255,255,255); 
+font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;  
+font-size: 20px; 
+text-shadow: 0px 1px 1px #161619; 
+line-height: 1.5; 
+padding-bottom: 50px; 
+font-weight: 300;
+}
+               
+
+/*--[ Services ]--------------------*/
+              
+#services-container {
+background: rgb(0,0,0); 
+width: 100%; 
+overflow: hidden; 
+}
+              
+#our-services {
+width: 800px; 
+margin-top: 75px; 
+margin-bottom: 75px; 
+margin-left: auto; 
+margin-right: auto; 
+padding-top: 150px;
+}
+
+#our-services #services-blurb h1 {
+font-size: 62px; 
+line-height: 1; 
+margin-bottom: 1em; 
+font-family: 'Playfair Display', Georgia, serif;
+color: #fff; 
+text-shadow: 0px 1px 1px #161619; 
+font-weight: 900; 
+}
+
+#our-services #services-blurb {
+color: #777; 
+font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; 
+font-size: 20px; 
+text-shadow: 0px 1px 1px #161619; 
+line-height: 1.5; 
+padding-bottom: 50px; 
+font-weight: 300;
+}
+
+
+/*--[ Contact Us ]--------------------*/
+               
+#contact-container {
+background: rgb(0,0,0) url(https://dl.dropboxusercontent.com/u/9043524/Expressions%20Limo/Collage_2.jpg) center center no-repeat;  
+width: 100%; 
+overflow: hidden; 
+min-height:100%;
+-moz-background-size: cover;
+background-size: cover; 
+}
+              
+#contact-us {
+width: 800px; 
+margin-top: 75px; 
+margin-bottom: 75px; 
+margin-left: auto; 
+margin-right: auto; 
+padding-top: 150px;
+}
+               
+#contact-us #contact-blurb h1 {
+font-size: 62px; 
+line-height: 1; 
+margin-bottom: 1em; 
+font-family: 'Playfair Display', Georgia, serif;
+color: #fff; 
+text-shadow: 0px 1px 1px #161619; 
+font-weight: 900; 
+}
+
+#contact-us #contact-blurb {
+color: rgb(255,255,255); 
+font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; 
+font-size: 20px; 
+text-shadow: 0px 1px 1px #161619; 
+line-height: 1.5; 
+padding-bottom: 50px; 
+font-weight: 300;
+}
+
+
+#contact-us #contact-blurb #map {
+width: 400px; 
+float: right;
+}
+
+#contact-us #contact-blurb #address {
+width: 350px; 
+float: left; 
+margin-top: 35px;
+margin-bottom: 100px;
+}
+                                               		
+                    
+</style>
+</head>
+
+
+<body>
+
+<div id="header">
+
+<ul id="nav">
+
+<li><a title="About Us" href=#about-container>About Us</a></li>
+<li><a title="Our Services" href=#our-services>Our Services</a></li>
+<li><a title="Contact Us" href=#contact-container>Contact Us</a></li>
+<li><a title="Trolley" href="">Trolley</a></li>
+<li><a title="Customer Feedback" href="">Customer Feedback</a></li>
+<li><a title="Prom Season" href="Prom Season"></a></li>
+
+</ul>
+        
+</div> <!-- end #header -->
+
+
+<div id="greeting">
+                                
+<div id="logo-holder">
+
+<div id="logo">
+
+<img src="https://dl.dropboxusercontent.com/u/9043524/Expressions%20Limo/logo.png" />
+
+</div>
+
+</div>                          
+
+<div id="greeting-text">
+                        
+<p class="first_statement"><span style="color: rgb(254,191,75);">Express</span> yourself<span style="color: rgb(254,191,75);">.</span></p>
+                        
+<p>Where exceptional service is everyday.</p>
+
+<p>717-556-5466</p>
+
+</div>
+        
+</div> <!-- end #greeting -->
+
+<div id="about-container"> 
+                
+<div id="about"> 
+                
+<div id="blurb">  
+
+<h1>About Us.</h1>      
+
+<p>Expressions Limousine is a family owned business that was founded in November 1999.  Our simple philosophy is to treat each  customer the way we would expect to be treated. Our first priority has always been and will always be our customer. Whether you are looking for a special occasion limousine or transportation to an airport, we strive to make your trip a pleasurable  one. Fully licensed and insured, our staff of professional chauffers are ready to take you wherever you need to go.</p>
+
+<p>PA PUC# A-00116363  
+<br>USDOT 1457748</p>
+
+<p>Call us at 717-556-5466</p>  
+ 
+ </div> 
+                              
+</div> 
+        
+</div>  <!-- end #about-container -->
+
+
+<div id="services-container"> 
+                
+<div id="our-services"> 
+                
+<div id="services-blurb">  
+                        
+<h1>Our Services.</h1>      
+                        
+<p><span style="color: rgb(254,191,75);">Airport Services:</span>  We offer Sedan, SUV, Van, and Limousine service to all Airports.  All services are personal services,  meaning we do not combine your trip with anyone else. We even include the daily paper and a light snack.  And we do not believe in waiting until the last minute to arrive and then rushing to catch your plane.  We will be there when we say we will, if not just a bit earlier.</p>
+                        
+<p><span style="color: rgb(254,191,75);">Weddings:</span> We offer many choices for your special day. We have Limousines to accommodate 6-10 passengers, SUV Limousine or a  Limo Bus to accommodate 14 passengers, Vans to shuttle guests or Sedans. All of our Wedding Limousines come equipped with  water, snacks, soda, alcohol removed champagne, "Just Married" signs,  a red carpet, glassware, coordinated napkin colors,   and a properly attired driver.  All at no extra charge</p> 
+                        
+<p><span style="color: rgb(254,191,75);">Proms:</span>  We love Proms! It is such a happy day and we do everything we can to help make that day special. We offer  Limousines to accommodate 6-10 passengers, SUV Limousine or Limo Bus to accommodate 14 passengers and Sedans. All of our  Limousines are stocked with sodas, water, and snacks. We even match the napkins to your school colors. When renting a Prom  Package, your driver will always be right outside, in case you need them.</p>
+                        
+<p><span style="color: rgb(254,191,75);">Concert Packages:</span> Includes travel time to and from the concert and three hours of waiting time.  All of our  Limousines are stocked with sodas, water, and snacks. When renting a Concert  Package, your driver will always be right outside, in case you need them.</p>
+                        
+<p><span style="color: rgb(254,191,75);">Newborn Packages:</span> Take your new child home in style.  After all, it's the perfect way to begin spoiling them right from the start and treat their mother with the attention she deserves.  All of our  Limousines are stocked with sodas, water, snacks, and a special gift for your newest addition.</p>
+                        
+<p><span style="color: rgb(254,191,75);">Dinner Packages:</span> Reserve our Six Passenger Limousine for a four hour package and we'll buy you dinner for two at a local restaurant.  See our Special Events page to see where this month's Dining Feature is happening.</p>
+                        
+<p><span style="color: rgb(254,191,75);">Hourly Rentals</span> Any special occasion deserves a limousine.  Our Hourly Rentals can handle whatever you may have envisioned.  Be it a Birthday Party, a sweet sixteen, a bachelor(ette) party, or a trip out for pizza, we can accommodate your needs.  We offer  Limousines to accommodate 6-10 passengers, Vans, SUV Limousine, or Limo Bus to accommodate 14 passengers and Sedans. All of our  Limousines are stocked with sodas, water, and snacks.</p>
+                        
+<p>We do <i>not</i> charge travel time for local pick ups. We do not charge you extra because you need to go somewhere in the middle  of the night.  We do not charge extra for  holiday service.  We do, however, ask that all reservations be made as far in  advance as possible since everything we do is based on availability.</p>
+                        
+</div> 
+
+</div>            
+                        
+</div>  <!-- end #services-container -->
+
+
+<div id="contact-container"> 
+                
+<div id="contact-us"> 
+                
+<div id="contact-blurb">  
+                      
+<h1>Contact Us.</h1> 
+
+<div id="map">
+			
+<p><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;q=1030+Pointview+Avenue+PO+Box+297++Ephrata+PA+17522-0297&amp;ie=UTF8&amp;hq=&amp;hnear=1030+Pointview+Ave,+Ephrata,+Lancaster,+Pennsylvania+17522&amp;gl=us&amp;ei=cNnYS7PtOI7q9QTU9r2JBw&amp;ved=0CAgQ8gEwAA&amp;z=16&amp;ll=40.170924,-76.194914&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?hl=en&amp;q=1030+Pointview+Avenue+PO+Box+297++Ephrata+PA+17522-0297&amp;ie=UTF8&amp;hq=&amp;hnear=1030+Pointview+Ave,+Ephrata,+Lancaster,+Pennsylvania+17522&amp;gl=us&amp;ei=cNnYS7PtOI7q9QTU9r2JBw&amp;ved=0CAgQ8gEwAA&amp;z=16&amp;ll=40.170924,-76.194914&amp;source=embed" style="text-align:left">View Larger Map</a></small></p>
+                      
+</div>
+                      
+<div id="address">
+                         
+<p>1030 Pointview Avenue
+<br>PO Box 297
+<br>Ephrata PA 17522-0297
+<br><a href="mailto:expressionslimo@netscape.net">expressionslimo@netscape.net</a>
+<br><a href="mailto:info@expressionslimo.com">info@expressionslimo.com</a>
+<br>717-556-5466</p>
+
+<p style="margin-top: 35px;">You can also follow us on Facebook.</p>
+                         
+<p><a href="http://www.facebook.com/pages/Ephrata-PA/Expressions-Limousine-of-Lancaster/316483095419?v=wall&ref=ts"><img src="https://dl.dropboxusercontent.com/u/9043524/Expressions%20Limo/socialnetworking_facebook_icon_116x24.gif" /></a></p>
+
+</div>
+
+</div>    
+    
+</div> 
+                
+</div>  <!-- end #contact-container -->
+       		
+        
+</body>
+</html> 
