@@ -38,11 +38,6 @@ font-size: 100%;
 body {
 margin: 0;
 padding: 0;
-background: rgb(0,118,68) url(http://theartdirectedjournal.github.io/Site_Images/Misc/Beach.jpg) top left no-repeat;
-min-height:100%;
--moz-background-size: cover;
-background-size: cover;
-overflow: hidden;
 }
 
 :focus { 
@@ -62,11 +57,22 @@ a:hover {
 color: rgb(255,255,255);
 }
 
+#main {
+width: 100%;
+background: rgb(0,118,68) url(http://theartdirectedjournal.github.io/Site_Images/Misc/Beach.jpg) top left no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
 #main_content {
 width: 800px; 
 margin-left: auto; 
 margin-right: auto; 
 padding: 50px; 
+margin-top: 200px;
+margin-bottom: 300px;
 }
 
 #main_content p {
@@ -132,6 +138,8 @@ border: 1px solid #777;
 
 <body>
 
+<section id="main">
+
 <section id="main_content">
 
 <h1>Another summer vacation has come to a close</h1>
@@ -145,6 +153,8 @@ border: 1px solid #777;
 <a class="home_button" href="http://theartdirectedjournal.github.io">Table of Contents</a>
 
 </div>
+
+</section>
 
 </section>
         
