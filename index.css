@@ -31,14 +31,24 @@ color: #777;
 
 /*--[ HEADER ]--------------------*/
 #header {
+background: rgba(255,255,255,.65); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
 width: 100%; 
 overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2; 
 }
 
 #header #nav {
-margin-bottom: 20px; 
-margin-top: 20px; 
-width: 800px; 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px; 
 }
 
 #header #nav li { 
@@ -46,8 +56,7 @@ display: inline;
 font-size: 14px; 
 font-family: 'Open Sans', 'Arial', sans-serif; 
 color: #777; 
-font-weight: normal; 
-padding: 15px;  
+padding-right: 15px;  
 text-transform: uppercase;
 }
 
@@ -75,7 +84,7 @@ color: #333;
                
 #contents h1 {
 font-family: 'Abril Fatface', 'Georgia', serif;
-font-size: 82px; 
+font-size: 72px; 
 color: rgb(0,0,0); 
 font-weight: normal; 
 margin-bottom: 50px; 
