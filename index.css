@@ -52,7 +52,7 @@ text-transform: uppercase;
 }
 
 #header #nav a {
-color: #777; 
+color: rgb(0,0,0); 
 -webkit-transition: 0.5s all ease-in-out; 
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: 0.5s all ease-in-out;
@@ -76,7 +76,7 @@ color: #333;
 #contents h1 {
 font-family: 'Abril Fatface', 'Georgia', serif;
 font-size: 82px; 
-color: #000; 
+color: rgb(0,0,0); 
 font-weight: normal; 
 margin-bottom: 50px; 
 -webkit-transition: 0.5s all ease-in-out; 
@@ -112,7 +112,8 @@ width: 200px;
 position: relative; 
 font-size: 14px; 
 font-family: 'Open Sans', 'Arial', sans-serif;
-color: #777;  
+color: #777;
+font-weight: 300;  
 }
 
 #contents .to-the-top a {
