@@ -4,6 +4,8 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>One Thing Well</title>
 
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
@@ -37,6 +39,144 @@ $(function(){
 html {
 font-size: 100%; 
 }
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none; 
+border: none; 
+color: rgb(111,113,115);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: rgb(252,252,252);
+}
+
+p {
+margin: 20px;
+}
+
+#intro_holder {
+width: 100%;  
+background: rgb(16,18,17) url(http://theartdirectedjournal.github.io/Site_Images/Misc/iPod_Nano.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover; 
+overflow: hidden;
+}
+
+#header {  
+padding: 5px 0; 
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}  
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 20;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;  
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200); 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252); 
+}
+
+
+#intro {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+text-align: center;
+margin-top: 75px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro h1 {
+font-size: 50px;
+margin-bottom: 0px;
+font-weight: 300;
+}
+
+#intro h2 {
+font-size: 18px;
+margin-top: 25px;
+color: rgb(200,200,200);
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(16,18,17);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+font-size: 16px;
+line-height: 1.5;
+font-family: 'Cardo', 'Georgia', serif;
+font-weight: 400;
+}
+
+#main_content .begin_article {
+font-size: 20px;
+line-height: 1.75;
+color: rgb(232,44,12);
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
 
 body {
 margin: 0;
@@ -162,7 +302,7 @@ font-weight: 400;
 }
 
 #main_content .begin_article {
-font-size: 28px;
+font-size: 32px;
 line-height: 1.75;
 color: rgb(232,44,12);
 }
@@ -172,6 +312,7 @@ margin-top: 100px;
 text-align: center;
 }
 
+}
                                                                                  
 </style>
 </head>
