@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>It's About Time</title>
+	
+      	
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+body {
+font-family: 'Open Sans', 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+background: rgb(180,229,250);
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: rgb(36,48,54); 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+  
+a:hover, a:focus { 
+color: #777;
+}
+
+p {
+margin-top: 0px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+font-size: 16px;
+line-height: 1.5;
+color: #333;
+}
+
+img {
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+h1 {
+font-size: 32px;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+color: rgb(36,48,54);
+}
+
+#header { 
+background: rgb(36,48,54); 
+opacity: 20%;
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 12px; 
+font-weight: 700;    
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(255,255,255); 
+text-shadow: 0px 1px 2px #161619;
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: #777; 
+}
+
+#main {
+width: 100%;
+overflow: hidden;
+background: rgb(250,250,250);
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main a {
+font-weight: 700;
+}
+
+#main .image_holder {
+text-align: center;
+margin-top: 50px;
+}
+
+
+#main .ending {
+margin-top: 75px;
+margin-bottom: 75px;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+h1 {
+font-size: 52px;
+}
+
+p {
+padding-left: 50px;
+padding-right: 50px;
+}
+
+#main {
+width: 650px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed <span style="font-weight: 400;">Journal</span></a></li>
+</ul>
+               
+</section>
+
+<section id="main">
+
+<h1>It's About Time</h1>
+
+<p>As I have long complained that <a href="https://play.google.com/store/apps/details?id=com.android.chrome">Chrome</a> for Android did not support blocking third-party cookies, I was happy to learn that the <a href="http://www.androidpolice.com/2015/03/11/chrome-for-android-updated-to-version-41-with-pull-to-refresh-functionality-apk-download/">latest version</a> (41) introduced this functionality.  <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">Firefox</a> for Android is still my browser of choice, as is Firefox on the desktop as of late.  However, it is good to know that Google finally resolved this issue.</p>
+
+<p>As a quick note about Firefox for Android, I really like this browser.  It uses the real Firefox rendering engine, and it is a very fast browser in general.  Additionally, the folks at Mozilla have already patched the issue found in the most recent <a href="https://www.youtube.com/watch?v=V99skqmTyiY">HP Zero Day Initiative "Pwn2Own" contest</a>, as this was included in the release notes for the update I received today (3/20/2015).</p>
+
+<p>On one last note, Android is truly the most open mobile platform at the moment.  Think about it.  What other modern mobile OS allows the installation of the true version of a third party browser? While iOS allows third party browsers, Apple <a href="http://techcrunch.com/2012/06/28/google-bows-to-apple-chrome-on-ios-will-use-apples-slow-uiwebview-to-render-web-pages/">does not allow</a> those third party browsers to use their true rendering and JavaScript engines.  The same is true of Windows Phone.</p>
+
+<div class="image_holder">
+<img src="http://theartdirectedjournal.github.io/Site_Images/Misc/chrome_cookies_small.png" />
+</div>
+
+<p class="ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
