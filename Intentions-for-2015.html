@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>Intentions for 2015</title>
 
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
@@ -46,17 +48,38 @@ outline: none;
 a:link, a:visited {
 text-decoration: none; 
 border: none; 
-color: #336699;
+color: rgb(227,227,227);
 -webkit-transition: .5s all ease-in-out;
 -moz-transition: .5s all ease-in-out;
 -ms-transition: .5s all ease-in-out;
-border-bottom: 1px dotted #336699;
+border-bottom: 1px dotted rgb(227,227,227);
 padding-bottom: 2px;
 }
 
 a:hover {
-color: #777;
-border-bottom: 1px dotted #777;
+color: #999;
+border-bottom: 1px dotted #999;
+}
+
+p {
+font-family: 'PT Mono', 'Lucida Console', serif;
+line-height: 1.5;
+font-weight: normal;
+color: rgb(255,255,255);
+text-shadow: 0px 1px 2px #161619;
+font-size: 16px;
+margin: 20px;
+}
+
+h1 {
+font-family: 'PT Mono', 'Lucida Console', serif;
+line-height: 1.5;
+font-weight: normal;
+color: rgb(255,255,255);
+text-shadow: 0px 1px 2px #161619;
+font-size: 16px;
+text-align: center;
+text-transform: uppercase;
 }
 
 #main {
@@ -69,45 +92,14 @@ overflow: hidden;
 }
 
 #main_content {
-width: 600px;
-margin-left: auto;
-margin-right: auto;
-padding: 50px; 
--webkit-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
--moz-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
-box-shadow: 12px 18px 37px -18px rgba(22,22,25,1);
-margin-top: 100px; 
-margin-bottom: 100px; 
--webkit-border-bottom-left-radius: 20px 450px; 
--webkit-border-bottom-right-radius: 450px 30px; 
--webkit-border-top-right-radius: 10px 120px; 
--moz-border-radius-bottomleft: 20px 450px; 
--moz-border-radius-bottomright: 450px 30px; 
--moz-border-radius-topright: 10px 120px; 
-border-radius-bottomleft: 20px 450px; 
-border-radius-bottomright: 450px 30px; 
-border-radius-topright: 10px 120px;
-background: rgb(255,255,255);
+width: 100%; 
+margin-top: 50px; 
+margin-bottom: 50px; 
+padding-top: 50px;
+padding-bottom: 50px;
 }
 
-#main p {
-font-family: 'PT Mono', 'Lucida Console', serif;
-line-height: 1.5;
-font-weight: normal;
-color: #222;
-font-size: 16px;
-}
 
-h1 {
-font-family: 'PT Mono', 'Lucida Console', serif;
-line-height: 1.5;
-font-weight: normal;
-color: #222;
-font-size: 16px;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 100px;
-}
 
 .Intention {
 text-transform: uppercase;
@@ -120,7 +112,43 @@ margin-top: 100px;
 text-align: center;
 }
 
+/*--[ FOR BIG SCREENS ]--------------------*/
 
+@media screen and (min-width: 481px) {
+
+h1 {
+margin-bottom: 100px;
+color: #222;
+text-shadow: none;
+}
+
+a {
+color: #336699;
+border-bottom: 1px dotted #336699;
+}
+
+a:hover {
+color: #777;
+border-bottom: 1px dotted #777;
+}
+
+p {
+color: #222;
+text-shadow: none;
+}
+
+#main_content {
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px; 
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+margin-top: 100px; 
+margin-bottom: 100px; 
+background: rgb(255,255,255);
+}
+
+}
                                                                                  
 </style>
 </head>
