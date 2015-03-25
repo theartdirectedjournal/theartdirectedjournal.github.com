@@ -1,0 +1,221 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>Jurassic Park</title>
+	
+      	
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+body {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+margin: 0;
+padding: 0;
+background: rgb(22,22,22) url(http://theartdirectedjournal.github.io/Site_Images/Misc/t_rex.png) top 50px left -20px no-repeat;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: rgb(233,44,33); 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+  
+a:hover, a:focus { 
+color: #777;
+}
+
+p {
+margin-top: 0px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+font-size: 16px;
+line-height: 1.5;
+color: rgb(255,255,255);
+text-shadow: 0px 1px 2px #161619;
+}
+
+h1 {
+font-size: 48px;
+font-weight: 400;
+font-family: 'Sigmar One', 'Open Sans', 'Arial', sans-serif;
+text-transform: uppercase; 
+color: rgb(233,44,33); 
+-webkit-text-stroke: 1px #161619; 
+-moz-text-stroke: 1px #161619;
+-ms-text-stroke: 1px #161619;
+text-stroke: 1px #161619;
+color: rgb(233,44,33); 
+text-shadow: 3px 3px 0 #161619, -1px -1px 0 #161619, 1px -1px 0 #161619, -1px 1px 0 #161619, 1px 1px 0 #161619;
+text-align: center;
+}
+
+#header { 
+background: rgba(22,22,22,.5); 
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 12px;     
+text-transform: uppercase;
+font-family: 'Open Sans', 'Arial', sans-serif;
+text-transform: uppercase; 
+color: rgb(233,44,33); 
+text-shadow: 0px 1px 2px #161619;
+font-weight: 700;
+}
+
+#header #nav a {
+color: rgb(233,44,33);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: #777; 
+}
+
+#main {
+width: 100%;
+overflow: hidden;
+background: rgba(22,22,22,.9);
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main .ending {
+margin-top: 75px;
+text-align: center;
+font-family: 'Open Sans', 'Arial', sans-serif;
+text-transform: uppercase; 
+color: rgb(233,44,33); 
+color: rgb(233,44,33); 
+text-shadow: 0px 1px 2px #161619;
+font-size: 12px;
+font-weight: 700;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+h1 {
+font-size: 78px;
+} 
+
+#header #nav li {
+font-size: 14px;
+}
+
+#main {
+width: 600px;
+margin-left: 600px;
+overflow: hidden;
+margin-top: 100px;
+margin-bottom: 100px;
+background: transparent;
+}
+
+#main .ending {
+font-size: 14px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed <span style="text-transform: lowercase; font-weight: 300;">Journal</span></a></li>
+</ul>
+               
+</section>
+
+<section id="main">
+
+<h1>Jurassic Park</h1>
+
+<p>I am not a huge fan of dinosaurs, but from the moment I first saw it in the theatre, Jurassic Park has been my all-time favorite movie. Did you realize that none of the tragic second half of the movie would have happened had it not been for the actions of Dennis Nedry?  You can talk about <a href="https://www.youtube.com/watch?v=SkWeMvrNiOM" target="_blank">&ldquo;life finds a way&rdquo;</a> all day long, but in reality, if it had not been for Nedry, things would not gone bad like they did.</p>
+
+<p>Let me step back for a moment. For those who may not have seen the movie (or read the <a href="http://www.amazon.com/Jurassic-Park-Michael-Crichton/dp/0345370775" target="_blank">excellent book</a>, which is of course slightly different than the movie adaptation) here is a short plot summary.  John Hammond, the owner/CEO of a company called InGen, created a park in which Dinosaurs had been genetically engineered and brought back to life using sophisticated DNA extraction and gene sequencing techniques.  Hammond wished to created an experience that was part zoo, part Disney World, where the main attraction would be a ride in which the park guests can view these Dinosaurs.</p>
+
+<p>Before the opening of the park, there was a serious accident (a worker was devoured by a velociraptor), and the park&#8217;s investors became concerned that the park would be unsafe for guests.  As such,  in an effort to put the investors minds at ease, Hammond brought in two of the &#8220;top minds&#8221; in palaeontology to tour the park and give it their blessing. The lawyer representing the investors also brought to the park his own expert, Ian Malcolm.  Malcolm, played by Jeff Goldblum, was a mathematician who specialized in <a href="https://www.youtube.com/watch?v=n-mpifTiPV4" target="_blank">Chaos Theory</a>.</p>
+
+<p>Jurassic Park was extremely automated, using a very sophisticated computer system (for its time) where the phones, rides, and even the fences were all networked.  The engineer behind this automation was their &ldquo;IT guy&rdquo;, for lack of a better word, Dennis Nedry.  There was a problem.  Nedry apparently had some financial problems, at least that is what can be assumed based on a conversation that he had with Hammond during the movie.  As such, he had secretly made a deal with a rival company to steal embryos from the park in exchange for a very large sum of money.</p>
+
+<p>In order to pull off this theft, Nedry engineered an 18 minute window for himself, during which time he could shut off various park systems in order to steal the embryos and make his escape without getting caught.  The result of Nedry's plan (it didn't help that a tropical storm system hit the park at the same time Nedry acted on his plan) was all hell breaking lose in the park, whereby many people were eaten and injured by the dinosaurs, who had escaped since Nedry shut off the park's electric fences.</p>
+
+<p>We have learned, based on the summary above, that Nedry was a shady character.  His actions ultimately perpetuated the chain of events that caused many deaths and the subsequent failure of the park. It is the perfect case of insider threat, and this movie should be required viewing for any information security professional.</p>
+
+<p>But why?</p>
+
+<p>For starters, Nedry was a single point of failure. Based on what was stated and implied in the movie, the whole automation of the park, from system administration down to debugging millions of lines of code (application development), rested solely on his shoulders. As such, Hammond certainly did not employ the concept of separation of duties. Separation of duties is <a href="http://resources.sei.cmu.edu/asset_files/TechnicalReport/2012_005_001_34033.pdf" target="_blank">defined</a> as the requirement of dividing job duties among people to limit the possibility that any one person could steal information, commit fraud or sabotage something without the cooperation of another.</p>
+
+<p>Hammond did not see the signs. When he and Nedry would get into &ldquo;financial debates&rdquo;, Hammond should have suspected that Nedry could become a bad actor, and Hammond should have taken the necessary steps to mitigate this risk.  Hammond could have given Nedry a raise, for example. However, since appeasement is no guarantee to mitigate the risk of insider threat, the park should have also instituted a system of monitoring and logging (that Nedry could not have disabled), appropriate software development practices (so Nedry could not have planted backdoors and or logic bombs in the code), better system administration practices (<a href="https://www.youtube.com/watch?v=RfiQYRn7fBg" target="_blank">&ldquo;You didn't say the magic word&rdquo;</a>), as well as more appropriate physical security of the facility.</p>
+
+<p>In the end, the park's failure was ultimately caused by a lack of separation of duties. (A tropical storm did not help either, as it provided Nedry with a perfect cover.)  Nedry was the only person who could get the park back on line, but this scenario could have been prevented.  If you want to read more about how you can mitigate the risk of insider threat in your organization, I would encourage you to read <a href="http://resources.sei.cmu.edu/asset_files/TechnicalReport/2012_005_001_34033.pdf">this paper</a> from CERT.</p>
+
+<p class="ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
