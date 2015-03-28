@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>All I Really Need</title>
 
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
@@ -60,6 +62,10 @@ border-bottom: 1px dotted rgb(51,51,51);
 text-shadow: none;
 }
 
+p {
+margin: 20px;
+}
+
 #header { 
 padding: 5px 0; 
 height: auto; 
@@ -73,16 +79,15 @@ overflow: hidden;
 #header #nav { 
 margin-bottom: 10px; 
 margin-top: 10px; 
-margin-left: 50px;
+margin-left: 20px;
 }                
 
 #header #nav li { 
 display: inline; 
-font-size: 14px; 
+font-size: 12px; 
 font-family: 'Georgia', serif; 
 color: #777; 
-font-weight: normal; 
-padding: 15px;  
+font-weight: normal;  
 text-transform: uppercase;
 text-rendering: optimizeLegibility;
 font-feature-settings: "kern" 1;
@@ -102,6 +107,104 @@ border: none;
 color: #777; 
 }
 
+
+#main_content {
+width: 100%;
+margin-top: 75px;
+margin-bottom: 75px;
+}
+
+#main_content p {
+color: rgb(51,51,51);
+font-family: 'Georgia', serif;
+font-size: 18px;
+line-height: 1.5;
+font-weight: normal;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.05em;
+}
+
+#main_content h1 {
+font-weight: 700;
+font-size: 52px;
+text-align: center;
+color: rgb(51,51,51);
+font-family: 'Open Sans', 'Arial', sans-serif;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.05em;
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#main_content h1:hover {
+color: #777;
+}
+
+#main_content h2 {
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+color: #777;
+font-family: 'Georgia', serif;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.05em;
+padding: 20px;
+width: 200px;
+border-top: 1px dotted rgb(33,33,33);
+border-bottom: 1px dotted rgb(33,33,33);
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+font-style: italic;
+}
+
+#main_content .quote {
+font-size: 28px;
+color: #777;
+margin-top: 50px;
+margin-bottom: 0;
+text-align: center;
+line-height: 1.25;
+}
+
+#main_content .attribution {
+font-size: 12px;
+text-align: right;
+margin-top: 25px;
+margin-bottom: 75px;
+font-style: italic;
+}
+
+#main_content .happy_ending {
+margin-top: 75px;
+text-align: center;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Georgia', serif; 
+color: #777; 
+font-weight: normal;   
+text-transform: uppercase;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.05em;
+}
 
 #main_content {
 width: 800px;
@@ -179,6 +282,8 @@ font-style: italic;
 #main_content .happy_ending {
 margin-top: 100px;
 text-align: center;
+}
+
 }
 
                                                                                  
