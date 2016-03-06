@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Thoughts on Remix OS</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+color: rgb(171,5,52);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+color: #777;
+text-shadow: none;
+}
+
+p {
+margin: 20px;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Georgia', serif;
+color: rgb(171,5,52);
+font-weight: normal;
+text-transform: uppercase;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.05em;
+}
+
+#header #nav a {
+color: rgb(171,5,52);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+text-decoration: none;
+border: none;
+}
+
+#header #nav a:hover {
+color: #777;
+}
+
+
+#main_content {
+width: 100%;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+#main_content p {
+color: rgb(0,0,0);
+font-family: 'Georgia', serif;
+line-height: 1.5;
+font-weight: normal;
+text-rendering: optimizeLegibility;
+font-feature-settings: "kern" 1;
+letter-spacing: -0.05em;
+font-size: 16px;
+}
+
+#main_content .happy_ending {
+margin-top: 75px;
+text-align: center;
+font-size: 14px;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 50px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+}
+
+#main_content {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200;
+margin-bottom: 200;
+}
+
+#main_content p {
+font-size: 20px;
+}
+
+#main_content .happy_ending {
+margin-top: 100px;
+text-align: center;
+font-size: 18px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+    <ul id="nav">
+        <li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed <span style="text-transform: lowercase; font-style: italic;">Journal</span></a></li>
+    </ul>
+
+</section>
+
+<section id="main_content">
+
+<p>As an Android enthusiast, I was very excited to learn about <a href=”http://www.jide.com/en/remixos-for-pc”>Remix OS</a>, and when version 2.0 was released, I decided to give it a try by installing it on my laptop as a dual boot with Windows 10.  The installation worked exactly <a href=”https://www.youtube.com/watch?v=vwKPHtOuweU”>as advertised</a>.  However, using the OS was an entirely different matter.</p>
+
+<p>Remix OS is a great concept, but it is not yet ready for prime time, especially on a laptop with no touch screen capabilities.  As Android by its very nature is a touch centric OS, there are still some things about using Remix OS with only a keyboard and trackpad that Jide needs to improve upon.  Basic things like two-finger scrolling, drag and drop, clicking and right clicking worked out of the box with no configuration on my part.  However, when scrolling within the app drawer, the two finger scrolling motion more frequently than not dragged the apps around instead of navigating up and down within the app drawer.  Additionally, sometimes onscreen buttons did not click responsively.  The mouse pointer was also a little janky at times.</p>
+
+<p>The native browser that comes preinstalled in Remix is terrible.  Web pages would not scroll, nor would they render correctly in most cases.  Furthermore, there is no way to uninstall or disable the app (without root). Fortunately, one can side load Google’s apps, and Chrome performs much better than the native browser.  However, by default, Chrome wanted to load the mobile versions of pages, and since this is a version of Chrome built for mobile, there is no way install extensions (such as Ghostery).</p>
+
+<p>Google Docs and Sheets also work well.  However, since these apps from the Play Store are designed for mobile, I found it better to just use Docs and Sheets in the browser (making sure that “request desktop site” was checked in Chrome. Speaking of the browser, while most of the apps I installed worked well in Remix, I found myself using GMail, Hangouts and Google Photos, for example, in the browser.</p>
+
+<p>I also installed Word, Excel and PowerPoint.  I do not use these apps on my phone, as Google’s office suite works just fine, but I do occasionally use Office on my laptop.  In Remix, while you can open Word documents just fine, you need to be an Office 365 subscriber to create or edit anything.  I think Microsoft looks at the screen size of the device that their Office apps are running on, since Office is free to use on smaller screens.  (The laptop I installed Remix on has a 15 inch screen.)</p>
+
+<p>While the concept of Remix was solid, the execution on a laptop leaves something to be desired.  At the moment, I think Chrome OS is better for laptops, but I could see Remix being very successful as a tablet OS.  If the Pixel C were running Remix, it would have made that device a lot better.</p>
+
+<p class="happy_ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
