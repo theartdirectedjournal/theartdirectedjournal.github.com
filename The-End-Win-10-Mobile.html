@@ -1,0 +1,372 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Windows 10 Mobile is Dead</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #903;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(http://theartdirectedjournal.github.io/Site_Images/Misc/Alcatel.jpg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 12px;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 300;
+text-shadow: 0px 1px 2px #161619;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+font-family: 'Didact Gothic', sans-serif;
+font-weight: 400;
+margin-top: 75px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: 'Anton','Arial', sans-serif;
+font-size: 48px;
+font-weight: normal;
+text-align: center;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(233,233,233);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 16px;
+line-height: 1.75;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+}
+
+#main_content .firstcharacter {
+color: #903;
+float: left;
+font-size: 45px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+text-transform: uppercase;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #903;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 300;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+font-family: 'Didact Gothic', sans-serif;
+font-weight: 400;
+margin-top: 150px;
+margin-bottom: 250px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: 'Anton', 'Arial', sans-serif;
+font-size: 72px;
+font-weight: normal;
+text-align: center;
+}
+
+#intro p {
+font-size: 32px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(233,233,233);
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+}
+
+#main_content .firstcharacter {
+color: #903;
+float: left;
+font-size: 75px;
+line-height: 60px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">It's the End of the World for Windows 10 Mobile</p>
+
+<p>(and I feel fine)</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">I</span>n October of 2015, I <a href="http://theartdirectedjournal.github.io/WPThoughts">wrote a piece</a> asserting why I thought that Windows 10 Mobile would fail.  I surmised that because Microsoft’s first party applications, like Office and Cortana, are truly cross platform, there is no real incentive for people to buy a phone running Windows 10 mobile.  Indeed, 2016 was not a good year for Microsoft’s mobile version of Windows, but not exactly for the reasons that I emphasized in my piece.  We saw the decline and demise of the Lumia line, solely at the hand of Microsoft.  Of the three phones that they did introduce in 2016, there was little to no advertising,  and toward the end of 2016, most of the remaining Lumia 650’s, 550’s and 950’s in the U.S. were out of stock.  Microsoft has stressed a reliance on OEM partners to pick up the slack in making phones.  However, only a handful of OEM’s (specifically Alcatel and HP in the United States) decided to take a gamble on Windows 10 Mobile.  While Alcatel’s low end efforts were relatively successful (based on anecdotal comments from a few different T-Mobile employees at a few different local stores), it was nowhere near enough.  The HP Elite X3 was a flagship device, but it was geared primarily for a business clientele, was expensive, and was not sold with any carrier subsidies of financing.  Furthermore, two highly publicized crowd funding campaigns for the NuAns Neo and Coship failed miserably; so much so that the new version of the former will run Android.</p>
+
+<p>Thus far, 2017 is not shaping up too well for Windows 10 Mobile.  Market share is at an all-time low, much of this having to do with little advertising from Microsoft and no additional phones being introduced by OEMs.  One additional crowdfunding campaign for the Cerulean Moment is about to come to an unsuccessful end.  T-Mobile recently pulled the Alcatel Idol 4S, which was the one and only Windows phone in the United States that any carrier offered.  Furthermore, there is still a now wider “app gap”, with additional third party developers either pulling out of the platform completely or putting their applications in maintenance mode, as was the case with Spotify.</p>
+
+<p>It seems, in fact, that Microsoft has put the whole operating system in somewhat of a maintenance mode now that the Creators Update has been released to the general public.  First, the Creators update was only released with official support for a select few phones (see list here).  Second, those people still on the Fast ring builds in the Insider program (assuming they are using a phone with continued support) are finding that they are not receiving the Redstone 3 builds that the PC platform is receiving.  Instead they are receiving a version of Windows 10 Mobile called Feature 2, which has been broken off from the main Windows 10 code base.  To make matters worse, Microsoft has not given any indication as to whether they are keeping or killing their mobile OS.  Things are indeed looking dire for those fans of Windows 10 Mobile.</p>
+
+<p>If Microsoft does kill Windows 10 Mobile, is this the end of the world?  I don’t think so.  I too am a fan of the platform, but all good things must come to an end.  I keep harkening back to this same mantra: “the cup is already broken”.  Would I advise anyone at this point to get a phone running Windows 10 Mobile?  Absolutely not.  (Even if they could find one) Will I continue to use mine? (I have an Alcatel OneTouch Fierce XL.)  Absolutely.    It is not like the phone is going to instantly become unusable once Microsoft decides it is the end of the line for Windows 10 Mobile.  So as long as they continue to offer security updates to the few folks who remain, that is fine.  Now, if they just drop the platform cold turkey with no security updates, that is where I take issue.  Although, since they are targeted mainly at business users at this point, that scenario would be highly unlikely.</p>
+
+<p>There is much speculation about what Microsoft will do next.  There is talk of a game changing ultra-mobile PC that can make phone calls.  It would be in the Surface line of devices, and will be a completely new form factor, must likely running Windows 10 on ARM.  Will this device even exist?  Who knows?  If it does someday exist, will it be expensive?  Again, who knows?  As of right now, until Microsoft offers a clear direction on what they are planning to do in the mobile space, even though I am still happy with my Alcatel, if asked for my advice on which mobile platform to choose, I will recommend either iPhone or Android, depending on budget and needs.</p>
+
+<p>I too am thinking about what to do next.  Currently, I use a company-issued iPhone for work, and I regularly swap my personal SIM card between the aforementioned Alcatel and a first generation Moto G that I got in 2014.  It is still trucking along, albeit with a battery that is decreasingly lasting as long as it once did, and currently running Lineage OS (Android 7.1) so that I can continue receiving security updates.  I have recently been giving serious consideration to getting an iPhone next.  While there is so much I hate about Apple as a company, they get mobile mostly right in terms of updates and security.  Android is so much more usable in my opinion.  However, security and updates are a huge issue.  I am getting to the point where I just don’t want to experiment with different ROMs on my phone.  Lineage OS is great.  However, if I buy any other Android device than a Pixel (of which I am not a fan), I would be looking at a lack of timely security updates.  I just want something that is secure and that just works, yet I also don’t want to spend a lot of money either.  I don’t mind a 4-inch screen.  Maybe an iPhone SE will fit the bill?  Either way, I still have some time and some thinking to do on this.</p>
+
+<p class="end"><a href="http://theartdirectedjournal.com">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
