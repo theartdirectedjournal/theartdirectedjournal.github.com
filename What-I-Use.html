@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>What I Use</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #903;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(http://theartdirectedjournal.github.io/Site_Images/Misc/Alcatel.jpg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+margin-top: 75px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+font-size: 52px;
+text-align: center;
+text-transform: uppercase;
+}
+
+#intro p {
+font-family: 'Cormorant Garamond', serif;
+font-size: 18px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 400;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background:rgb(233,233,233);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+}
+
+#main_content .firstcharacter {
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+color: #000;
+float: left;
+font-size: 55px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+#main_content .begin_point {
+    font-family: 'Oswald', sans-serif;
+    color: #000;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #903;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 150px;
+margin-bottom: 250px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(233,233,233);
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 85px;
+line-height: 60px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+}
+
+#main_content .begin_point {
+font-size: 42px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">What I Use</p>
+
+<p>¯\_(ツ)_/¯</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">R</span>ecently I stumbled upon <a href="https://usesthis.com/">&ldquo;Uses This&rdquo;</a>, which bills itself as &ldquo;a collection of nerdy interviews asking people from all walks of life what they use to get the job done.&rdquo;  I have always been interested in this topic, as I am always looking for inspiration and ways to make my productivity better, faster, smarter, etc.  As such, and since it has been a while since I have posted anything, I thought I would share the tech and applications that I use on a daily basis in the &ldquo;Uses This&rdquo; format.</p>
+
+<p class="begin_point">Who are you and what do you do?</p>
+
+<p>I'm a husband, dad, and a Christian.  I'm a tech enthusiast, and I love Japanese cars.  I work in information security at a large company and maintain this site as a creative outlet of sorts &mdash; a place to practice HTML, CSS and work on my writing.</p>
+
+<p class="begin_point">What hardware do you use?</p>
+
+<p>I won't get into the work stuff here, but for personal use, my main machine is a secondhand 14-inch HP Pavilion laptop, circa 2012.  It has an Intel Core i5 and a measly 4 GB RAM, which I keep meaning to upgrade. The battery no longer charges, but I use the laptop plugged in all the time anyway. I really should replace my laptop, but at this point, I just want to see how long it can go.  After all, it still does everything I need it to do, and replacement batteries (this would be my second) are super cheap on Amazon.</p>
+
+<p>My current phone is a <a href="https://www.nextbit.com/">Nextbit Robin</a>, which, even with its quirks and flaws, I really like.  My other phone is an Alcatel OneTouch Fierce XL with Windows 10.  I use it for testing purposes and as a tablet around the house.  Even though I no longer use the Alcatel as my main phone, I am still a big fan of Windows 10 Mobile.  I also have a Kindle Fire HD 8.  I got it with the intention of unlocking the bootloader and running an Android ROM besides Fire OS, but I never got around to it.  At this point, my daughter has sort of commandeered it, and since she thinks it is hers, I rarely use it.</p>
+
+<p class="begin_point">What software do you use and why?</p>
+
+<p>The main operating system on my laptop is Windows 10 (Fall Creator's Update).  I have to admit, even though I have been a Linux enthusiast for most of my adult life, (<a href="http://theartdirectedjournal.github.io/Apple">I was also once a Mac enthusiast</a>); Windows 10 has really grown on me.  It runs speedy quick on my laptop, and I think the privacy issues are more fear, uncertainty and doubt than any true threat.  My default browser is currently Microsoft Edge, but I have Chrome installed for testing, watching YouTube, and working with Google's suite of apps (Docs, Sheets, Drive, Photos, etc.)  I think Edge renders text well, and I feel like it actually performs better than Chrome when it comes to browsing.  I use the uBlock Origin extension for ad-blocking in each browser.</p>
+
+<p>I am mainly in the browser on my laptop, but there are some additional apps that I regularly use.  I use the <a href="https://www.microsoft.com/en-us/store/p/roku/9wzdncrdlm3t">Roku</a> app to control my TV (more on that later).  I also use Groove Music to playback my locally saved MP3 collection.  I use Spotify and Pandora for streaming music.  I have Netflix installed, but I rarely watch Netflix on my laptop.  Last but not least, I have Cuphead, which is an amazing game that can be downloaded from the Windows Store.  When I do play games on my laptop, I typically hook up an XBox One controller.</p>
+    
+<p>In addition to using Google's suite of productivity apps, I use Office 2010. I can upgrade to Office 2016 for super cheap through work, and will probably do so once 2010 is no longer supported.  I keep all my files in One Drive and use One Note religiously.  It is like a second brain.  Speaking of second brains, I am actually probably one of the few that regularly uses <a href="https://www.microsoft.com/en-us/windows/cortana">Cortana</a>.  I find it/her to be a pretty good digital assistant.  (I do not have voice activation enabled though.)  Also in the &ldquo;getting stuff done&rdquo; department, I use <a href="https://code.visualstudio.com/">Visual Studio Code</a> for any code editing that I do.  In fact, I am writing and designing this article in VS Code now.  I use GIMP for photo editing. Finally, I regularly use VMWare Workstation Player to play around in <a href="https://www.kali.org/">Kali Linux</a>, as well as to test out other Linux distributions.</p>
+
+<p>On my Nextbit Robin, I am actually running an Android ROM called <a href="https://lineageos.org/">Lineage OS</a>, which is based on Android 7.1 and includes the latest security updates from Google.  Installing Lineage was actually one of the first things I did when I got the phone.  I did try at one point to use the stock Nextbit ROM, but the stock ROM had a lot of bugs and issues.  Plus, it was behind on security updates, and even though updates have been promised through February 2018, it seems like the Nextbit (now Razor) team has put the Robin on the back burner.  I also tried Paranoid Android, but I could not get Android Pay to work.  As such, I have settled in with Lineage, as I have found it to be the most stable ROM for the Robin (and again, Android Pay works).  I am using the &ldquo;Nano&rdquo; version of <a href="http://opengapps.org/">Open GApps</a>.  The &ldquo;Nano&rdquo; version pretty much only consists of Google Play Services, the Play Store and the Google App.</p>
+
+<p>The great thing about Android as opposed to iOS is that one can actually set default apps.  As such, I am currently experimenting with using Microsoft Edge as my default browser. As an extension of this experiment, I have completely disabled the Google App (and Google Assistant) and am using Cortana as my default virtual assistant.  Besides Edge and Cortana, there are a handful of apps on my phone that are regularly used, including but not limited to: Messaging (the AOSP text messaging app included with Lineage), Phone (AOSP), One Note, Calculator (AOSP), Google Play Music, Amazon Music, Android Pay, the Google camera app, and Snapseed.  Both One Drive and Google Photos back up my photos when I am on Wi-Fi and charging.  Last but not least, Google's GMail app is actually not installed, as Outlook is my email client of choice.  I prefer Outlook because, unlike the GMail app, Outlook gives me the ability to mark an email as unread.  This is crucial to how I do email.  Plus, I think Outlook is more visually appealing with its blue color scheme than the garish red that is the dominant color of the GMail app.  Oh yes, and it has been my experience that the GMail app does not play well with my Outlook.com email account.  While my emails come through, it is a pull-from-the-server every 15 minutes deal, and sometimes when I delete a message, the deleted message will mysteriously show up again in the inbox with a new notification to accompany it.  Outlook does not have these problems.  I also like that the calendar is integrated into the app itself.</p>
+
+<p class="begin_point">What other tech stuff do you use?</p>
+
+<p>For security reasons I have been hesitant to bring any &ldquo;Internet of Things&rdquo; devices into my home &mdash; No Wi-Fi enabled cameras or door locks, no Internet connected fridges, and no Google Home or Alexa for me.  That said, we have a 4K Roku TV downstairs in our family room.  We settled on Roku many moons ago as our streaming device(s) of choice because Roku has all the obligatory apps and services, with the exception of iTunes, which we don't use anyway.  My wife and I also have a Roku Premier in our bedroom, which recently replaced an old Roku HD that we used for roughly four or five years prior.  My son's XBox One S is in our front room den, and I sometimes use it to watch TV (mainly the Velocity app).  Last but not least, I have an NES Classic connected to our main family room TV.  I'm not much of a gamer anymore, but I very much enjoy old NES games, Megaman 2 being my favorite at the moment.</p>
+
+<p class="begin_point">What is my dream set up?</p>
+
+<p>My dream set up would be a device that could be both my phone and laptop.  Having one device that is small enough to fit in my pocket and be a phone, while at the same time powerful enough to dock and use as a &ldquo;real&rdquo; computer would be awesome.  I was a huge fan of Windows 10 Mobile (and Windows Phone before it), and I am sad that convergence technologies like <a href="https://www.microsoft.com/en-us/windows/Continuum"></a>Continuum</a> and <a href="https://www.youtube.com/watch?v=EtNhlVn3ETQ&feature=youtube_gdata_player">Ubuntu Edge</a> (Ubuntu's version of Continuum) were not more popular. (The Ubuntu Edge device was never made, and Microsoft has at this point, pretty much killed all development of Windows 10 Mobile, only offering security updates for a few more years.)  That said, I am keeping my hopes up that one day, Microsoft will get back into the phone business, even if it is not a phone in the traditional sense, but rather some other type of small, always-connected Windows based device with phone capabilities.</p>
+
+<p class="end"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
