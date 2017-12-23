@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>A Few Random Thoughts</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load("jquery", "1.2.6");
+</script>
+
+<script type="text/javascript">
+$(function(){
+$('a[href*=#]').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+&& location.hostname == this.hostname) {
+var $target = $(this.hash);
+$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+if ($target.length) {
+var targetOffset = $target.offset().top;
+$('html,body').animate({scrollTop: targetOffset}, 1000);
+return false;
+}
+}
+});
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(11, 65, 78);
+  font-family: 'Lora', serif;
+  animation-name: change_the_color;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; 
+  -webkit-animation-name: change_the_color;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite; 
+}
+
+@keyframes change_the_color
+{
+  0%   {background: rgb(11, 65, 78);}
+  25%  {background: rgb(9, 54, 65);}
+  50%  {background: rgb(6, 40, 48);}
+  75%  {background: rgb(9, 54, 65);}
+  100% {background: rgb(11, 65, 78);}
+}
+
+@-webkit-keyframes change_the_color 
+{
+  0%   {background: rgb(11, 65, 78);}
+  25%  {background: rgb(9, 54, 65);}
+  50%  {background: rgb(6, 40, 48);}
+  75%  {background: rgb(9, 54, 65);}
+  100% {background: rgb(11, 65, 78);}
+}
+
+:focus {
+  outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(240, 132, 70);
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+  color: rgb(136,136,136);
+  text-shadow: none;
+}
+
+p {
+  margin: 20px;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+#header {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 12px;
+  color: rgb(187,187,187);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+  color: rgb(187,187,187);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  border: none;
+  padding: 40px 10px;
+  text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a:hover {
+  color: rgb(136,136,136);
+}
+
+#article_body {
+  margin-top: 100px;
+}
+
+#article_body .title {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(187,187,187);
+  text-align: center;
+  text-shadow: 0px 1px 2px #161619;
+}
+
+#article_body .article_date {
+    font-size: 12px;
+    color: rgb(136,136,136);
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#article_body p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(187,187,187);
+  text-shadow: 0px 1px 2px #161619;
+}
+
+#article_body .happy_ending {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+
+
+/*--[ FOR LARGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#article_body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#article_body .title {
+  font-size: 48px;
+}
+
+#article_body .article_date {
+    font-size: 14px;
+    margin-bottom: 75px;
+}
+
+#article_body p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#article_body .happy_ending a {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</span></a></li>
+</ul>
+
+</section>
+
+<section id="article_body">
+
+<p class="title">A Few Random Thoughts</p>
+
+<p class="article_date">December 23, 2017</p>
+
+<p>Lately I have been thinking about Windows 10 S and whether or not I could use it as my daily driver.  In many ways, I think I could.  I used a Chromebook for a long time with no issues, and in many ways, Windows 10 S and Chrome OS are very similar.  For example, with Windows 10 S, you are basically stuck with one browser &mdash; Microsoft Edge.  With Chrome OS, you are basically stuck with one broswer &mdash; Chrome.  With Windows 10 S, all apps must come from the Windows Store.  However, with Chrome OS, since Android apps now run on some older and all new Chromebooks, one could technically use Microsoft Edge <a href="https://www.techrepublic.com/article/how-to-run-firefox-quantum-on-a-chromebooK">or Firefox</a>.  As I have been using Edge as my default browser as of late (even on my Android phone), I think I could use Windows 10 S as my daily driver, provided Microsoft could do three things:  First, they should allow the Windows subsystem for Linux to work on Windows 10 S, and/or get VMWare Player or Virtual Box into the Windows Store.  Second, they should work to get Visual Studio Code in the Windows Store.  Third, they should work with Google to get Android Studio (or at last the SDK with ADB and Fastboot) into the Windows store.  I run Kali Linux in a VM these days and have Ubuntu installed in the Windows subsystem for Linux.  I use VS Code as my editor of choice, and I use the Android SDK (specifically Fastboot and ADB) for boot loader unlocking, and Android ROM and custom recovery installation.</p>
+
+<p>Speaking of going all &ldquo;Microsoft&rdquo;, I am still enjoying the <a href="http://theartdirectedjournal.github.io/What-I-Use">switch to Microsoft apps</a> on my Android Phone.  Google Assistant and the Google app are still completely disabled, as I have yet to run into any show stopping issues with Cortana.  Cortana on Android is still not as good as it was natively on Windows 10 Mobile, but then again, the Google Assistant on Android also cannot do things that Cortana on Windows 10 Mobile could do, like <i>completely</i> hands free texting using Bluetooth.  I am finding Outlook to be better than Gmail in a lot of different ways.  OneNote, Word, Excel and Office Lens are all great in their own respects, although I do still have Google Sheets, Docs and Keep installed.  I tried to make the switch from the default Lineage OS launcher (Trebuchet) to the Microsoft launcher but have moved back to Trebuchet.  Trebuchet is faster, uses less RAM, and the transitions/animations aren't as janky as they are on the Microsoft launcher.  Also, as a quick note, the Microsoft launcher uses a slightly different font than the rest of the OS, and the inconsistency bothered me to no end.</p>  
+
+<p>I am very disheartened by the FCC's recent decision to dismantle the previous FCC's 2015 net neutrality protections.  Under normal circumstances, I would not be too concerned about something like this, as I am a firm believer that healthy competition between companies is best for the consumer.  The problem is, there is no competition between internet service providers across a large part of the United States. Where I live, for example, there is really only viable option to choose from &mdash; Spectrum.  I am just enough outside the Chralotte city limits that Google Fiber (who is in places <a href="https://fiber.google.com/cities/charlotte/">in and around Charlotte</a>) is not coming to my area any time soon.  As such, my only other option is DSL, and, based on the technical support staff I spoke with from my local phone company, I could maybe pull down up to 6 Mbps.  As such, I am stuck with Spectrum for better or for worse.  I hope Congress can do something to fix this (not hopeful, given the number in congress, both Democrat and Republican, who take money from the telecoms), or maybe the higher courts can get involved and turn around the FCC's ruling before it is too late.</p>
+
+<p>Last but not least, I am not yet sure what to make of the news that Apple is purposely <a href="https://www.xda-developers.com/apple-confirms-slows-down-older-iphones-aging-batteries">slowing down their older iPhones</a> in an effort to prolong the phone's life as the battery inevitably deteriorates.  Did Apple truly, as they say they did, implement these changes in iOS for older iPhones out of a desire to make their older devices last longer, even if it means a hit in performance?  Or did they make these changes to iOS in order to drive people to upgrade sooner?  They do make their money from selling new devices.  I have a feeling we'll never know for sure, but I can say that I have not experienced anything quite like this with an Android device.  Yes, Android devices do get slower over time.  However, for any Android device that I have ever had that became slow and unstable over time or after an over the air update, a simple factory reset, not a battery repacement, brought the performance back up to where it should be.  I also took a Nokia Lumia 521 from Windows Phone 8 to Windows Phone 8.1 and never experienced any performance issues, even well after the operating system upgrade and without having to factory reset the device.  As such, I will be certainly on the lookout in case my wife complains of a drop in the performance of her iPhone 7.  I will give Apple that lithium-ion batteries are not the most reliable things over time, but either way, Apple has painted themselves into a corner so to speak.</p>
+
+<p class="happy_ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
