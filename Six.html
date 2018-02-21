@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Six</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load("jquery", "1.2.6");
+</script>
+
+<script type="text/javascript">
+$(function(){
+$('a[href*=#]').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+&& location.hostname == this.hostname) {
+var $target = $(this.hash);
+$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+if ($target.length) {
+var targetOffset = $target.offset().top;
+$('html,body').animate({scrollTop: targetOffset}, 1000);
+return false;
+}
+}
+});
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(253, 156, 205);
+  font-family: 'Lora', serif;
+}
+
+:focus {
+  outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(176,56,137);
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+  color: #000;
+  text-shadow: none;
+}
+
+p {
+  margin: 20px;
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 12px;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+#header #nav a {
+  color: rgb(255,255,255);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  border: none;
+  background-color: rgb(176,56,137);
+  padding: 40px 10px;
+}
+
+#header #nav a:hover {
+  background-color: #333;
+}
+
+#article_body {
+  margin-top: 100px;
+}
+
+#article_body .title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+}
+
+#article_body p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+}
+
+#article_body .image_holder {
+ text-align: center;
+}
+
+#article_body .happy_ending {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+
+/*--[ FOR LARGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#article_body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#article_body .title {
+  font-size: 48px;
+}
+
+#article_body p {
+  font-size: 22px;
+  line-heigt: 1.5;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</span></a></li>
+</ul>
+
+</section>
+
+<section id="article_body">
+
+<p class="title">Six</p>
+
+<p>Six years ago, my wife brought a beautiful baby girl into the world.</p>
+
+<p>I cannot believe that this cute baby...</p>
+
+<p class="image_holder"><img src="http://theartdirectedjournal.github.com/Site_Images/2012-10-24T10-36-26_8.jpg" /></p>
+
+<p>... has now grown into this wonderful girl.</p>
+
+<p class="image_holder"><img src="http://theartdirectedjournal.github.com/Site_Images/IMG_20180109_113734_591.jpg" /></p>
+
+<p>She is smart.  She is kind.  She is funny, and she has never met a stranger.  I learn so much from her every day, and I am grateful that God chose her mom and I to be her parents.</p>
+
+<p class="happy_ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
