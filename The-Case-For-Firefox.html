@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>The Case for Firefox</title>
+	
+      	
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,700" rel="stylesheet"> 
+
+
+<style type="text/css" media="screen">
+
+body {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+margin: 0;
+padding: 0;
+background: rgb(255,255,255) url(http://theartdirectedjournal.github.io/Site_Images/Firefox.svg) top 50px center no-repeat;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: rgb(255,255,255); 
+text-decoration: none; 
+border: none;
+background: rgb(0,0,0);
+-webkit-transition: 1s all ease-in-out; 
+-moz-transition: 1s all ease-in-out;
+-ms-transition: 1s all ease-in-out;
+font-weight: 700; 
+text-shadow: 0px 1px 2px #161619;
+padding-left: 4px;
+padding-right: 4px;
+}
+  
+a:hover, a:focus { 
+color: rgb(0,0,0);
+background: rgb(255,255,255);
+text-shadow: none;
+}
+
+p {
+margin-top: 0px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+font-size: 16px;
+line-height: 1.5;
+color: rgb(0,0,0);
+}
+
+.make_it_bold {
+font-weight: 700;
+font-size: 24px;
+font-family: 'Zilla Slab', 'Open Sans', 'Arial', sans-serif;
+}
+
+h1 {
+font-size: 60px;
+font-weight: 700;
+font-family: 'Zilla Slab', 'Open Sans', 'Arial', sans-serif;
+color: rgb(234,29,67); 
+-webkit-text-stroke: 1px #161619; 
+-moz-text-stroke: 1px #161619;
+-ms-text-stroke: 1px #161619;
+text-stroke: 1px #161619;
+color: rgb(234,29,67); 
+text-shadow: 3px 3px 0 #161619, -1px -1px 0 #161619, 1px -1px 0 #161619, -1px 1px 0 #161619, 1px 1px 0 #161619;
+text-align: center;
+text-transform: uppercase;
+}
+
+#header { 
+background: rgba(255,255,255,.5); 
+padding: 5px 0; 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 12px;     
+text-transform: uppercase;
+font-family: 'Open Sans', 'Arial', sans-serif;
+text-transform: uppercase; 
+color: rgb(234,29,67); 
+font-weight: 700;
+}
+
+#header #nav a {
+color: rgb(234,29,67);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+background: transparent;
+text-shadow: none;
+}
+
+#header #nav a:hover {
+color: rgb(0,0,0); 
+}
+
+#main {
+width: 100%;
+overflow: hidden;
+background: rgba(255, 255, 255,.2);
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main .ending {
+margin-top: 75px;
+text-align: center;
+font-family: 'Open Sans', 'Arial', sans-serif;
+text-transform: uppercase;   
+font-size: 12px;
+font-weight: 700;
+}
+
+#main .ending a {
+color: rgb(234,29,67);
+text-shadow: none;
+background: transparent;
+}
+
+#main .ending a:hover {
+color: rgb(0,0,0);
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+h1 {
+font-size: 100px;
+} 
+
+#header #nav li {
+font-size: 14px;
+}
+
+#main {
+width: 600px;
+margin-left: 600px;
+overflow: hidden;
+margin-top: 100px;
+margin-bottom: 100px;
+background: transparent;
+}
+
+#main p {
+font-weight: 400;
+}
+
+#main .ending {
+font-size: 14px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed <span style="text-transform: lowercase; font-weight: 300;">Journal</span></a></li>
+</ul>
+               
+</section>
+
+<section id="main">
+
+<h1>The Case for Firefox</h1>
+
+<p><a href="http://theartdirectedjournal.github.io/WhyLinux">I mentioned in a recent piece</a> that I had switched to Firefox as my default browser on both my desktop and phone.  I’m really enjoying the fruits of this decision thus far, as my browsing experience, especially on mobile, has been faster and cleaner.  Aside from the fact that Firefox works and syncs across Windows, Linux, iOS, and Android, here are a few reasons that I feel you should give Firefox another shot.
+
+<p><span class="make_it_bold">It is fast.</span>  I was a hardcore Firefox user starting in about 2004.  Internet Explorer was a pile of junk, and Firefox offered a fresh, fast and more secure alternative.  I stopped using Firefox as my default browser shortly after Chromebooks arrived on the scene.  Based on my positive experience with my trusty CR-48, I switched to Chrome on my Mac as well and did not look back, only using Firefox for the occasional testing purposes.  At that point, Firefox had become a bloated mess, and Chrome was fast and lean.  Fast forward to present day.  The newly redesigned Firefox is now a speed demon, and Chrome is the browser that seems a little long in the tooth.</p>
+    
+<p><span class="make_it_bold">It is open source.</span>  Firefox is an open source project, managed by Mozilla, a non-profit organization.  <a href="https://www.mozilla.org/en-US/mission/">Mozilla's Mission</a> is to, &ldquo;ensure the Internet is a global public resource, open and accessible to all. An Internet that truly puts people first, where individuals can shape their own experience and are empowered, safe and independent.&rdquo;  I like this philosophy, and I feel like Mozilla wants to keep the rights of the end user first and foremost.</p>
+
+<p><span class="make_it_bold">It is conscious of our privacy.</span>  Firefox has built in ad-blocking and <a href="https://support.mozilla.org/en-US/kb/tracking-protection">tracking protection</a>, which without the need for third-party extensions, can be enabled in settings with the click of a button.  Unlike Google Chrome, where Google has just now started <a href="https://www.blog.google/products/chrome/browser-web-worth-protecting/">implementing ad-blocking</a> for only the most egregious offenses, Firefox blocks everything.  Chrome’s native ad-blocking solution also does not stop sites from tracking you across the web in order to target you with ads.  For Chrome on the desktop, I must rely on an extension (uBlock Origin) which works well.  However, Chrome on Android does not allow one to install 3rd party extensions.  In contrast, because Firefox's ad-blocking and tracking protection is native, it works just the same on mobile as it does on the desktop.</p>
+
+<p>I know that there is an ethical debate behind this, as a lot of sites make their money from ads, but if you wish, you can always disable tracking protection on a site by site basis.</p>
+
+<p><span class="make_it_bold">In conclusion,</span> if you want a browser that is fast, stable, cares about your privacy and works and syncs across multiple platforms, I would encourage you to give Firefox a try.</p>
+
+<p class="ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
