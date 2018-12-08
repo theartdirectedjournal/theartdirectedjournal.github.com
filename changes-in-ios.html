@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Changes I Would Like to See Apple Make to the iOS Home Screen</title>
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load("jquery", "1.2.6");
+</script>
+
+<script type="text/javascript">
+$(function(){
+$('a[href*=#]').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+&& location.hostname == this.hostname) {
+var $target = $(this.hash);
+$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+if ($target.length) {
+var targetOffset = $target.offset().top;
+$('html,body').animate({scrollTop: targetOffset}, 1000);
+return false;
+}
+}
+});
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(33,33,33) url(https://theartdirectedjournal.github.io/Site_Images/Dark_Noise.png) top left repeat;
+}
+
+:focus {
+  outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(40,80,129);
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+  color: #777;
+  text-shadow: none;
+}
+
+p {
+  margin: 20px;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+.image_holder {
+  text-align: center;
+}
+
+#header {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 18px;
+  color: #777;
+  font-family: 'Clicker Script', cursive;
+  font-weight: 300;
+}
+
+#header #nav a {
+  color: rgb(255,255,255);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  background-color: rgb(40,80,129);
+  padding: 40px 10px;
+}
+
+#header #nav a:hover {
+  background-color: #333;
+}
+
+#article_body {
+  margin-top: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#article_body .title {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  text-shadow: 0px 1px 2px #161619;
+  margin-bottom: 75px;
+}
+
+#article_body p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: rgb(238,238,238);
+}
+
+#article_body .happy_ending {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#article_body .happy_ending a {
+  font-weight: 400;
+  font-size: 12px;
+  padding: 25px;
+  background-color: rgb(40,80,129);
+  padding: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  color: rgb(255,255,255);
+  text-shadow: opx 1px 2px #161619;
+}
+
+#article_body .happy_ending a:hover {
+  background-color: #333;
+}
+
+#article_body .disclaimer {
+  font-size: 10px;
+}
+
+
+/*--[ FOR LARGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+img {
+  float: right;
+  max-width: 50%;
+  padding: 20px;
+}
+
+#article_body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#article_body .title {
+  font-size: 62px;
+  margin-bottom: 100px;
+}
+
+#article_body p {
+  font-size: 22px;
+  line-heigt: 1.5;
+}
+
+#article_body .happy_ending a {
+  font-size: 14px;
+}
+
+#article_body .disclaimer {
+  font-size: 12px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</span></a></li>
+</ul>
+
+</section>
+
+<section id="article_body">
+
+<p class="title">Changes I Would Like to See Apple Make to the iOS Home Screen</p>
+
+<p>Having made the switch from a Nextbit Robin to an iPhone this past summer, I have thus far been extremely happy with the simplicity, reliability and speed of iOS.  However, there are a couple of shortcomings with regards to the iOS home screen that I hope Apple will improve upon for iOS 13.</p>
+
+<p class="image_holder"><img src="https://theartdirectedjournal.github.com/Site_Images/matam-jaswanth-334889-unsplash.jpg" /></p>
+
+<p>For starters, one of the things that I sorely miss about Android is the app drawer.  The Android app drawer is Google's convenient way of providing the user a clean home screen if he or she so chooses, because all installed applications are cleanly tucked away in alphabetical order, accessible with a simple swipe up on the homescreen (or via the app drawer button in older versions of Android).  In contrast, the way that iOS works today is that all newly installed apps appear on the user's last home screen page, and they are not by default placed in any particular order.  This leaves the home screen(s) by default very cluttered. While one can choose to position apps in alphabetical order on the homescreen in iOS, as well as have a minimal first home screen with all apps on subsequent home screens, it is a very manual effort to get to that point.  The Android way of doing it is simply better.  As such, I would like to see Apple adopt some type of app drawer that automatically places apps in alphabetical order.  There could be a checkbox somewhere in settings, just like there is in the Play Store on Android today, whereby the user could select to automatically add newly istalled apps to the home screen if they choose.  At the very least, should the app drawer route not be feasible for Apple, I would like to see them give the option to automatically order apps on a particular homescreen in alphabetical order.</p>
+
+<p>In iOS today, there is no way to position app icons in any chosen place on the home screen. Each icon defaults to the first empty position on the home screen, starting at the top-left, then going right and down.  If Apple would simply allow any icon to be placed at any point on the homescreen grid, that would be fantastic, as I would prefer to place a few key apps that I use often that live on my first home screen at the bottom of the home screen instead of near the top.</p>
+
+<p class="happy_ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+<p class="disclaimer">Photo Credit <a href="https://unsplash.com/photos/LyPq-Bq97kM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matam Jaswanth</a> via Unsplash.</p>
+
+</section>
+
+</body>
+</html>
