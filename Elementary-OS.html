@@ -1,0 +1,359 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>Elementary OS</title>
+		
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin:300,400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Aleo:300,400,700" rel="stylesheet"> 
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL TAG STYLES ]---------*/
+html { 
+font-size: 100%; 
+}
+
+body { 
+font-family: 'Aleo', serif; 
+font-weight: 400;
+margin: 0; 
+padding: 0; 
+background: rgb(255,255,255); 
+width: 100%;   
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #336699; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+font-weight: 700;
+}
+
+a:hover, a:focus { 
+color: #777;
+}
+
+p {
+margin: 20px;
+line-height: 1.5;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}                		
+
+/*--[ HEADER ]--------------------*/
+#header {
+background: rgba(255, 255, 255, 0.87);  
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2; 
+font-family: 'Libre Franklin', sans-serif;
+font-weight: 300;
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px; 
+}
+
+#header #nav li { 
+display: inline; 
+font-size: 14px;  
+color: #777;   
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+                                		
+                
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;  
+color: #333;
+}   
+               
+#contents h1 {
+font-size: 48px; 
+color: rgb(0,0,0);  
+margin-bottom: 75px; 
+margin-top: 100px;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+font-weight: 700;
+margin-left: 20px;
+margin-right: 20px;
+line-height: 1;
+}
+
+#contents p { 
+font-size: 16px; 
+color: #333; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+font-weight: 300;
+}
+
+#contents .when {
+font-size: 32px;   
+margin-top: 75px;
+margin-bottom: 0;
+font-weight: 700;
+line-height: 1;
+}
+
+#contents .happy_ending {
+margin-top: 50px;
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+font-family: 'Libre Franklin', sans-serif;
+}
+
+#Copyright {
+width: 100%; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 75px; 
+margin-bottom: 25px; 
+font-weight: 300;
+font-size: 12px;
+font-family: 'Libre Franklin', sans-serif;
+}
+
+#Copyright p { 
+text-align: center; 
+color: #777;
+}  
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+img {
+float: right;
+max-width: 50%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+#header {
+background: rgba(255,255,255,.65); 
+opacity: 20%;
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2; 
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px;  
+}
+
+#header #nav li { 
+display: inline;   
+color: #777;   
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 300;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+
+#contents {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px; 
+color: #333;
+}   
+               
+#contents h1 {
+font-size: 72px; 
+color: rgb(0,0,0);  
+margin-bottom: 125px; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+}
+
+#contents p { 
+font-size: 20px; 
+color: #333; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+line-height: 1.5;
+}
+
+#contents .when {
+font-size: 46px;   
+margin-top: 75px;
+margin-bottom: 0;
+}
+
+#contents .happy_ending {
+    margin-top: 75px;
+}
+
+#Copyright {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p { 
+text-align: center; 
+color: #777;
+}
+   
+}    
+      
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+	<ul id="nav">
+
+        <li><a title="The Art Directed Journal" href="https://theartdirectedjournal.github.io/">The <span style="font-weight: 700;">Art Directed</span> Journal</a></li> 
+
+    </ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">        
+
+    <h1>Elementary OS</h1>
+
+    <p>I toyed with the idea of using <a href="https://elementary.io/">Elementary OS</a> a few years ago, but after playing around with it in a virtual machine, I ultimately decided to hold off on a bare metal install.  It was nothing against Elementary itself.  I just decided it was not so great a distro that it warranted a change from Ubuntu at the time.  Fast forward to January 2019.  After being inspired by the <a href="https://www.forbes.com/sites/jasonevangelho/2019/01/15/introducing-the-elementary-os-5-linux-community-challenge/#79263e363810">Elementary OS Challenge</a> that Jason Evangelho is currently doing over on Forbes, I decided to give Elementary OS a fair shot.</p>
+    
+    <p class="when">What is Elementary OS</p>
+        
+    <p>Elementary is a <a href="https://medium.com/elementaryos/privacy-and-elementary-os-95f9f2debe98">privacy conscious</a> Linux distribution that is based off of the latest Ubuntu long term support (LTS) release. It uses a unique, Mac-like desktop environment called Pantheon, and the team behind this distro has a real focus on design and usability.  There is an <a href="https://appcenter.elementary.io/">App Center</a> and several other pre-installed apps, such as Music and Code, that are unique to Elementary.</p>
+
+    <img src="https://theartdirectedjournal.github.com/Site_Images/Elementary_Desktop.png" />
+
+    <p class="when">Initial Impressions...</p>
+
+    <p>The install process went smoothly.  Since Elementary is based on the latest Ubuntu LTS release, the install process in terms of drive partitioning and creating user accounts was very similar to Ubuntu.  If you have installed Ubuntu, the Elementary install process will be very familiar.  Upon initial boot, you are presented with an extremely clean desktop environment.  It borders on minimal, and I like it.  There is a Mac-like doc at the bottom, and there is a bar at the top of the screen that Elementary calls the Panel.  It contains the date/time (clicking gives you a calendar), as well as the obligatory icons for Wi-Fi, battery, volume, notifications, and power.  The far left side of the panel contains an Applications menu.  Clicking this presents sort of an app drawer of sorts, where you can search and/or choose from all of your installed applications.</p>
+
+    <p>In terms of actually using Elementary, I would say that it is a very usable desktop.  In fact, I am a huge fan of Gnome, but the Elementary desktop is growing on me.  It is much faster on my hardware than Gnome is, and the overall memory usage is much less with Elementary's desktop.  The dock is one of the things that I like, and I find it better than the Gnome dock, the Ubuntu dock, or any Gnome shell extensions, like Dash to Dock.</p>
+
+    <img src="https://theartdirectedjournal.github.com/Site_Images/Screenshot from 2019-01-23 00.22.41.png" />
+
+    <p>Elementary comes pre-installed with a minimal number of applications.  I really like this approach of having a few key things installed and allowing the user to add what they want.  Adding applications happens through a curated App Center, although you can still use the terminal to install, remove and update.  The Elementary app center is unique though, as it offers applications specifically developed for Elementary.  The model is a pay-what-you-want model.  I kind of like it.  Should you feel like supporting the developer you can, but for those who are cash strapped, you can have the application for free (or whatever price you feel is fair).  I'll be interested to see, given the small install base of Elementary, whether this approach actually works in drawing developers to the platform.  The Elementary team also reviews all curated applications.  How well this team reviews them from a security perspective is yet to be seen.  You can also install other applications through App Center, like, for example, Gnome Disks.  Of course, as I stated before, since Elementary is based on the latest Ubuntu LTS release, all of the Ubuntu repositories are also available.</p>
+
+    <p class="when">A Few Tips and Tricks...</p>
+
+    <p>The following tips and tricks make Elementary just a little more usable, at least for me.</p>
+
+    <p>On my particular hardware, the trackpad is always iffy for many distros, particularly when it comes to two-finger scrolling, and Elementary was no exception.  This is not really a big deal, as installing the legacy synaptics drivers fixes this issue.  It is pretty much the first thing I do after initial install on any distro I try. To install these drivers, simply pop open the terminal and type the following: <code>sudo apt-get install xserver-xorg-input-synaptics</code>.  You will need to reboot in order for this change to take effect.</p>
+
+    <img src="https://theartdirectedjournal.github.com/Site_Images/Screenshot from 2019-01-23 00.37.01.png" />
+
+    <p>The dock was not quite to my liking.  It is not really advertised in the main settings app, but you can easily change the look and feel of the dock by hovering your mouse over an empty space on the dock (between icons), and pressing control, then right-clicking.  Next, click &ldquo;preferences&rdquo; in the menu that pops up.</p>
+
+    <p>There are a few applications that are not installed by default that I typically like to have including Gnome Disks, Google Chrome, Visual Studio Code, Libre Office, and Firefox.  It is strange to me that Firefox and Libre Office do not come pre-installed. There is in fact no office suite that comes pre-installed with Elementary, which I find to be a little odd.  I sort of understand why Firefox is not installed, as Elementary wants you to use their built in browser, which I think may be Chromium based?</p>
+
+    <p>Like Ubuntu, the firewall does not come enabled out of the box.  However, unlike Ubuntu, the security portion of the settings app has a firewall option.  I am not sure why the firewall is not enabled out of the box, but I highly advise enabling it as one of the first courses of action after install.</p>
+
+    <p>Lastly, you will notice that there is no really obvious way to minimize a window.  There is an arrow in the upper right hand corner of each window.  However, this arrow only maximizes or brings the window back to &ldquo;normal&rdquo; from a maximized state.  The close &ldquo;X&rdquo; is on the left by the way.  I'm not sure I really like this, but it is not a deal breaker.  If you would like to minimize a window, you can easily do it by simply clicking the icon of the application you would like to minimize in the dock.</p>
+
+    <p class="when">Wrapping It All Up...</p>
+
+    <p>I thought about making this a series of articles about Elementary, and while I like Elementary a lot, I am planning to move over to Fedora 29 for a while.  As such, my time with Elementary will soon come to an end. All in all, Elementary is a very polished distro with a unique flavor.  If you are a Mac person, you will probably love Elementary.</p>
+
+    <p class="happy_ending"><a href="https://theartdirectedjournal.github.io">Table of Contents</a></p>
+		
+</section>	<!-- end #contents -->
+
+<section id="Copyright">
+    
+    <p>&copy; 2009-2019 Steve Best. All Rights Reserved.</p>
+    
+</section>
+        
+</body>
+</html> 
