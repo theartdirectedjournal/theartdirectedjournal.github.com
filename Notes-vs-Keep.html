@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>iCloud Notes vs Google Keep</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">  
+
+<style type="text/css" media="screen">
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(255,255,255) url(https://theartdirectedjournal.github.io/Site_Images/iCloudNotes.png) top left repeat;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+:focus {
+  outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(0,0,0);
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+  font-weight: 900;
+  border-bottom: 1px dotted rgb(0,0,0);
+}
+
+a:hover {
+  color: #F4B400;
+  text-shadow: none;
+  border-bottom: 1px dotted #F4B400;
+}
+
+p {
+  margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+} 
+
+#header {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  background: transparent;
+  overflow: hidden;
+}
+
+#header #nav {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 12px;
+  color: rgb(0,0,0);
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#header #nav a {
+  color: rgb(0,0,0);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  border: none;
+  padding: 40px 10px;
+}
+
+#header #nav a:hover {
+  color: #777;
+  border: none;
+  text-shadow: none;
+}
+
+#article_body {
+  margin-top: 100px;
+}
+
+#article_body .title {
+  font-size: 42px;
+  font-weight: 900;
+  color: rgb(33,33,33) url(http://theartdirectedjournal.github.io/Site_Images/Android/grey_bckgrd.png) top left repeat;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+#article_body p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: rgb(60,60,60);
+}
+
+#article_body .subheading {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 50px;
+  color: rgb(0,0,0);
+  line-height: 1;
+}
+
+#article_body .subheading_2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 50px;
+  color: rgb(0,0,0);
+  line-height: 1;
+}
+
+#article_body .righty {
+  float: none;
+  text-align: center;
+}
+
+#article_body .lefty {
+  float: none;
+  text-align: center;
+}
+
+#article_body .happy_ending {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: 12px;
+}
+
+
+
+/*--[ FOR LARGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+img {
+max-width: 50%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+#article_body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#article_body .title {
+  font-size: 92px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+#article_body p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#article_body .subheading {
+  font-size: 38px;
+  margin-top: 100px;
+}
+
+#article_body .subheading_2 {
+  font-size: 38px;
+  margin-top: 175px;
+}
+
+#article_body .righty {
+  float: right;
+}
+
+#article_body .righty:hover {
+max-width: 100%;
+}
+
+#article_body .lefty {
+  float: left;
+  margin-right: 25px;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io"><span style="text-transform: lowercase; font-weight: 300;">The</span> Art Directed <span style="text-transform: lowercase; font-weight: 300;">Journal</span></a></li>
+</ul>
+
+</section>
+
+<section id="article_body">
+
+<p class="title">iCloud <span style="color: #F4B400; font-weight: 400; text-shadow: -1px -1px 0px rgba(238, 138, 8, 0.884);">Notes</span> <br><span style="font-weight: 300; color: #dddddd; margin-left: 25px;">vs</span> <br><span style="color: #4285F4; font-weight: 400; font-family: 'Poppins', sans-serif;">G</span><span style="color: #DB4437; font-weight: 400; font-family: 'Poppins', sans-serif;">o</span><span style="color: #F4B400; font-weight: 400; font-family: 'Poppins', sans-serif;">o</span><span style="color: #4285F4; font-weight: 400; font-family: 'Poppins', sans-serif;">g</span><span style="color: #0F9D5F; font-weight: 400; font-family: 'Poppins', sans-serif;">l</span><span style="color: #DB4437; font-weight: 400; font-family: 'Poppins', sans-serif;">e</span> <span style="font-weight: 300; color: #777;">Keep</span></p>
+
+<p>Back in 2013, shortly after making the switch from iOS to <a href="https://theartdirectedjournal.github.io/android">Android</a>, I began using <a href="https://www.google.com/keep/">Google Keep</a> as my note taking app of choice. Keep is a relatively simple app, and not only does it have the ability to sync between all of my devices, it is also free. Additionally, Google has added some useful features to Keep over time, including but not limited to voice recording, drawing, and importing photos. I briefly switched over to Microsoft's OneNote for a short time when I had a Windows phone, but once I switched back to Android thereafter, I migrated all my notes back into Google Keep.  In fact, when I <a href="https://theartdirectedjournal.github.io/iphoneSE">moved back to iOS in July of last year</a>, I deleted Apple's default iOS Notes app and continued to use Google Keep.</p>
+
+<p>However, I recently came across a few articles about Twitter founder Jack Dorsey and how he <a href="https://www.cnbc.com/2018/10/18/why-twitter-ceo-jack-dorsey-works-on-an-iphone-not-a-laptop.html">uses only an iPhone</a> to run both Twitter and Square. His extensive use of the native notes application on his phone, iOS Notes, is one of the things that empowers him to eliminate a laptop or a tablet from his workflow. This inspired me to re-examine iOS Notes. If a founder and CEO of two giant corporations can run things only using his phone and <a href="https://mobile.twitter.com/jack/status/1012428138326851585">using the stock Apple Notes app</a> on that phone, it must mean that Apple's native notes app has made some vast improvements since its skeuomorphic days in earlier versions of iOS. Could it be that iOS Notes is better than Google Keep? I just had to find out.</p>
+
+<p class="subheading">Design...</p>
+
+<p>Both applications are easy enough to use and provide a low barrier of entry to actually getting notes on the page. Both applications are well designed in that regard, with very similar color schemes. While both having icons with a significant amount of yellow in them, iOS Notes actually uses more yellow within the app itself.  In this way, Keep is slightly easier on the eyes.  It is also my opinion that Keep has better typography. However, there is a subtle paper like background in Notes that I really like. It's skeumorphic, but not overtly skeumorphic. Design is highly subjective though.</p>
+
+<p class="subheading">Features...</p>
+
+<p>Keep and iOS Notes (just referred to as Notes from here on out) have a very similar feature set. Both are kind of &ldquo;bare bones&rdquo;, if you will, but that is exactly what I look for in a note taking application. In terms of what I feel are &ldquo;must have&rdquo; features, the two applications do share quite a few. Notes has built in spell check. Keep has spell check as well. Both are backed by big corporations and sync to their respective clouds.  I know this might sound strange, but if I am going to be syncing my notes to the cloud, I want to ensure that cloud is robust and will be there for some time to come.  I know that Google has been known to kill popular apps, and I know that Apple could change direction with Notes and iCloud at any point they so choose, but I would rather use something like Notes or Keep than a smaller app like Simplenote or Bear.  That said, one of the key features that sets Notes apart is that individual notes taken in Notes can be password protected. On the iPhone, password protected notes can be unlocked with Touch ID / Face ID. In the browser, notes can be unlocked by providing the password.  Keep does not appear to offer the ability to password protect a note.</p>
+
+<img class="lefty" src="https://theartdirectedjournal.github.io/Site_Images/Siri_Notes.PNG" />
+
+<P>Google Keep has the ability to attach a reminder directly to any note.  This happens to be an extremely useful feature, and for the longest time, this appeared to be the one &ldquo;gotta have&rdquo; feature that would keep me using Keep.  However, I recently found that one can use Siri to set a reminder for a note created in Notes.  The first step is to create a note.  Next, with the newly created note open, one can say, &ldquo;Hey Siri.  Remind me about this at 2pm today&rdquo;, for example.  Siri will then create a corresponding reminder in the Reminders app in iOS.  One can also enable typing to Siri in the iPhone’s accessibility settings.  If that is enabled, instead of verbally calling for Siri, one can simply hold down the home button (I use an iPhone SE) and type the reminder command into Siri.  In the Reminders app on the phone, the reminder is actually linked to the note in Notes.  Taping on the Notes icon within the remider will pop open the Notes app and the corresponding note. If using Notes.app on the Mac, I would assume that the process of setting a reminder using Siri would be similar.  As I am currently using Notes in iCloud.com via the browser, the ability to attach a reminder to a note does not exist.  Accessing Keep via the Chrome app or via the web, one can easily attach a reminder to a note by simply tapping/clicking on the reminder icon.  As such, the reminder functionality of Keep is slightly more comprehensive.</P>
+
+<img class="righty" src="https://theartdirectedjournal.github.io/Site_Images/Notes_app.png" />
+
+<p>With Notes, it appears that you can have more than one type of note in a note. For example, a single note can combine a to-do list with checkboxes and paragraphs of text underneath. I have not been able to get Keep to mimic this.  Notes also has the ability to make text bold, italicize text, as well as underline text.  One can create headings and sub-headings.  One can add a title to a note, or not.  If a title to a note is added, that is what shows up in the main list of notes within the app.  If a title is not added to a note, the first few lines show up as the title in the main list.  Individual notes in Keep are limited to simple plain text.  A title is optional, but there is a dedicated field for the title.</p>
+
+<p>Both applications have the ability to upload photos, and as previously stated, both applications provide one the ability to draw within notes.  However, one feature that really sets Notes apart from Keep is the ability to scan a document using the phone's camera and export that scanned document as a .pdf.  This feature has proven itself invaluable over the course of the last few months.</p>
+
+<p class="subheading">Ease of Access...</p>
+
+<p>Keep is available for iOS through the App Store and preinstalled on most Android devices. However, Notes, while preinstalled on iOS, is not available for Android (at least to my knowledge) through Google Play or side load. On the laptop / desktop side of things, Google Keep has a stand-alone Chrome app which works on Windows, Mac or Linux. One can also access their notes stored in Keep via any web browser. The browser based application syncs well and is fast and fluid. There is even a link to quickly view Keep from within GMail on the web. iCloud notes are accessible from within the native Notes.app on a Mac only, but iCloud notes are also accessible through any browser on Windows, Mac or Linux.  I have found, at least on Ubuntu 19.04, that iCloud is faster in Chrome than it is in Firefox.  In my opinion, it safe to say that Keep is the slightly more widely available application, but an iOS user who is not also a Mac user would be just fine in the web app, provided they used Google Chrome.  I would assume that Safari also perform well, but I have not tested that since I no longer use a Mac.  The Epiphany browser (native Gnome browser based on Webkit) works terribly for what it is worth. I have not tested any of this in Microsoft Windows.</p>
+
+<img class="lefty" src="https://theartdirectedjournal.github.io/Site_Images/IMG_0493.PNG" />
+
+<p>Keep is also available as an app on Apple Watch, but only to view notes one has already created. One cannot create or edit notes directly on the watch. There is one exception.  Items on to-do lists that were previously created in Keep, either via the mobile app or on the web, can be marked as complete on the Apple Watch. Unfortunately, at this time Apple does not offer Notes as an appliction on Apple Watch, and there is no way to take a note directly with Siri on Apple Watch. However, on the actual iPhone, Siri is able to take notes and send them to the Notes app. Unfortunately, Siri is unable to generate a note in Keep, nor is Keep able to take voice notes/dictate. One can create an audio note (an actual audio file) however.</p>
+
+<p>As a quick aside, from a mobile perspective, at least on my iPhone SE, Notes launches slightly faster on the iPhone than does Keep. In fact, I am finding this to be true with many of Apple's native apps. For example, iOS's native mail app launches much faster than does Outlook or GMail. Outlook is actually very slow to launch and render anything on my SE. GMail for iOS only launches slightly slower than does Apple's native mail app. In fact, I actually quite like the GMail app for iOS.  It is fast, fluid and allows for push emails where the native iOS mail app can only fetch mail from GMail accounts.  As another example, Safari launches much faster and performs much better than does Chrome or Firefox on iOS.  This is due to Apple's imposed limitations on the two non-native browsers, as Apple will not allow the true rendering engines of these browsers to be used on iOS, instead making the developers use a sub-par version of Webkit.  But I digress.  This is actually something that I should elaborate on in a future piece.</p>
+
+<p class="subheading">To Sum It All Up &mdash; How I Use These Apps...</p>
+
+<p>While design is certainly subjective, these apps provide roughly the same feature set and have an easy barrier of entry to getting notes on the page. I have both on my phone at this time and use them both a good bit.  Notes actually lives in the dock on my phone, as I use it frequently for things that I need to capture quickly. Keep lives in the Productivity folder on my second screen.  That said, since I don't use a Mac, I put things into Keep that I need to be able to easily access cross platform.  While I can access notes captured in iOS Notes through iCloud in the browser, it is not the ideal thing for me, especially since I have two-factor authentication turned on for my iCloud account.</p>
+
+<p class="happy_ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
