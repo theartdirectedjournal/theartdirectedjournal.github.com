@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Do Android Updates Matter?</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load("jquery", "1.2.6");
+</script>
+
+<script type="text/javascript">
+$(function(){
+$('a[href*=#]').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+&& location.hostname == this.hostname) {
+var $target = $(this.hash);
+$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+if ($target.length) {
+var targetOffset = $target.offset().top;
+$('html,body').animate({scrollTop: targetOffset}, 1000);
+return false;
+}
+}
+});
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255,255,255);
+  font-family: 'Lora', serif;
+  animation-name: change_the_color;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; 
+  -webkit-animation-name: change_the_color;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite; 
+}
+
+@keyframes change_the_color
+{
+  0%   {background: rgb(255,255,255);}
+  25%  {background: rgb(245,245,245);}
+  50%  {background: rgb(235,235,235);}
+  75%  {background: rgb(245,245,245);}
+  100% {background: rgb(255,255,255);}
+}
+
+@-webkit-keyframes change_the_color 
+{
+  0%   {background: rgb(255,255,255);}
+  25%  {background: rgb(245,245,245);}
+  50%  {background: rgb(235,235,235);}
+  75%  {background: rgb(245,245,245);}
+  100% {background: rgb(255,255,255);}
+}
+
+:focus {
+  outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(55, 78, 206);
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+  font-weight: 700;
+}
+
+a:hover {
+  color: rgb(32, 47, 116);
+  text-shadow: none;
+}
+
+p {
+  margin: 20px;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+#header {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 12px;
+  color: rgb(55, 78, 206);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+#header #nav a {
+  color: rgb(55, 78, 206);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  border: none;
+  padding: 40px 10px;
+  font-weight: 300;
+}
+
+#header #nav a:hover {
+  color: rgb(32, 47, 116);
+}
+
+#article_body {
+  margin-top: 100px;
+}
+
+#article_body .title {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(0,0,0);
+  text-align: center;
+}
+
+#article_body .article_date {
+    font-size: 12px;
+    color: rgb(33,33,33);
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#article_body p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(33,33,33);
+}
+
+#article_body .happy_ending {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+
+/*--[ FOR LARGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#article_body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#article_body .title {
+  font-size: 48px;
+}
+
+#article_body .article_date {
+    font-size: 14px;
+    margin-bottom: 75px;
+}
+
+#article_body p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#article_body .happy_ending a {
+  font-size: 14px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The <span style="font-weight: 700;">Art Directed</span> Journal</a></li>
+</ul>
+
+</section>
+
+<section id="article_body">
+
+<p class="title">Do Android Updates Matter?</p>
+
+<p class="article_date">August 11, 2019</p>
+
+<p>I was browsing through <a href="http://loopinsight.com">The Loop</a> this past Friday morning and came across an article by Dave Mark titled <a href="http://www.loopinsight.com/2019/08/08/ios-adoption-90-android-pie-adoption-10-does-it-matter/">iOS adoption, 90%. Android Pie adoption, 10%. Does it matter?</a>.  Near the end of his article, Dave invited the reader to correct him on Twitter regarding his question about whether or not it matters from a security perspective if users are on the latest version of Android.  I'm not on Twitter (in fact, I eschew most social media), and as such, I thought I would post this instead.  I think it will provide a more in depth response than a tweet anyway.  :-)  In short, the answer to Dave's question is nuanced.</p>
+
+<p>First, a few things to note.  I'm an iPhone user, having <a href="https://theartdirectedjournal.github.io/iphoneSE">switched</a> in July 2018.  Prior to that, I was an Android user for five years. I’m experienced with custom ROMs, unlocking boot loaders, and the inner workings of Android. I’m a fairly technical nerd. :-)  Common security best practices such as not downloading strange apps, being careful where you go on the web, not clicking links in texts, emails, etc. apply equally to Android and iOS.  Those things being said, the official answer to Dave's question is as follows:  From a security perspective, it does not matter as much whether or not an Android user is on the latest version of Android as much as it matters that an iPhone user is on the latest version of iOS.  Let me explain...</p>
+
+<p>When I am talking about Android here, I specifically mean Google-blessed Android that can download applications from the Google Play Store.  I am not talking about a) Chinese and other market Android devices with no Google involvement and/or b) Fire tablets, IOT devices, etc.  Those devices in the former category, while great in number since the Chinese market is so large, are not representative of most Android devices in the US.</p>
+
+<p>So, with that out of the way, all Google-blessed Android devices have an app installed that has essentially god-like power on the device called Google Pay Services.  Google uses Play Services to provide (even as far back as version 4.4, Kit Kat) with updates to various lower level services that run on the device. In fact, Google has been decoupling a lot of services, processes and features from Android itself (i.e. the Android open source project (AOSP)) and into the Play Store over time.  What this essentially means is that Google can push security updates to various services and system level apps through this mechanism, regardless of Android version.  An example of this is a find my device tracking feature that Google nearly universally rolled out to all users through Play Services.  Another example of a new feature that was universally rolled out through Play Services is Google Play Protect, which scans all apps on the device for malware. The <a href="https://security.googleblog.com/2015/12/protecting-hundreds-of-millions-more.html">safe browsing</a> feature was also pushed out to users via Play Services.</p>
+
+<p>Now, there are some things that still require updates to the core OS itself that cannot be done through Play Services.  This is why Google introduced the “Android security patch level” and <a href="https://www.theverge.com/platform/amp/2018/10/24/18019356/android-security-update-mandate-google-contract">requires</a> all OEMs that sell phones with Google blessed Android that have been activated by more than 100,000 users to roll out security patches to those devices.  My son uses an unlocked Moto G5 Plus, which runs Android 8.0 (Oreo).  While this phone will never receive Android Pie (9.0), it still continues to receive security updates.</p>
+
+<p>Furthermore, the architecture of Android is secure out of the box, due to controls including but not limited to process isolation in the Linux kernel, a user based permissions model, application sandboxing, SE Linux, and verified boot.  Yes, one can select to install applications from outside of the Play Store, but that is not enabled by default, and one must acknowledge a security warning before doing so.  Even then, Play Protect continues to scan the device.  For most users, not installing apps from outside of the Play Store is enough to prevent most malware.  Yes, there have been occasions where Google does let malware slip through and enter the Play Store.  However, this is typically caught pretty quickly.  I would argue that the same holds true for iOS as well, and there have been occassions, albeit rare, where Apple has had malware distributed in apps available within their App Store.</p>
+
+<p>Because of the modular nature of Android and the Play Store, Google also ensures that app versions are up to date, no matter which version of Android you’re on.  Take for example Google Chrome.  As the default browser, it is the way that most users will interact through the web, either through the full browser itself or though <a href="https://play.google.com/store/apps/details?id=com.google.android.webview&hl=en_US">WebView</a>.  Both Chrome and WebView are not updated with the OS, but rather through the Play Store.  This means that the same version of Google Chrome (with the same features and more importantly security patches) is available on devices even as far back as Kit Kat (4.4).  Contrast that with iOS and Safari.  If you’re not on the latest version of iOS, you don’t have the latest version of Safari.  Yes, sometimes Apple does issue out of band security patches, as they recently did with iOS 10, but it is a rarity.  (Also, I think that fixed a GPS issue and nothing with Safari).</p>
+
+<p>What about preinstalled malware?  There are many articles such as <a href="https://www.cnet.com/news/android-malware-that-comes-preinstalled-are-a-massive-threat/">this one</a> that sound the alarm on this issue.  The sad reality is that the market is so vast and the eco-system is fragmented.  As a result, one really does have to be careful which phones one purchases.  Samsung (yuck), LG, Google's own Pixel line, Motorola, OnePlus, and Nokia are all basically safe, reputable bets.  <a href="https://threatpost.com/down-the-rabbit-hole-with-a-blu-phone-infection/128390/">BLU</a> and some of the other &ldquo;budget&rdquo; manufacturers have been suspect.  Bottom line, it goes back to the moral compass of the manufacturer in question and how the supply chain is secured end to end from manufacture to consumer.  Just food for thought, and not to cast a doubt on Apple or iOS (and again, I use an iPhone), but whose to say that an iPhone could not be compromised somewhere along the line in the supply chain? There is no proof of this happening at the moment, but it could happen.</p>
+
+<p>I often get asked by folks what phone to get.  The first thing I always start with is budget, and unfortunately, this is something that Apple really should improve upon.  They need a &ldquo;budget&rdquo; iPhone that is not an older model.  I got my SE for $240, but it won’t get updates after iOS 13 (presumably, based on Apple's past update precedent). Depending on budget, or other factors such as whether or not they want a device with more options for customization, I usually do recommend an iPhone.  However, there are a lot of really good Android devices out there. I have recommended a Pixel for some.  I recommended a OnePlus 7 to one of my wife's friends, and she seems to be very happy with it so far.  Both my boys (17 and 14) use Android by preference, and they are happy with their Moto G’s (G5 Plus and G6 respectively). My youngest son is actually on his second Moto G.</p>
+
+<p>I hope this helps shed some additional light on the Android security model.  While it is different than iOS, that does not necessarily mean that it is not as good or that users of older Android devices are all using phones that are plagued by malware.</p>
+
+<p class="happy_ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
