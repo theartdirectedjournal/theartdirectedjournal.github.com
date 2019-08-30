@@ -96,13 +96,22 @@ img {
 }
 
 #article_body .title {
-  font-size: 42px;
+  font-size: 52px;
   font-weight: 700;
   color: #B6CBDB;
   line-height: 1;
 }
 
 #article_body p {
+  font-size: 18px;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #B6CBDB;
+}
+
+#article_body ol {
+  margin-right: 20px;
+  margin-left: 25px;
   font-size: 18px;
   line-height: 1.75;
   font-weight: 400;
@@ -137,13 +146,22 @@ img {
 }
 
 #article_body .title {
-  font-size: 52px;
+  font-size: 72px;
   line-height: 1;
 }
 
 #article_body p {
   font-size: 22px;
   line-height: 1.75;
+}
+
+#article_body ol {
+  margin-right: 20px;
+  margin-left: 40px;
+  font-size: 22px;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #B6CBDB;
 }
 
 #article_body .happy_ending a {
@@ -171,13 +189,21 @@ img {
 
 <p class="title">External Image Display in GMail for iOS</p>
 
-<p>I know it's probably a super tiny thing to most people, but nevertheless it's a super tiny thing that absolutey drives me crazy about the GMail app for iOS. So what is this thing in the GMail app for iOS that drives me crazy, you might ask? If one opened an email using the GMail app for iOS and that email contained an image, the image would automatically download and display.  You're right, you may observe.  That does sound like a tiny thing.  Who cares?  Three words: <a href="https://www.thecut.com/2019/03/what-is-email-tracking-and-how-can-i-block-it.html">email tracking beacons</a>.  Read about this and then come back, if you would.</p>
+<p>I know it's probably a super tiny thing to most people, but nevertheless it's a super tiny thing that absolutey drives me crazy about the GMail app for iOS. So what is this thing about the GMail app for iOS that drives me crazy, you might ask? If one opens an email using the GMail app for iOS and that email contains an image, the image automatically downloads and displays.  You're right, you may observe.  That does sound like a pretty insignificant thing.  Who cares?  Three words: <a href="https://www.thecut.com/2019/03/what-is-email-tracking-and-how-can-i-block-it.html">email tracking beacons</a>.</p>
 
-<p>Granted, all images in emails that are opened with the GMail app for iOS are first scanned by Google.  This actually does three really good things:  1) The sender of an email can’t use an image to get information about one's location, since the location is Google's and not the email recipient's.  2) The sender of an email can’t use an image to set or read cookies in one's browser. 3) Google makes sure the image does not contain anything malicious.  However, while the sender of an email might not be able to know the location of the recipient, they would still know that the recipient opened the email, since the image automatically loaded.  In Gmail on the web and in the GMail app in Android, Google gives one the option as to whether to load images or not.  If the image is not loaded, it cannot tell the sender of the email that the email was opened.  However, on iOS, this option has mysteriously not been available.</p>
+<p>Granted, the images in emails that are opened with the GMail app for iOS are first scanned by Google.  This does three things:</p>
 
-<p>Until now...  I noticed this morning (August 28, 2019) that Google has finally fixed this in iOS, giving the user the option to load all images automatically or block them if they would like.  Again, I know.  This is probably not a big deal to you, but it made my day.  :-)</p>
+<ol>
+<li>The sender of an email can’t use a loaded image to get information about one's location.</li> 
+<li>The sender of an email can’t use the image to set or read cookies in one's browser.</li> 
+<li>Google makes sure the email does not contain anything malicious.  </li>
+</ol>
 
-<p class="image_holder"><img src="https://theartdirectedjournal.github.com/Site_Images/IMG_0789.PNG" /></p>
+<p>However, while a sender who places a tracking pixel in their email might not be able to know the exact location of the recipient,they would still know that the recipient opened the email, since the image automatically loaded.  In Gmail on the web and in the GMail app in Android, Google gives one the option as to whether to load images or not, thus giving the user the option of letting the sender of the email know that they opened it.  However, on iOS, this option has mysteriously not been available.</p>
+
+<p>Until now...  Google has finally fixed this in iOS, giving the user the option to load all images automatically or block them if they would like.  Again, I know.  This is probably not a big deal to you, but it made my day.  &#129299;</p>
+
+<p class="image_holder"><img src="https://theartdirectedjournal.github.io/Site_Images/IMG_0789.PNG" /></p>
 
 <p class="happy_ending"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
 
