@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Minimal Install</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Pro:300,400,700' rel="stylesheet"> 
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: rgb(138, 24, 71);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+font-weight: 700;
+}
+
+a:hover {
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+code {
+font-size: 14px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}     
+
+#intro_holder {
+width: 100%;
+background: linear-gradient(126deg, rgba(101, 101, 101, 0.09) 0%, rgba(101, 101, 101, 0.09) 68%,rgba(200, 200, 200, 0.09) 68%, rgba(200, 200, 200, 0.09) 100%),linear-gradient(164deg, rgba(238, 238, 238, 0.03) 0%, rgba(238, 238, 238, 0.03) 90%,rgba(14, 14, 14, 0.03) 90%, rgba(14, 14, 14, 0.03) 100%),linear-gradient(27deg, rgba(214, 214, 214, 0.04) 0%, rgba(214, 214, 214, 0.04) 34%,rgba(104, 104, 104, 0.04) 34%, rgba(104, 104, 104, 0.04) 100%),linear-gradient(175deg, rgba(20, 20, 20, 0.01) 0%, rgba(20, 20, 20, 0.01) 4%,rgba(9, 9, 9, 0.01) 4%, rgba(9, 9, 9, 0.01) 100%),linear-gradient(257deg, rgba(14, 14, 14, 0.01) 0%, rgba(14, 14, 14, 0.01) 28%,rgba(164, 164, 164, 0.01) 28%, rgba(164, 164, 164, 0.01) 100%),linear-gradient(311deg, rgba(68, 68, 68, 0.07) 0%, rgba(68, 68, 68, 0.07) 33%,rgba(213, 213, 213, 0.07) 33%, rgba(213, 213, 213, 0.07) 100%),linear-gradient(244deg, rgba(43, 43, 43, 0.02) 0%, rgba(43, 43, 43, 0.02) 80%,rgba(161, 161, 161, 0.02) 80%, rgba(161, 161, 161, 0.02) 100%),linear-gradient(130deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 49%,rgba(105, 105, 105, 0.04) 49%, rgba(105, 105, 105, 0.04) 100%),linear-gradient(90deg, rgb(190, 33, 111),rgb(97, 3, 0));
+min-height: 600px;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 12px;
+font-family: "Open Sans", "Arial", sans-serif;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+font-family: "Open Sans", "Arial", sans-serif;
+font-weight: 300;
+margin-top: 150px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 52px;
+font-weight: 700;
+text-align: center;
+letter-spacing: -2px;
+}
+
+#intro p {
+font-size: 18px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background:rgb(233,233,233);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Crimson Pro', serif;
+font-weight: 300;
+}
+
+#main_content .firstcharacter {
+color: #000;
+float: left;
+font-size: 62px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+#main_content .begin_point {
+    color: #000;
+    font-weight: 700;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+font-weight: 700;
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 12px;
+}
+
+#main_content .end a {
+border-bottom: none;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+img {
+float: right;
+max-width: 50%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: rgb(138, 24, 71);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+code {
+font-size: 16px;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 250px;
+width: 960px;https://fedoramagazine.org/what-is-silverblue/
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+font-weight: bold;
+text-align: center;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(233,233,233);
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 75px;
+line-height: 60px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+font-size: 16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The <span style="font-weight: 700; text-transform: uppercase;">Art Directed</span> Journal</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Minimal Install</p>
+
+<p>My experience with Ubuntu 19.04</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">D</span>istro hopping is <a href="https://www.urbandictionary.com/define.php?term=distrohopper">something</a> that I just cannot shake.  No matter how determined I am to stay with a particular distro, I just cannot stay put.  I had been relatively content with elementary OS, but in the last few weeks, I have cycled between Fedora 30, then back to elementary, then to Fedora Silverblue, then to Pop!_OS, then back to elementary, and finally to Ubuntu 19.04. I like Fedora, but I prefer Debian based distros. I really like the concept of an <a href="https://fedoramagazine.org/what-is-silverblue/">immutable operating system</a> (think Chrome OS or the latest version of Mac OS), but Silverblue still has a way to go. While elementary OS and Pop!_OS are Ubuntu derivatives (Ubuntu, of course, being based on <a href="https://www.debian.org/">Debian</a>), I ultimately decided to have a long term go with Ubuntu proper.  I had used 19.04 during its beta period, as well as for a few weeks <a href="https://theartdirectedjournal.github.io/Ubuntu-19-04">a few months ago</a>, and I had a really good experience with it.</p>
+
+<p>But all that back story is sort of beside the point.  With all of my disto hopping, I basically have setting up a new distro down to a science, and while it is relatively easy, it ultimtately takes some time.  There are only a handful of core applications that don't come bundled with each distro, upon which I rely that I need to install, and there are settings (which vary from distro to distro) that must be tweaked.  However, the most time consuming thing for me is deleting all the apps that I don't use that inevitably come bundled with most distros. I know I can just leave these unneeded applications installed and just not use them, but the fact that they are there taking up space triggers something OCD deep down in me.  (For what it's worth, I also delete all of Apple's worthless default apps on the iPhone, and when I was into Android custom ROMs, I would install the Nano version of <a href="https://opengapps.org/">Open GApps</a>.) Depending on the distro, again, this all takes time.</p>
+
+<img src="https://theartdirectedjournal.github.io/Site_Images/Ubuntu_minimal_install_apps.png" />
+
+<p>So as I was going through the Ubuntu 19.04 install process this time, I noticed something that I actually had not really paid much attention to before, which upon further research, appears to have been around at least since version 18.04:  the minimal install option.  So, I checked the box for a minimal install and finished the installation process.  The minimal install option keeps a number of applications, all of which I remove anyway, from being installed in the first place.  For Ubuntu, those applications include, but are not limited to, Libre Office (an MS Office alternative), Thunderbird (an email client from Mozilla), Transmission (a torrent application), Rhythmbox (Ubuntu's music player of choice), Cheese (a camera app), Shotwell (a photo manager), and Amazon (a link to the Amazon store).  It also keeps a number of games that I never play from being installed.</p>
+
+<p>I must say that I am glad I went this route.  Upon rebooting after the initial install, all I had to do was enable two-finger scrolling (the trackpad on my laptop has drivers for this that no distro seems to have preinstalled), enable the software firewall (<code>sudo ufw enable</code>), install Chrome and Visual Studio Code (those afrementioned core applications), and update the system (<code>sudo apt update && sudo apt dist-upgrade</code>).  That's literally it.  I was up and running on a minimal install in a matter of minutes.  After that, there were a few settings that I tweaked, and I also added Gnome Music (which I much prefer over Rythmbox for its simplicity) and <a href="https://www.gimp.org/">GIMP</a>.  I also installed the Gnome Tweak Tool, so that I could remove desktop icons.</p>  
+
+<p>If you're planning to install Ubuntu anytime soon, and you're like me and you prefer simplicity, I would highly recommend that you try the minimal install option.</p>
+
+<p class="end"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
