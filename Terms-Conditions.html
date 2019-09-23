@@ -27,6 +27,100 @@ body {
 
 a:link, a:visited {
   text-decoration: none;
+  color: #f37329;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #cc3b02;
+}
+
+p {
+  margin: 30px;
+}
+
+#header {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 12px;
+  color: #777;
+  font-weight: 300;
+}
+
+#header #nav a {
+  color: rgb(255,255,255);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  border: none;
+  background-color: rgb(40,80,129);
+  padding: 40px 10px;
+  font-weight: 300;
+}
+
+#header #nav a:hover {
+  background-color: #cc3b02;
+}
+
+#article_body {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#article_body p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(255,255,255);
+  font-weight: 400;
+  text-shadow: 0px 1px 2px #161619;
+}
+
+#article_body .happy_ending {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#article_body .happy_ending a {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  background: #f37329;
+  text-shadow: 0px 1px 2px #161619;
+}
+
+#article_body .happy_ending a:hover {
+  background: #cc3b02;
+}
+
+
+
+/*--[ FOR LARGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+a:link, a:visited {
+  text-decoration: none;
   color: rgb(40,80,129);
   -webkit-transition: .5s all ease-in-out;
   -moz-transition: .5s all ease-in-out;
@@ -36,10 +130,6 @@ a:link, a:visited {
 a:hover {
   color: #000;
   text-shadow: none;
-}
-
-p {
-  margin: 30px;
 }
 
 #header {
@@ -82,22 +172,23 @@ p {
 #article_body {
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-left: 30px;
-  margin-right: 30px;
   padding-top: 30px;
   padding-bottom: 20px;
-  width: 80%;
   background: rgb(226,226,226);
   -webkit-box-shadow: 2px 2px 10px -3px rgba(22,22,25,1);
   -moz-box-shadow: 2px 2px 10px -3px rgba(22,22,25,1);
   box-shadow: 2px 2px 10px -3px rgba(22,22,25,1);
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #article_body p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   color: #333;
   font-weight: 400;
+  text-shadow: none;
 }
 
 #article_body .happy_ending {
@@ -116,24 +207,6 @@ p {
 
 #article_body .happy_ending a:hover {
   background: rgb(33,33,33);
-}
-
-
-
-/*--[ FOR LARGER SCREENS ]--------------------*/
-
-@media screen and (min-width: 481px) {
-
-#article_body {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#article_body p {
-  font-size: 18px;
-  line-height: 1.5;
-}
 
 }
 
@@ -153,9 +226,9 @@ p {
 
 <section id="article_body">
 
-<p>This site has no privacy policy.  While I do make heavy use of Google Fonts, I do not collect anything from visitors of this site.  In fact, I do not actually care which sites you came from, nor do I care where you go from here.  I do not care what browser you use, and I do not care where you are located. To ensure an optimal reading experience, I test each post using Chrome (desktop), Firefox, Epiphany (based on <a href="https://webkit.org/downloads/">Webkit</a>) and Safari (iOS).  I do not wish to personalize any content, and I will not show you any ads.</p> 
+<p>While I do make heavy use of <a href="https://developers.google.com/fonts/faq#what_does_using_the_google_fonts_api_mean_for_the_privacy_of_my_users">Google Fonts</a>, I do not collect any information from the visitors of this site.  I don't care about SEO or anayltics.  In fact, I don't actually care which site(s) you come from, nor do I care where you go from here.  I don't care what browser you use, and I don't care where you're located. Instead, to ensure an optimal reading experience, I do test each post using Chrome (desktop and Android), Firefox (desktop and Android), Epiphany (which is based on <a href="https://webkit.org/downloads/">Webkit</a>) and Safari (iOS).  Some posts may look different in different browsers and at different widths, but that's okay with me.</p> 
 
-<p>Instead, I will do my best to provide a fast, well-designed and (hopefully) entertaining reading experience.</p>
+<p>I don't wish to personalize any content for you, and I will not show you any ads.  The bottom line here is that I keep this site as a hobby, as a place to practice web design and improve my writing.  That said, I will do my absolute best to provide you with a fast, well-designed and (hopefully) entertaining reading experience.</p>
 
 <p class="happy_ending"><a href="http://theartdirectedjournal.github.io">&#10003; I Accept</a></p>
 
@@ -163,3 +236,4 @@ p {
 
 </body>
 </html>
+
