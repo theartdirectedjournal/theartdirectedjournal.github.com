@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>elementary OS 5.1 Hera</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet">  
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #a10705;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #ed5353;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}       
+
+.left {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}       
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(http://theartdirectedjournal.github.io/Site_Images/e_OS_Desktop.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+background: rgba(0,0,0,.80)
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+font-family: 'Raleway', sans-serif;
+margin-top: 100px;
+margin-bottom: 175px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: 'Raleway', sans-serif;
+font-size: 52px;
+font-weight: 300;
+text-align: center;
+margin-bottom: 50px;
+}
+
+#intro p {
+font-family: 'Cormorant Garamond', serif;
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: linear-gradient(to bottom, #fafafa 0%, #d4d4d4 100%);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+}
+
+#main_content .firstcharacter {
+font-family: 'Cormorant Garamond', serif;
+font-weight: 700;
+color: #000;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+#main_content .begin_point {
+font-family: 'Cormorant Garamond', serif;
+color: #000;
+font-size: 38px;
+line-height: 1;
+margin-top: 50px;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+img {
+float: right;
+max-width: 50%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+.left {
+float: left;
+max-width: 50%;
+height: auto;
+margin-right: 25px;
+margin-bottom: 25px;
+}       
+
+.left:hover {
+max-width: 100%;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 350px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+margin-bottom: 75px;
+}
+
+#intro p {
+font-size: 32px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">elementary OS</p>
+
+<p>Newly released version 5.1 Hera is a feature packed update to one of the most beautiful and consumer friendly Linux distros.</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">O</span>ther people who are much better at reviewing operating systems than I have given elementary OS 5.1 a review.  You can read one of those <a href="https://www.forbes.com/sites/jasonevangelho/2019/12/03/meet-elementary-os-the-linux-desktop-thats-more-elegant-than-mac-and-windows-10/#39d41ab36c15">here</a> or another <a href="https://www.omgubuntu.co.uk/2019/12/elementary-os-5-1-hera-release">here</a>, or you can watch this one <a href="https://www.youtube.com/watch?v=3QORi599w90">here</a>.  Furthermore, in their customary fashion, the good folks over at elementary have written an <a href="https://blog.elementary.io/introducing-elementary-os-5-1-hera/">extremely detailed post</a> as to the specific changes that 5.1 brings.</p>
+
+<p>So why even write up a review?  My point of view is a bit different.  Rather than parrot what has changed, I would like to convey why I use elementary and how the new changes make my life easier.</p>
+
+<p class="begin_point">Why Linux?  Why elementary?</p>
+
+<p>In terms of my personal preference, I actually have nothing against Windows.  I have to use it for work, and I like the &ldquo;new&rdquo; Microsoft.  I really dislike Mac OS.  I like the way Mac OS looks.  I think it's a beautiful operating system. But I feel that the hardware is overpriced, and the operating system itself is becoming slower and more draconian.  I for one will never buy another Mac.  But the reality is that I just really like Linux.</p>
+
+<p>I have written about <a href="https://theartdirectedjournal.github.io/WhyLinux">why I prefer Linux</a> before. Linux is a great alternative to Windows and Mac OS, and it can make older hardware young again.  elementary is especially good at the latter. It's a rather light-weight distro, meaning that it is not heavy on CPU and RAM.  The 5.1 update, which is in reality a cumulative point in time update that includes the changes that the elementary team has been rolling into version 5.0 over time, makes elementary even more fast and fluid.</p>
+
+<p class="begin_point">Sensible Application Defaults</p>
+
+<p>I am a firm believer in a concept called &ldquo;sensible defaults&rdquo;. My friend Patrick Rhone has written about this <a href="https://patrickrhone.com/2010/11/08/sensible-defaults/">here</a>, if you would like to read more.  Upon a clean install of elementary OS, one is presented with all of the applications one needs to get stuff done, and all of those applications are well designed and really useful &mdash; sensible defaults, if you will.  Now, I install a handful of third-party applications.  I like and mainly use Chrome (and Google Keep).  I like Visual Studio Code (more on that later on).  I use Spotify Premium, and there is an application in the AppCenter called Eddy that is great at making .deb installs a breeze.  But really and truly, I could perform a fresh install of elementary OS and technically not have to install any addtional applications.  The browser, which is Webkit based, works well.  There is a well thought out email client, a calendar, a calculator, a photos app, and a video app.  However, there are some default applications that, in my opinion, are simply extraordinary.</p>
+
+<p>One such example is Code. 2019 found me disto hopping quite a bit.  I began the year with <a href="https://theartdirectedjournal.github.io/Elementary-OS">elementary OS</a>, took a tiny break to briefly install <a href="https://theartdirectedjournal.github.io/Ubuntu-19-04">Ubuntu 19.04</a>, but then went back to elementary.  I got bored and installed two different versions of Fedora, as well as Pop!_OS, eventually going back to <a href="https://theartdirectedjournal.github.io/Minimal-Install">Ubuntu 19.04</a>.  But it was back to elementary soon therafter.  I also took a small break to very briefly use Windows 10, mainly to play around with the Windows subsystem for Linux, but it was again back to elementary soon therefter.  I say all that to say that one of the applications I had not really used during my previous time with elementary was Code.  Code, as the name so aptly suggests, is elementary's default code editor, and it is really a well written application.  I have always sort of standardized on Visual Studio Code, since it is truly cross platform, and while I still use Visual Studio Code from time to time, I am beginning to prefer elementary's Code.  It launches quickly (much more so than VS Code), is beautiful, performs well, uses few system resources, has <a href="https://elementary.io/docs/code/getting-started#pushing-to-github">Git integration</a>, and has a few really nice and useful extensions, such as &ldquo;Broswer Preview&rdquo;.</p>
+
+<img src="https://theartdirectedjournal.github.io/Site_Images/Code.png" />
+
+<p>Other examples of sensible defaults provided with elementary include their Screenshot application, their Terminal and Music.  The Screenshot application is fast, simple and versatile.  It has three main modes: whole screen, current application window, and select area to grab.  The Terminal also has some really great features, like <a href="https://theartdirectedjournal.github.io/paste-protection">paste protection</a>, as well as stars when one enters passwords, as opposed to no feedback when entering passwords, like in the <a href="https://help.gnome.org/users/gnome-terminal/stable/">Gnome terminal</a>. I like how Terminal integrates with elementary's notifications menu, and I also like how one can simply paste with Control+V.  Last but certainly not least is the Music application.  It is fast (see the theme here?), bare bones, and it just works.  I have imported my entire music collection to it. While the application does not live in the dock, I regularly use it.</p>
+
+<p class="begin_point">Sensible System Defaults</p>
+
+<p>I used to be one of those people who loves to tinker with how things look.  I used to play with themes, icons, etc.  However, I am no longer that person.  I no longer feel the need to customize everything to the nth degree.  elementary is perfect for me, as it comes with a very well thought out desktop environment called Pantheon.  While reminiscent of Mac OS, Pantheon is actually much more well thought out.  The 5.1 update, which again is really just a culmination of the numerous updates that the elementary team had rolled into version 5.0 over time, makes this desktop even better.  For example, they have changed the way certain settings are laid out, making them much more logical.  Case in point are the mouse and touchpad settings.</p>
+
+<img class="left" src="https://theartdirectedjournal.github.io/Site_Images/Mouse_Touchpad_Settings.png" />
+
+<p>Another example is an application called Onboarding, which technically rolled out in <a href="https://blog.elementary.io/get-settled-into-elementary-os-with-onboarding/">July</a>.  It is a little application that shows you what is new in terms of important updates, and it also provides a first run experience, where one can easily choose default settings, such as turning on location services, turning on warmer display colors at night to prevent eye strain, and setting temp files and files in the trash to automatically be deleted after 30 days.  I really like the first run experience.</p>
+
+<p class="begin_point">The Update Experience</p>
+
+<p>What I like about elementary is that it is essentially a very stable, rolling release.  It is based on Ubuntu 18.04 long term support (LTS), but at the same time, the developers are constantly adding their own bug fixes, applications, application updates, and various other little tweaks, in addition to the regular security updates and fixes that come from the Ubuntu base.  I really like this approach, and I look forward to updates.  Also, and this is a really key &ldquo;feature&rdquo;, the elementary team always takes care to blog in great detail about even the most minute of updates.  Plus, if you follow them on Twitter, you'll be privy to some of the development and design work they are doing.  I really appreciate this level of transparency.</p>
+
+<p>Like all Linux distros, updates are installed when you want them.  Updates (both apps and OS) occur through the AppCenter, but one can still also go to the command line (which I prefer).  Rarely does an update require a reboot.</p>
+
+<p class="begin_point">A Few Areas of Improvement</p>
+
+<p>What review is complete without some constructive criticism?  This just so happens to be a minor thing for me, but I think it is very important for new users &mdash; the software firewall is not enabled by default on a fresh install.  I would like to see the elementary team just go ahead and make this change.  I do like the fact that unlike Ubuntu, there is actually a firewall section within the Security & Privacy section of System Settings.</p>
+
+<p>This also may be an issue with my hardware, but I did run into a few issues on an initial clean install of 5.1.  I think it could have been a bad USB drive?  Or maybe it is my laptop?  Either way, the install bombed out on me twice.  Each time it bombed out was because after I had connected to my WiFi network, then selected the option to install all updates during the install process, I seemed to lose the WiFi connection.  This is actually fairly normal for my device (HP Pavilion laptop circa 2012 with an i5) during a vanilla Ubuntu install.  However, each time during the copying files piece of the install process, I received errors.  Of course, as there was no WiFi, I could not report the install error.  The solution, at least for me, was to do the install like normal, except <i>not</i> check the install updates during the install box.  The install succeeded.</p>
+
+<p>The cool thing about this was that I emailed <a href="https://twitter.com/CassidyJames">Cassidy</a>, who was very responsive and stated they were going to be looking into testing with both the updates checked and unchecked to see if they can reproduce the issue.</p>
+
+<p>That said, I also tried doing an install of 5.0 with a very old ISO that I had downloaded when 5.0 first came out.  I successfully installed that, and then I was able to easily upgrade to 5.1.  In fact, the updates went so smoothly that I actually did not realize that I was on 5.1 until I went into System Settings --> About and then looked.</p>
+
+<p class="begin_point">Many Thanks</p>
+
+<p>Thank you to the many developers, both working at elementary in a full time capacity and who volunteer.  Their hard work and labor of love make this distro possible.  This team has created a wonderful thing.  elementary is hands down the best desktop operating system there is at the moment.  Keep up the great work!  As I've said before, such a great team, and such a great distro to <a href="https://elementary.io/get-involved">get involved</a> with.</p>
+
+<p class="end"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
