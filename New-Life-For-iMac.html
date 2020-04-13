@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>New Life for an Old iMac</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'EB Garamond', 'Garamond', serif;
+font-weight: normal;
+letter-spacing: -0.05em;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #903;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+    
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+.left {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(http://theartdirectedjournal.github.io/Site_Images/cloudready_imac.jpg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 75px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 52px;
+text-align: center;
+}
+
+#intro p {
+font-size: 18px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(237,237,237) url(https://theartdirectedjournal.github.io/Site_Images/Organization/extra_clean_paper.png) top left repeat;
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+font-weight: 700;
+color: #000;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 400;
+text-transform: uppercase;
+
+}
+
+#main_content .begin_point {
+color: #000;
+font-size: 36px;
+line-height: 1;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+    
+img {
+float: right;
+max-width: 50%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+.left {
+float: left;
+max-width: 50%;
+height: auto;
+margin-right: 25px;
+margin-bottom: 25px;
+}       
+
+.left:hover {
+max-width: 100%;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #903;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 150px;
+margin-bottom: 250px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The Art Directed Journal</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">New Life for an Old iMac</p>
+
+<p>April 2020</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">A</span>pple made some spectacularly great hardware during Steve Jobs’ second tenure as CEO.  The build quality, reliability and longevity of most of the products Apple released during this time was truly second to none, and the 2008 iMac was no exception.  My wife and I purchased our 2008 iMac in late August (or maybe it was early September) 2008.  Close to 12 years later, our little iMac is still trucking along.  It was somewhat slower than it used to be, and the long unsupported operating system, (<a href="https://en.wikipedia.org/wiki/OS_X_El_Capitan">OS X El Capitan</a>), was woefully out of date.  Since there is no option through official Apple channels to upgrade our iMac to the latest version of Mac OS, or even to a slightly older version of Mac OS that is still supported by Apple with security updates, the iMac just sat on my desk quietly collecting dust.  In fact, I don't think that it had been powered on since around October 2018.</p>
+    
+<p style="text-align: center; color: #777;">....................</p>
+
+<p>I sometimes thought about what to do about our little iMac. Should I retire it and take it up to my closet, where all my old tech stuff goes to die?  Should I &ldquo;hackintosh&rdquo; the latest version of Mac OS onto it?  Should I install Linux? I really didn't want to retire it, especially since the hardware still worked just fine.  However, the idea of &ldquo;hackintoshing&rdquo; the latest version of Mac OS onto it did not seem appealing to me, as I'm not a fan of the later versions of Mac OS.  Ultimately, I decided to go the Linux route.</p>
+
+<p class="begin_point">The answer to the question of which Linux distro to go with did not turn out to be an easy one.</p>
+
+<p>I initially installed <a href="https://elementary.io/">elementary OS</a>, which has been my favorite Linux distro for quite some time.  I have written in detail about it <a href="https://theartdirectedjournal.github.io/Elementary-OS">here</a>, <a href="https://theartdirectedjournal.github.io/paste-protection">here</a>, and <a href="https://theartdirectedjournal.github.io/Hera">here</a>. elementary’s desktop environment, Pantheon, runs well on older hardware.  I love the way Pantheon looks, and I enjoy the sensible defaults that the elementary team has created.  While everything initially worked out of the box, including but not limited to WiFi, Bluetooth, and printers, there were some quirks, such as an odd popping sound whenever the volume was initially turned up or down, that were annoying, yet easy enough to deal with.  However, there was one huge issue that caused me to second guess my choice of elementary.  Upon waking the iMac from sleep after any period of non-activity, the entire display would become grainy and the colors would be distorted.  The only thing that seemed to work to make the display return to normal was a reboot.  I also tried the following additional Linux distros, all of which also had the same display issue:  Ubuntu 19.10, Xubuntu 19.10,  and Fedora 32.  While I’m sure that this is a solvable issue, I could not find any real solutions anywhere on the Internet, and I do not currently have the patience to troubleshoot.</p>
+    
+<p class="begin_point">Chrome OS, rather CloudReady, to the rescue.</p>
+    
+<p>As I was searching for an answer to the aforementioned display issue, I came across a company called Neverware that makes a version of Chrome OS called <a href="https://www.neverware.com">CloudReady</a>.  It's actually based on <a href="https://www.chromium.org/chromium-os">Chromium OS</a>, which is the open source version of Google's <a href="https://www.google.com/chromebook/chrome-os/">Chrome OS</a>. Neverware has a list of hardware that has been &ldquo;certified&rdquo; for use with CloudReady, and it just so happens that our iMac is on the list. CloudReady is free for home use, and since I have long been a fan of Chrome OS, I decided to give it a shot.  The installation process was easy.  You simply create a USB installer and proceed to install, following the <a href="https://guide.neverware.com/build-installer/automatic-usb-maker/">instructions on their site</a>.</p>
+    
+<img src="https://theartdirectedjournal.github.io/Site_Images/Cloud_Ready_System_Info.png" />
+    
+<p>Just as it did with elementary OS, WiFi worked out of the box, as did Bluetooth, sound, and printing. Much to my delight, the grainy-color-distorted-screen-after-waking-from-sleep issue was gone.  Speaking of delight, I forgot what a joy Chrome OS (CloudReady) was to set up and use.  The set up process was a breeze.  As I had a Chromebook once upon a time, most of my previously installed apps showed up in the &ldquo;shelf&rdquo;(dock) and in the launcher within minutes after signing in with my Google account.  Cloudready came with Virtualbox preinstalled. The Hulu progressive web app (PWA) was preinstalled as well.  (At least I think Neverware preinstalled the Hulu PWA, as I don't recall ever having installed that one on my old Chromebook.)<p>
+    
+<p class="begin_point">What about performance?</p>
+    
+<p>I <a href="https://theartdirectedjournal.github.io/thisoldmac">wrote about</a> our iMac at its ten year anniversary, commenting that it was holding up surprisingly well for a ten year old machine, &ldquo;as long as you don’t expect Porsche level performance&rdquo;.  Just like Chrome OS, CloudReady is lightweight, and it makes our lower spec'd iMac just fly.  I love the simplicity of this operating system.  Some may say Chrome OS is simplistic to a fault, but I have everything I need.  The Chromium browser (the open source version of Google Chrome that comes installed with CloudReady) launches with lightening quick speed.  In fact, it launches much faster on this iMac than it does on my laptop, which has a much better processor.  Given the little iMac's now low end processor and the smaller amount of RAM, CloudReady has made multi-tasking on this iMac actually decent.</p>
+    
+<p class="begin_point">Have there been any issues to speak of?</p>
+
+<p>CloudReady, while Linux based, is a little different from other Linux distributions, even Chrome OS in some ways.  For example, even though you sign into the device with your Google account, just like on a Chromebook, the Google Play store is not included, and thus, the ability to install Android apps is not available. That's not such a big deal for me, as everything that I need to do on this machine can be accomplished either in the Chromium browser or through a PWA.</p>
+    
+<img class="left" src="https://theartdirectedjournal.github.io/Site_Images/Flatpak.png" />
+    
+<p>One nice-to-have feature that Neverware enabled is the ability to download and install <a href="https://flathub.org/home">Flatpak</a> applications.  To do so, simply navigate to Flathub and download the .flatpakref file for the application you wish to install.  Then, from your downloads folder, simply click on the file, click &ldquo;open&rdquo; in the menu bar and click &ldquo;Install Application&rdquo; from the drop down menu.  This functionality is still very much a work in progress.  Some applications have strange issues.  For example Firefox opens to file tree page, while <a href="https://www.gimp.org/">GIMP</a> opens to an error that states, &ldquo;Opening '/' failed: Not a regular file&rdquo;.</p>
+
+<p>Chrome OS will allow you to <a href="https://support.google.com/chromebook/answer/9145439?p=chromebook_linuxapps&b=chromeover64&visit_id=637222056386218835-2475287755&rd=1">install Linux (beta) within Chrome OS</a>, and CloudReady appears to give that option as well.  However, when I follow the steps to enable Linux, I get errors stating that the virtual machine cannot be started.  This is a common error, based on my research, and I plan to troubleshoot this a bit more to see if it is a hardware support issue or something else.  Either way, installing Linux within Chrome OS is something that I can easily live without, especially since Neverware has enabled installs of Flatpak applications.</p>
+    
+<p style="text-align: center; color: #777;">....................</p>
+    
+<p>CloudReady makes our little iMac feel like a new computer again.  Hopefully, Neverware will keep supporting the 2008 iMac with updates.  If so, and if the hardware keeps on keeping on, I plan to continue happily using this iMac for many more years to come.</p>
+
+<p class="end"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
