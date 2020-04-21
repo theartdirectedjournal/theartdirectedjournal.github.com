@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>New Life for an Old iMac Part 2</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Manrope', sans-serif;
+font-weight: normal;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: rgb(94, 161, 216);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+font-weight: 700;
+}
+
+a:hover {
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+    
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+.left {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(https://theartdirectedjournal.github.io/Site_Images/iMac_Catalina.jpg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 12px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+border: none;
+font-weight: 400;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 75px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 52px;
+text-align: center;
+font-weight: 700;
+line-height: 1;
+}
+
+#intro p {
+font-size: 14px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: linear-gradient(to bottom, rgb(0,0,0) 0%, rgb(33,33,33) 100%);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(246,246,246);
+font-size: 16px;
+line-height: 1.75;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#main_content .begin_point {
+color: #rgb(246,246,246);
+font-size: 42px;
+line-height: 1;
+margin-top: 50px;
+margin-bottom: 50px;
+font-weight: 700;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+    
+img {
+float: right;
+max-width: 50%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+.left {
+float: left;
+max-width: 50%;
+height: auto;
+margin-right: 25px;
+margin-bottom: 25px;
+}       
+
+.left:hover {
+max-width: 100%;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 12px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 150px;
+margin-bottom: 250px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+}
+
+#intro p {
+font-size: 16px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 800px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-size: 16px;
+line-height: 1.75;
+}
+
+#main_content .begin_point {
+font-size: 72px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="https://theartdirectedjournal.github.io">The Art Directed Journal</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">New Life for an Old iMac Part 2</p>
+
+<p>April 2020</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p>I <a href="https://theartdirectedjournal.github.io/New-Life-For-iMac">wrote earlier this month</a> about how installing CloudReady, a version of Chrome OS distributed and maintained by Neverware, gave new life to the seemingly outdated 2008 iMac that my wife and I share.  CloudReady has made our iMac a joy to use again, and I have been happily using it since.  In fact, aside from my iPhone 11, our little iMac has become my most used computer.</p>
+
+<p>When thinking about what to do to restore our iMac, I briefly contemplated shoehorning the latest version of macOS on it.  However, as I am not a huge fan of the changes that Apple has made to the Mac operating system since Snow Leopard, I decided to go the Linux route.  A few days ago, I came across <a href="https://youtu.be/wxFzZWqoCng">a really good tutorial for installing the latest version of macOS (Catalina) on unsupported Macs</a>, and curiosity got the better of me.  Now our iMac is running Catalina.</p>
+
+<p class="begin_point">Was the install process easy?  Absolutely.</p>
+
+<p>The tutorial was really detailed and not technically complicated.  There is no command line jujutsu involved.  Anyone who is half way decent at following instructions can do it.  Step 1 was to remove CloudReady and re-install Mac OS X Snow Leopard.  Fortunately, I still had the install disc that I bought from Apple for $30 back in the day.  I simply put the disc in the iMac’s drive, hit the option key as I booted it up, and then went into the Disc Utlility.  This allowed me to wipe the hard drive and format it as Mac OS Extended (Journaled).  Once that was done, I then installed Snow Leopard.</p>
+    
+<p>After installing Snow Leopard, the steps on <a href="http://dosdude1.com/catalina/">dosdude1’s site</a> could be followed.  Again, his instructions are straight forward, and he must be commended for his fantastic work.  I only ran into two issues, the first of which occurred after getting to the step where I could actually install Catalina to our iMac's newly-formatted-as-APFS hard drive.  After choosing the &ldquo;Reinstall macOS&rdquo; option, the initial install process would run, but instead of a clean reboot into the second phase of the install process, the installer would loop back into the macOS Utlilites tool.  I figured out that if you then manually shut down the iMac, remove the USB drive with the macOS installer tools on it, then boot again sans USB drive, the install process would complete.</p> 
+
+<p>The other issue I ran across was that once that install process completed, it would not boot back into the OS to finish the Catalina set up process.  The work around for this was to again boot from the installer USB created earlier in the process, and from there click the &ldquo;macOS Post Install&rdquo; option.  Depending on which Mac you have, all the appropriate drivers and additional files will be installed.  Once that completed, I then booted into the OS normally and finished the Catalina set up.</p>
+    
+<p class="begin_point">How is Catalina compared to CloudReady?</p>
+
+<p>Interestingly enough, Catalina actually performs better on this iMac than did OS X El Capitan (which was the last version of the Mac operating system supported by Apple for the iMac 8,1).  Even with the lower end processor and minimal amount of RAM, it is still a very usable machine with Catalina.  However, don’t expect Porsche performance.  Things like day to day web surfing, using Visual Studio Code, listening to Spotify, and watching video all work well.  I have not tried it, but I highly suspect things like video editing and heavy photo editing will be a no-go.  I edited the photo used in the top section of this piece on the iMac, using a web app called Pixlr accessed via Safari.  It was not a painful process (although all I did to the photo was add a layer of black with a 75% transparency).</p>
+
+<p>In terms of the overall performance aspect of CloudReady versus Catalina, well, with CloudReady being so light weight, it absolutely runs circles around Catalina on this machine.  It is what it is.  If you want a machine that is a speed demon on a device as now low end as this one, stick with CloudReady.  That said, I have been pleasantly surprised with Catalina, and I’m planning to continue running Catalina for the near future.</p>
+
+<p class="begin_point">What apps am I using on our iMac?</p>
+
+<p>I have kept it mostly stock so far. I’m going to use the Safari browser as my main browser, since that is the browser I use exclusively on my iPhone.  I will install Chrome and Firefox eventually, as I need them, but for now Safari works well.  I am using Apple Notes, as it syncs with iCloud (and I use it on my iPhone a good bit anyway).  Google Keep also works well in Safari, as does GMail and the Google suite.</p>
+    
+<img src="https://theartdirectedjournal.github.io/Site_Images/Catalina_Desktop.png" />
+
+<p>I have installed the Spotify client for streaming music, as I am a Spotify Premium customer.  As Spotify is platform agnostic,  I currently use it as the main music app on my iPhone, as well as a primary music source for each of the Google assistant devices in my home.  My wife keeps mentioning that she is thinking about making her Apple Music subscription a family plan, and if she does that, I may switch.  Otherwise, I’m happy with Spotify.  Lastly, the only other deviation from stock Apple apps thus far has been Visual Studio Code.  This is an excellent cross platform app from Microsoft, and I it is installed on every computer that I have.</p>
+
+<p>It's nice that macOS contains everything one needs out of the gate to be productive.  (Although, to be fair, most desktop operating systems, including but not limited to Chrome OS, Windows, and various Linux distros, also now include everything out of the box one needs to be productive.)</p>
+  
+<p style="text-align: center; color: #777;">....................</p>
+    
+<p>So there you have it.  All in all, my experience with Catalina on our old iMac has been great.  Thanks to <a href="http://dosdude1.com">dosdude1</a> for all the incredible work in getting Catalina running on older Macs!</p>
+
+<p class="end"><a href="https://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
+
