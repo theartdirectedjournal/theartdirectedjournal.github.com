@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>iOS 14 App Library</title>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Pro:300,400,700' rel="stylesheet"> 
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: rgb(60, 88, 128);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+font-weight: 700;
+}
+
+a:hover {
+color: rgb(58, 115, 110);
+}
+
+p {
+margin: 20px;
+}
+
+code {
+font-size: 14px;
+}
+
+img {
+max-width: 60%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}     
+
+#intro_holder {
+width: 100%;
+background: rgba(60, 88, 128, 1.0);
+background: -webkit-linear-gradient(top left, rgba(60, 88, 128, 1.0), rgba(58, 115, 110, 1.0));
+background: -moz-linear-gradient(top left, rgba(60, 88, 128, 1.0), rgba(58, 115, 110, 1.0));
+background: linear-gradient(to bottom right, rgba(60, 88, 128, 1.0), rgba(58, 115, 110, 1.0));
+min-height: 600px;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 12px;
+font-family: "Open Sans", "Arial", sans-serif;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+font-family: "Open Sans", "Arial", sans-serif;
+font-weight: 300;
+margin-top: 150px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 52px;
+font-weight: 700;
+text-align: center;
+letter-spacing: -2px;
+}
+
+#intro p {
+font-size: 18px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background:rgb(233,233,233);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Crimson Pro', serif;
+font-weight: 300;
+}
+
+#main_content .firstcharacter {
+color: #000;
+float: left;
+font-size: 62px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+#main_content .begin_point {
+    color: #000;
+    font-weight: 700;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+font-weight: 700;
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 12px;
+}
+
+#main_content .end a {
+border-bottom: none;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+img {
+float: right;
+max-width: 40%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+code {
+font-size: 16px;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 250px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+font-weight: bold;
+text-align: center;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(233,233,233);
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 75px;
+line-height: 60px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+font-size: 16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="The Art Directed Journal" href="http://theartdirectedjournal.github.io">The <span style="font-weight: 700; text-transform: uppercase;">Art Directed</span> Journal</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">iOS 14 App Library</p>
+
+<p>a super brief rant</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">I</span> installed the iOS 14 public beta on my first generation iPhone SE.  Given the buggy nature of the iOS 13 betas last year, I figured installing the iOS 14 betas on my first generation SE would allow me to play around with iOS 14 without putting my iPhone 11 in any type of jeopardy from a reliability standpoint.  I also think that it's nice that Apple is continuing to provide software updates to the first generation SE, and I was curious as to how those updates would run on an older device.</p>
+
+<p>Thus far my experience with the iOS 14 betas on my first generation SE has been enjoyable, as they have proven themselves much more reliable and stable.  The user interface as a whole is snappy, and, as of the time of this writing, I have experienced no lagging or crashes.  Applications that gave me issues with the iOS 13 betas last year have been rock solid on the iOS 14 betas. (I’m looking at you Blackberry Work and iOS Mail.)</p>
+
+<img src="https://theartdirectedjournal.github.io/Site_Images/app_library.jpg" />
+
+<p>However, I do have one complaint.  It has nothing to do with reliability and is only a personal preference issue.  I do not like the App Library.  In theory, the App Library is supposed to provide a solution to iPhone users that Google solved for long ago with Android &mdash; a list of all applications in alphabetical order. It would allow one to put only the few apps that they access most frequently on the first screen and then allow one to swipe left from the edge of that main homescreen to view that alphabetical list.  Windows Phone (and Windows 10 Mobile) also executed this concept to perfection.  However, while Apple has now decided to at least give users an alphabetical list of apps, that list is not the first thing visible when one swipes into it from the homescreen.  Instead, one sees a screen full of convoluted folders that Apple has arbitrarily named and placed all apps into.  While some of the folder names make sense, some of them I do not agree with.</p>
+    
+<img src="https://theartdirectedjournal.github.io/Site_Images/productivity_folder.jpg" />
+
+<p>There also appears to be no way for the end user to remove or rename said folders.  Examine, for example, the screenshot of my &ldquo;Productivity&rdquo; folder that was auto generated in the App Library.  While I agree that a lot of these applications are indeed productivity apps, I would classify apps like Mail, Blackberry Connect, Outlook and Blackberry Work as apps used for communication.  In fact, I have those apps in an aptly named &ldquo;Communication&rdquo; folder on my iPhone 11.  I would also classify Files and Authenticator as utilities.</p>  
+
+<p>Additionally, the algorithm for the &ldquo;Suggestions&rdquo; folder in the App Library, as shown in the other screenshot, is interesting.  I have actually not used Blackberry Connect in quite a while (months in fact).  Why would this be a suggestion?  I get why the &ldquo;Recently Added&rdquo; folder would be in the App Library.  It is actually the one auto generated folder of the bunch that seems useful.  However these other folders?  They are just clutter.</p>
+    
+<p>Apple, first, if you’re reading this, thank you for your time.  However, please change this.  Just give the user an alphabetical list of apps and let the user control the rest.  I get that you want to differ your solution from those of your competitors, but often simplicity is the best solution.  The &ldquo;Recently Added&rdquo; folder is not a bad concept, but please either just get rid of the other folders entirely or let the user choose to remove or rename them.
+</p>
+
+<p class="end"><a href="http://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
